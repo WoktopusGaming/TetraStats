@@ -3,10 +3,10 @@
 /// Original: res/i18n
 /// To regenerate, run: `dart run slang`
 ///
-/// Locales: 5
-/// Strings: 3875 (775 per locale)
+/// Locales: 7
+/// Strings: 5439 (777 per locale)
 ///
-/// Built on 2025-05-14 at 17:11 UTC
+/// Built on 2025-05-18 at 14:23 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -27,6 +27,8 @@ const AppLocale _baseLocale = AppLocale.en;
 enum AppLocale with BaseAppLocale<AppLocale, Translations> {
 	en(languageCode: 'en', build: Translations.build),
 	deDe(languageCode: 'de', countryCode: 'DE', build: _StringsDeDe.build),
+	esEs(languageCode: 'es', countryCode: 'ES', build: _StringsEsEs.build),
+	frFr(languageCode: 'fr', countryCode: 'FR', build: _StringsFrFr.build),
 	koKr(languageCode: 'ko', countryCode: 'KR', build: _StringsKoKr.build),
 	ruRu(languageCode: 'ru', countryCode: 'RU', build: _StringsRuRu.build),
 	zhCn(languageCode: 'zh', countryCode: 'CN', build: _StringsZhCn.build);
@@ -153,6 +155,8 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	// Translations
 	Map<String, String> get locales => {
 		'en': 'English',
+		'fr-FR': 'French (Français)',
+		'es-ES': 'Spanish (Espanol)',
 		'ru-RU': 'Russian (Русский)',
 		'ko-KR': 'Korean (한국인)',
 		'zh-CN': 'Simplified Chinese (简体中文)',
@@ -1713,6 +1717,8 @@ class _StringsDeDe implements Translations {
 	// Translations
 	@override Map<String, String> get locales => {
 		'en': 'Englisch',
+		'fr-FR': 'French (Français)',
+		'es-ES': 'Spanish (Espanol)',
 		'ru-RU': 'Russisch (Русский)',
 		'ko-KR': 'Koreanisch (한국인)',
 		'zh-CN': 'Vereinfachtes Chinesisch (简体中文)',
@@ -3247,6 +3253,3129 @@ class _StringsStatsLineClearsDeDe implements _StringsStatsLineClearsEn {
 }
 
 // Path: <root>
+class _StringsEsEs implements Translations {
+	/// You can call this constructor and build your own translation instance of this locale.
+	/// Constructing via the enum [AppLocale.build] is preferred.
+	_StringsEsEs.build({Map<String, Node>? overrides, PluralResolver? cardinalResolver, PluralResolver? ordinalResolver})
+		: assert(overrides == null, 'Set "translation_overrides: true" in order to enable this feature.'),
+		  $meta = TranslationMetadata(
+		    locale: AppLocale.esEs,
+		    overrides: overrides ?? {},
+		    cardinalResolver: cardinalResolver,
+		    ordinalResolver: ordinalResolver,
+		  ) {
+		$meta.setFlatMapFunction(_flatMapFunction);
+	}
+
+	/// Metadata for the translations of <es-ES>.
+	@override final TranslationMetadata<AppLocale, Translations> $meta;
+
+	/// Access flat map
+	@override dynamic operator[](String key) => $meta.getTranslation(key);
+
+	@override late final _StringsEsEs _root = this; // ignore: unused_field
+
+	// Translations
+	@override Map<String, String> get locales => {
+		'en': 'Inglés (English)',
+		'fr-FR': 'Francés (Français)',
+		'es-ES': 'Espanol',
+		'ru-RU': 'Ruso (Русский)',
+		'ko-KR': 'Coreano (한국인)',
+		'zh-CN': 'Chino simplificado (简体中文)',
+		'de-DE': 'Alemán (Deutsch)',
+	};
+	@override Map<String, String> get gamemodes => {
+		'league': 'Tetra League',
+		'zenith': 'Quick Play',
+		'zenithex': 'Quick Play Expert',
+		'40l': '40 Líneas',
+		'blitz': 'Blitz',
+		'5mblast': '5,000,000 Blast',
+		'zen': 'Zen',
+	};
+	@override late final _StringsDestinationsEsEs destinations = _StringsDestinationsEsEs._(_root);
+	@override Map<String, String> get playerRole => {
+		'user': 'User',
+		'banned': 'Banned',
+		'bot': 'Bot',
+		'sysop': 'System operator',
+		'admin': 'Admin',
+		'mod': 'Moderator',
+		'halfmod': 'Community moderator',
+		'anon': 'Anonymous',
+	};
+	@override String get goBackButton => 'Go Back';
+	@override String get nanow => 'Not avaliable for now...';
+	@override String seasonEnds({required Object countdown}) => 'Season ends in ${countdown}';
+	@override String get seasonEnded => 'Season has ended';
+	@override String overallPB({required Object pb}) => 'Overall PB: ${pb} m';
+	@override String gamesUntilRanked({required Object left}) => '${left} games until being ranked';
+	@override String numOfVictories({required Object wins}) => '~${wins} victories';
+	@override String get promotionOnNextWin => 'Promotion on next win';
+	@override String numOfdefeats({required Object losses}) => '~${losses} defeats';
+	@override String get demotionOnNextLoss => 'Demotion on next loss';
+	@override String get records => 'Records';
+	@override String get nerdStats => 'Nerd Stats';
+	@override String get playstyles => 'Playstyles';
+	@override String get horoscopes => 'Horoscopes';
+	@override String get relatedAchievements => 'Related Achievements';
+	@override String get season => 'Season';
+	@override String get smooth => 'Smooth';
+	@override String get dateAndTime => 'Date & Time';
+	@override String get TLfullLBnote => 'Heavy, but allows you to sort players by their stats and filter them by ranks';
+	@override String get rank => 'Rank';
+	@override String verdictGeneral({required Object n, required Object verdict, required Object rank}) => '${n} ${verdict} of ${rank} rank avg';
+	@override String get verdictBetter => 'ahead';
+	@override String get verdictWorse => 'behind';
+	@override String get localStanding => 'local';
+	@override late final _StringsXpEsEs xp = _StringsXpEsEs._(_root);
+	@override late final _StringsGametimeEsEs gametime = _StringsGametimeEsEs._(_root);
+	@override String get track => 'Track';
+	@override String get stopTracking => 'Stop tracking';
+	@override String supporter({required Object tier}) => 'Nivel ${tier} de apoyo';
+	@override String comparingWith({required Object newDate, required Object oldDate}) => 'Data from ${newDate} comparing with ${oldDate}';
+	@override String get compare => 'Comparar';
+	@override String get comparison => 'Comparison';
+	@override String get enterUsername => 'Enter username or \$avgX (where X is rank)';
+	@override String get general => 'General';
+	@override String get badges => 'Badges';
+	@override String obtainDate({required Object date}) => 'Obtained ${date}';
+	@override String get assignedManualy => 'That badge was assigned manually by TETR.IO admins';
+	@override String get distinguishment => 'Distinguishment';
+	@override String get banned => 'Banned';
+	@override String get bannedSubtext => 'Bans are placed when TETR.IO rules or terms of service are broken';
+	@override String get badStanding => 'Bad standing';
+	@override String get badStandingSubtext => 'One or more recent bans on record';
+	@override String get botAccount => 'Bot account';
+	@override String botAccountSubtext({required Object botMaintainers}) => 'Operated by ${botMaintainers}';
+	@override String get copiedToClipboard => 'Copied to clipboard!';
+	@override String get bio => 'Bio';
+	@override String get news => 'News';
+	@override late final _StringsMatchResultEsEs matchResult = _StringsMatchResultEsEs._(_root);
+	@override late final _StringsDistinguishmentsEsEs distinguishments = _StringsDistinguishmentsEsEs._(_root);
+	@override late final _StringsNewsEntriesEsEs newsEntries = _StringsNewsEntriesEsEs._(_root);
+	@override String rankupMiddle({required Object r}) => '${r} rank';
+	@override String get copyUserID => 'Click to copy user ID';
+	@override String get searchHint => 'Username or ID';
+	@override String get navMenu => 'Navigation menu';
+	@override String get navMenuTooltip => 'Open navigation menu';
+	@override String get refresh => 'Refresh data';
+	@override String get searchButton => 'Search';
+	@override String get trackedPlayers => 'Tracked Players';
+	@override String get standing => 'Standing';
+	@override String get previousSeasons => 'Previous Seasons';
+	@override String get recent => 'Recent';
+	@override String get top => 'Top';
+	@override String get noRecord => 'No record';
+	@override String sprintAndBlitsRelevance({required Object date}) => 'Relevance: ${date}';
+	@override late final _StringsSnackBarMessagesEsEs snackBarMessages = _StringsSnackBarMessagesEsEs._(_root);
+	@override late final _StringsErrorsEsEs errors = _StringsErrorsEsEs._(_root);
+	@override late final _StringsActionsEsEs actions = _StringsActionsEsEs._(_root);
+	@override late final _StringsAprilFoolsEsEs aprilFools = _StringsAprilFoolsEsEs._(_root);
+	@override late final _StringsGraphsDestinationEsEs graphsDestination = _StringsGraphsDestinationEsEs._(_root);
+	@override late final _StringsFilterModaleEsEs filterModale = _StringsFilterModaleEsEs._(_root);
+	@override late final _StringsCutoffsDestinationEsEs cutoffsDestination = _StringsCutoffsDestinationEsEs._(_root);
+	@override late final _StringsRankViewEsEs rankView = _StringsRankViewEsEs._(_root);
+	@override late final _StringsStateViewEsEs stateView = _StringsStateViewEsEs._(_root);
+	@override late final _StringsTlMatchViewEsEs tlMatchView = _StringsTlMatchViewEsEs._(_root);
+	@override late final _StringsCalcDestinationEsEs calcDestination = _StringsCalcDestinationEsEs._(_root);
+	@override late final _StringsInfoDestinationEsEs infoDestination = _StringsInfoDestinationEsEs._(_root);
+	@override late final _StringsLeaderboardsDestinationEsEs leaderboardsDestination = _StringsLeaderboardsDestinationEsEs._(_root);
+	@override late final _StringsSavedDataDestinationEsEs savedDataDestination = _StringsSavedDataDestinationEsEs._(_root);
+	@override late final _StringsSettingsDestinationEsEs settingsDestination = _StringsSettingsDestinationEsEs._(_root);
+	@override late final _StringsHomeNavigationEsEs homeNavigation = _StringsHomeNavigationEsEs._(_root);
+	@override late final _StringsGraphsNavigationEsEs graphsNavigation = _StringsGraphsNavigationEsEs._(_root);
+	@override late final _StringsCalcNavigationEsEs calcNavigation = _StringsCalcNavigationEsEs._(_root);
+	@override late final _StringsFirstTimeViewEsEs firstTimeView = _StringsFirstTimeViewEsEs._(_root);
+	@override late final _StringsAboutViewEsEs aboutView = _StringsAboutViewEsEs._(_root);
+	@override late final _StringsStatsEsEs stats = _StringsStatsEsEs._(_root);
+	@override Map<String, String> get countries => {
+		'': 'Worldwide',
+		'AF': 'Afghanistan',
+		'AX': 'Åland Islands',
+		'AL': 'Albania',
+		'DZ': 'Algeria',
+		'AS': 'American Samoa',
+		'AD': 'Andorra',
+		'AO': 'Angola',
+		'AI': 'Anguilla',
+		'AQ': 'Antarctica',
+		'AG': 'Antigua and Barbuda',
+		'AR': 'Argentina',
+		'AM': 'Armenia',
+		'AW': 'Aruba',
+		'AU': 'Australia',
+		'AT': 'Austria',
+		'AZ': 'Azerbaijan',
+		'BS': 'Bahamas',
+		'BH': 'Bahrain',
+		'BD': 'Bangladesh',
+		'BB': 'Barbados',
+		'BY': 'Belarus',
+		'BE': 'Belgium',
+		'BZ': 'Belize',
+		'BJ': 'Benin',
+		'BM': 'Bermuda',
+		'BT': 'Bhutan',
+		'BO': 'Bolivia, Plurinational State of',
+		'BA': 'Bosnia and Herzegovina',
+		'BW': 'Botswana',
+		'BV': 'Bouvet Island',
+		'BR': 'Brazil',
+		'IO': 'British Indian Ocean Territory',
+		'BN': 'Brunei Darussalam',
+		'BG': 'Bulgaria',
+		'BF': 'Burkina Faso',
+		'BI': 'Burundi',
+		'KH': 'Cambodia',
+		'CM': 'Cameroon',
+		'CA': 'Canada',
+		'CV': 'Cape Verde',
+		'BQ': 'Caribbean Netherlands',
+		'KY': 'Cayman Islands',
+		'CF': 'Central African Republic',
+		'TD': 'Chad',
+		'CL': 'Chile',
+		'CN': 'China',
+		'CX': 'Christmas Island',
+		'CC': 'Cocos (Keeling) Islands',
+		'CO': 'Colombia',
+		'KM': 'Comoros',
+		'CG': 'Congo',
+		'CD': 'Congo, the Democratic Republic of the',
+		'CK': 'Cook Islands',
+		'CR': 'Costa Rica',
+		'CI': 'Côte d\'Ivoire',
+		'HR': 'Croatia',
+		'CU': 'Cuba',
+		'CW': 'Curaçao',
+		'CY': 'Cyprus',
+		'CZ': 'Czech Republic',
+		'DK': 'Denmark',
+		'DJ': 'Djibouti',
+		'DM': 'Dominica',
+		'DO': 'Dominican Republic',
+		'EC': 'Ecuador',
+		'EG': 'Egypt',
+		'SV': 'El Salvador',
+		'GB-ENG': 'Inglaterra',
+		'GQ': 'Guinea Ecuatorial',
+		'ER': 'Eritrea',
+		'EE': 'Estonia',
+		'ET': 'Ethiopia',
+		'EU': 'Europe',
+		'FK': 'Falkland Islands (Malvinas)',
+		'FO': 'Faroe Islands',
+		'FJ': 'Fiji',
+		'FI': 'Finland',
+		'FR': 'France',
+		'GF': 'French Guiana',
+		'PF': 'French Polynesia',
+		'TF': 'French Southern Territories',
+		'GA': 'Gabon',
+		'GM': 'Gambia',
+		'GE': 'Georgia',
+		'DE': 'Germany',
+		'GH': 'Ghana',
+		'GI': 'Gibraltar',
+		'GR': 'Greece',
+		'GL': 'Greenland',
+		'GD': 'Grenada',
+		'GP': 'Guadeloupe',
+		'GU': 'Guam',
+		'GT': 'Guatemala',
+		'GG': 'Guernsey',
+		'GN': 'Guinea',
+		'GW': 'Guinea-Bissau',
+		'GY': 'Guyana',
+		'HT': 'Haiti',
+		'HM': 'Heard Island and McDonald Islands',
+		'VA': 'Holy See (Vatican City State)',
+		'HN': 'Honduras',
+		'HK': 'Hong Kong',
+		'HU': 'Hungary',
+		'IS': 'Iceland',
+		'IN': 'India',
+		'ID': 'Indonesia',
+		'IR': 'Iran, Islamic Republic of',
+		'IQ': 'Iraq',
+		'IE': 'Ireland',
+		'IM': 'Isle of Man',
+		'IL': 'Israel',
+		'IT': 'Italy',
+		'JM': 'Jamaica',
+		'JP': 'Japón',
+		'JE': 'Jersey',
+		'JO': 'Jordan',
+		'KZ': 'Kazakhstan',
+		'KE': 'Kenya',
+		'KI': 'Kiribati',
+		'KP': 'Korea, Democratic People\'s Republic of',
+		'KR': 'Korea, Republic of',
+		'XK': 'Kosovo',
+		'KW': 'Kuwait',
+		'KG': 'Kyrgyzstan',
+		'LA': 'Lao People\'s Democratic Republic',
+		'LV': 'Latvia',
+		'LB': 'Lebanon',
+		'LS': 'Lesotho',
+		'LR': 'Liberia',
+		'LY': 'Libya',
+		'LI': 'Liechtenstein',
+		'LT': 'Lithuania',
+		'LU': 'Luxembourg',
+		'MO': 'Macao',
+		'MK': 'Macedonia, the former Yugoslav Republic of',
+		'MG': 'Madagascar',
+		'MW': 'Malawi',
+		'MY': 'Malaysia',
+		'MV': 'Maldives',
+		'ML': 'Mali',
+		'MT': 'Malta',
+		'MH': 'Marshall Islands',
+		'MQ': 'Martinique',
+		'MR': 'Mauritania',
+		'MU': 'Mauritius',
+		'YT': 'Mayotte',
+		'MX': 'México',
+		'FM': 'Micronesia, Federated States of',
+		'MD': 'Moldova, Republic of',
+		'MC': 'Monaco',
+		'ME': 'Montenegro',
+		'MA': 'Morocco',
+		'MN': 'Mongolia',
+		'MS': 'Montserrat',
+		'MZ': 'Mozambique',
+		'MM': 'Myanmar',
+		'NA': 'Namibia',
+		'NR': 'Nauru',
+		'NP': 'Nepal',
+		'NL': 'Netherlands',
+		'AN': 'Netherlands Antilles',
+		'NC': 'New Caledonia',
+		'NZ': 'New Zealand',
+		'NI': 'Nicaragua',
+		'NE': 'Niger',
+		'NG': 'Nigeria',
+		'NU': 'Niue',
+		'NF': 'Norfolk Island',
+		'GB-NIR': 'Northern Ireland',
+		'MP': 'Northern Mariana Islands',
+		'NO': 'Norway',
+		'OM': 'Oman',
+		'PK': 'Pakistan',
+		'PW': 'Palau',
+		'PS': 'Palestine',
+		'PA': 'Panama',
+		'PG': 'Papua New Guinea',
+		'PY': 'Paraguay',
+		'PE': 'Peru',
+		'PH': 'Philippines',
+		'PN': 'Pitcairn',
+		'PL': 'Poland',
+		'PT': 'Portugal',
+		'PR': 'Puerto Rico',
+		'QA': 'Qatar',
+		'RE': 'Réunion',
+		'RO': 'Romania',
+		'RU': 'Russian Federation',
+		'RW': 'Rwanda',
+		'BL': 'Saint Barthélemy',
+		'SH': 'Saint Helena, Ascension and Tristan da Cunha',
+		'KN': 'Saint Kitts and Nevis',
+		'LC': 'Saint Lucia',
+		'MF': 'Saint Martin',
+		'PM': 'Saint Pierre and Miquelon',
+		'VC': 'Saint Vincent and the Grenadines',
+		'WS': 'Samoa',
+		'SM': 'San Marino',
+		'ST': 'Sao Tome and Principe',
+		'SA': 'Saudi Arabia',
+		'GB-SCT': 'Scotland',
+		'SN': 'Senegal',
+		'RS': 'Serbia',
+		'SC': 'Seychelles',
+		'SL': 'Sierra Leone',
+		'SG': 'Singapore',
+		'SX': 'Sint Maarten (Dutch part)',
+		'SK': 'Slovakia',
+		'SI': 'Slovenia',
+		'SB': 'Solomon Islands',
+		'SO': 'Somalia',
+		'ZA': 'South Africa',
+		'GS': 'South Georgia and the South Sandwich Islands',
+		'SS': 'South Sudan',
+		'ES': 'España',
+		'LK': 'Sri Lanka',
+		'SD': 'Sudan',
+		'SR': 'Suriname',
+		'SJ': 'Svalbard and Jan Mayen Islands',
+		'SZ': 'Swaziland',
+		'SE': 'Sweden',
+		'CH': 'Switzerland',
+		'SY': 'Syrian Arab Republic',
+		'TW': 'Taiwan',
+		'TJ': 'Tajikistan',
+		'TZ': 'Tanzania, United Republic of',
+		'TH': 'Thailand',
+		'TL': 'Timor-Leste',
+		'TG': 'Togo',
+		'TK': 'Tokelau',
+		'TO': 'Tonga',
+		'TT': 'Trinidad and Tobago',
+		'TN': 'Tunisia',
+		'TR': 'Turkey',
+		'TM': 'Turkmenistan',
+		'TC': 'Turks and Caicos Islands',
+		'TV': 'Tuvalu',
+		'UG': 'Uganda',
+		'UA': 'Ukraine',
+		'AE': 'United Arab Emirates',
+		'GB': 'United Kingdom',
+		'US': 'Estados Unidos',
+		'UY': 'Uruguay',
+		'UM': 'US Minor Outlying Islands',
+		'UZ': 'Uzbekistan',
+		'VU': 'Vanuatu',
+		'VE': 'Venezuela, Bolivarian Republic of',
+		'VN': 'Vietnam',
+		'VG': 'Virgin Islands, British',
+		'VI': 'Virgin Islands, U.S.',
+		'GB-WLS': 'Wales',
+		'WF': 'Wallis and Futuna Islands',
+		'EH': 'Western Sahara',
+		'YE': 'Yemen',
+		'ZM': 'Zambia',
+		'ZW': 'Zimbabwe',
+		'XX': 'Desconocido',
+		'XM': 'La Luna',
+	};
+}
+
+// Path: destinations
+class _StringsDestinationsEsEs implements _StringsDestinationsEn {
+	_StringsDestinationsEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get home => 'Home';
+	@override String get graphs => 'Gráficos';
+	@override String get leaderboards => 'Clasificaciones';
+	@override String get cutoffs => 'Cutoffs';
+	@override String get calc => 'Calculator';
+	@override String get info => 'Info Center';
+	@override String get data => 'Saved Data';
+	@override String get settings => 'Settings';
+}
+
+// Path: xp
+class _StringsXpEsEs implements _StringsXpEn {
+	_StringsXpEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'XP Level';
+	@override String progressToNextLevel({required Object percentage}) => 'Progress to next level: ${percentage}';
+	@override String progressTowardsGoal({required Object goal, required Object percentage, required Object left}) => 'Progress from 0 XP to level ${goal}: ${percentage} (${left} XP left)';
+}
+
+// Path: gametime
+class _StringsGametimeEsEs implements _StringsGametimeEn {
+	_StringsGametimeEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'Exact gametime';
+	@override String gametimeAday({required Object gametime}) => '${gametime} a day in average';
+	@override String breakdown({required Object years, required Object months, required Object days, required Object minutes, required Object seconds}) => 'It\'s ${years} years,\nor ${months} months,\nor ${days} days,\nor ${minutes} minutes\nor ${seconds} seconds';
+}
+
+// Path: matchResult
+class _StringsMatchResultEsEs implements _StringsMatchResultEn {
+	_StringsMatchResultEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get victory => 'Victory';
+	@override String get defeat => 'Defeat';
+	@override String get tie => 'Tie';
+	@override String get dqvictory => 'Opponent was DQ\'ed';
+	@override String get dqdefeat => 'Disqualified';
+	@override String get nocontest => 'No Contest';
+	@override String get nullified => 'Nullified';
+}
+
+// Path: distinguishments
+class _StringsDistinguishmentsEsEs implements _StringsDistinguishmentsEn {
+	_StringsDistinguishmentsEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get noHeader => 'Header is missing';
+	@override String get noFooter => 'Footer is missing';
+	@override String get twc => 'TETR.IO World Champion';
+	@override String twcYear({required Object year}) => '${year} TETR.IO World Championship';
+}
+
+// Path: newsEntries
+class _StringsNewsEntriesEsEs implements _StringsNewsEntriesEn {
+	_StringsNewsEntriesEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override TextSpan leaderboard({required InlineSpan rank, required InlineSpan gametype}) => TextSpan(children: [
+		const TextSpan(text: 'Got № '),
+		rank,
+		const TextSpan(text: ' in '),
+		gametype,
+	]);
+	@override TextSpan personalbest({required InlineSpan gametype, required InlineSpan pb}) => TextSpan(children: [
+		const TextSpan(text: 'Got a new PB in '),
+		gametype,
+		const TextSpan(text: ' of '),
+		pb,
+	]);
+	@override TextSpan badge({required InlineSpan badge}) => TextSpan(children: [
+		const TextSpan(text: 'Obtained a '),
+		badge,
+		const TextSpan(text: ' badge'),
+	]);
+	@override TextSpan rankup({required InlineSpan rank}) => TextSpan(children: [
+		const TextSpan(text: 'Obtained '),
+		rank,
+		const TextSpan(text: ' in Tetra League'),
+	]);
+	@override TextSpan supporter({required InlineSpanBuilder s}) => TextSpan(children: [
+		const TextSpan(text: 'Became a '),
+		s('TETR.IO supporter'),
+	]);
+	@override TextSpan supporter_gift({required InlineSpanBuilder s}) => TextSpan(children: [
+		const TextSpan(text: 'Received the gift of '),
+		s('TETR.IO supporter'),
+	]);
+	@override TextSpan unknown({required InlineSpan type}) => TextSpan(children: [
+		const TextSpan(text: 'Unknown news of type '),
+		type,
+	]);
+}
+
+// Path: snackBarMessages
+class _StringsSnackBarMessagesEsEs implements _StringsSnackBarMessagesEn {
+	_StringsSnackBarMessagesEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String stateRemoved({required Object date}) => '${date} state was removed from database!';
+	@override String matchRemoved({required Object date}) => '${date} match was removed from database!';
+	@override String get notForWeb => 'Function is not available for web version';
+	@override String get importSuccess => 'Import successful';
+	@override String get importCancelled => 'Import was cancelled';
+}
+
+// Path: errors
+class _StringsErrorsEsEs implements _StringsErrorsEn {
+	_StringsErrorsEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get noRecords => 'No records';
+	@override String get notEnoughData => 'Not enough data';
+	@override String get noHistorySaved => 'No history saved';
+	@override String connection({required Object code, required Object message}) => 'Some issue with connection: ${code} ${message}';
+	@override String get noSuchUser => 'No such user';
+	@override String get noSuchUserSub => 'Either you mistyped something, or the account no longer exists';
+	@override String get discordNotAssigned => 'No connections found';
+	@override String get discordNotAssignedSub => 'Your query should look like described in [API guide](https://tetr.io/about/api/#userssearchquery)';
+	@override String get history => 'History for that player is missing';
+	@override String get actionSuggestion => 'Perhaps, you want to';
+	@override String get p1nkl0bst3rTLmatches => 'No Tetra League matches was found';
+	@override String get clientException => 'No internet connection';
+	@override String get forbidden => 'Your IP address is blocked';
+	@override String forbiddenSub({required Object nickname}) => 'If you are using VPN or Proxy, turn it off. If this does not help, reach out to ${nickname}';
+	@override String get tooManyRequests => 'You have been rate limited.';
+	@override String get tooManyRequestsSub => 'Wait a few moments and try again';
+	@override String get internal => 'Something happened on the tetr.io side';
+	@override String get internalSub => 'osk, probably, already aware about it';
+	@override String get internalWebVersion => 'Something happened on the tetr.io side (or on oskware_bridge, idk honestly)';
+	@override String get internalWebVersionSub => 'If osk status page says that everything is ok, let dan63047 know about this issue';
+	@override String get oskwareBridge => 'Something happened with oskware_bridge';
+	@override String get oskwareBridgeSub => 'Let dan63047 know';
+	@override String get p1nkl0bst3rForbidden => 'Third party API blocked your IP address';
+	@override String get p1nkl0bst3rTooManyRequests => 'Too many requests to third party API. Try again later';
+	@override String get p1nkl0bst3rinternal => 'Something happened on the p1nkl0bst3r side';
+	@override String get p1nkl0bst3rinternalWebVersion => 'Something happened on the p1nkl0bst3r side (or on oskware_bridge, idk honestly)';
+	@override String get replayAlreadySaved => 'Replay already saved';
+	@override String get replayExpired => 'Replay expired and not available anymore';
+	@override String get replayRejected => 'Third party API blocked your IP address';
+}
+
+// Path: actions
+class _StringsActionsEsEs implements _StringsActionsEn {
+	_StringsActionsEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get cancel => 'Cancel';
+	@override String get submit => 'Submit';
+	@override String get ok => 'OK';
+	@override String get apply => 'Apply';
+	@override String get refresh => 'Refresh';
+}
+
+// Path: aprilFools
+class _StringsAprilFoolsEsEs implements _StringsAprilFoolsEn {
+	_StringsAprilFoolsEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get fakeBanModaleTitle => 'You have been permanently banned from Tetra Stats';
+	@override String get fakeBanModaleBody => 'Reason: gross violation of the Terms of Service\n\nIf you want to appeal, please, contact dan63.';
+	@override String get fakeBanModaledan63Grin => 'Fool...';
+	@override String get SettingTitleUnfoolMyself => 'Unfool myself';
+	@override String get SettingButtonUnfool => 'Unfool';
+	@override String get SettingDescription => 'That button will allow you re experience april fool prank once again';
+}
+
+// Path: graphsDestination
+class _StringsGraphsDestinationEsEs implements _StringsGraphsDestinationEn {
+	_StringsGraphsDestinationEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get fetchAndsaveTLHistory => 'Fetch History';
+	@override String get fetchAndSaveOldTLmatches => 'Get Tetra League matches history';
+	@override String fetchAndsaveTLHistoryResult({required Object number}) => '${number} states was found';
+	@override String fetchAndSaveOldTLmatchesResult({required Object number}) => '${number} matches was found';
+	@override String gamesPlayed({required Object games}) => '${games} played';
+	@override String get dateAndTime => 'Date & Time';
+	@override String get filterModaleTitle => 'Filter ranks on graph';
+}
+
+// Path: filterModale
+class _StringsFilterModaleEsEs implements _StringsFilterModaleEn {
+	_StringsFilterModaleEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get all => 'All';
+}
+
+// Path: cutoffsDestination
+class _StringsCutoffsDestinationEsEs implements _StringsCutoffsDestinationEn {
+	_StringsCutoffsDestinationEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'Tetra League State';
+	@override String relevance({required Object timestamp}) => 'as of ${timestamp}';
+	@override String get actual => 'Actual';
+	@override String get target => 'Target';
+	@override String get cutoffTR => 'Cutoff TR';
+	@override String get targetTR => 'Target TR';
+	@override String get state => 'State';
+	@override String get advanced => 'Advanced';
+	@override String players({required Object n}) => 'Players (${n})';
+	@override String get moreInfo => 'More Info';
+	@override String NumberOne({required Object tr}) => '№ 1 is ${tr} TR';
+	@override String inflated({required Object tr}) => 'Inflated on ${tr} TR';
+	@override String get notInflated => 'Not inflated';
+	@override String deflated({required Object tr}) => 'Deflated on ${tr} TR';
+	@override String get notDeflated => 'Not deflated';
+	@override String get wellDotDotDot => 'Well...';
+	@override String fromPlace({required Object n}) => 'from № ${n}';
+	@override String get viewButton => 'View';
+}
+
+// Path: rankView
+class _StringsRankViewEsEs implements _StringsRankViewEn {
+	_StringsRankViewEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String rankTitle({required Object rank}) => '${rank} rank data';
+	@override String get everyoneTitle => 'Entire leaderboard';
+	@override String get trRange => 'TR Range';
+	@override String get supposedToBe => 'Supposed to be';
+	@override String gap({required Object value}) => '${value} gap';
+	@override String trGap({required Object value}) => '${value} TR gap';
+	@override String get deflationGap => 'Deflation gap';
+	@override String get inflationGap => 'Inflation gap';
+	@override String get LBposRange => 'LB pos range';
+	@override String overpopulated({required Object players}) => 'Overpopulated by a ${players}';
+	@override String underpopulated({required Object players}) => 'Underpopulated by a ${players}';
+	@override String get PlayersEqualSupposedToBe => 'cute';
+	@override String get avgStats => 'Average Stats';
+	@override String avgForRank({required Object rank}) => 'Average for ${rank} rank';
+	@override String get avgNerdStats => 'Average Nerd Stats';
+	@override String get minimums => 'Minimums';
+	@override String get maximums => 'Maximums';
+}
+
+// Path: stateView
+class _StringsStateViewEsEs implements _StringsStateViewEn {
+	_StringsStateViewEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String title({required Object date}) => 'State from ${date}';
+}
+
+// Path: tlMatchView
+class _StringsTlMatchViewEsEs implements _StringsTlMatchViewEn {
+	_StringsTlMatchViewEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get match => 'Match';
+	@override String get vs => 'vs';
+	@override String get winner => 'Winner';
+	@override String roundNumber({required Object n}) => 'Round ${n}';
+	@override String get statsFor => 'Stats for';
+	@override String get numberOfRounds => 'Number of rounds';
+	@override String get matchLength => 'Match Length';
+	@override String get roundLength => 'Round Length';
+	@override String get matchStats => 'Match stats';
+	@override String get downloadReplay => 'Download .ttrm replay';
+	@override String get openReplay => 'Open replay in TETR.IO';
+}
+
+// Path: calcDestination
+class _StringsCalcDestinationEsEs implements _StringsCalcDestinationEn {
+	_StringsCalcDestinationEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String placeholders({required Object stat}) => 'Enter your ${stat}';
+	@override String get tip => 'Enter values and press "Calc" to see Nerd Stats for them';
+	@override String get statsCalcButton => 'Calc';
+	@override String get damageCalcTip => 'Click on the actions on the left to add them here';
+	@override String get actions => 'Actions';
+	@override String get results => 'Results';
+	@override String get rules => 'Rules';
+	@override String get noSpinClears => 'No Spin Clears';
+	@override String get spins => 'Spins';
+	@override String get miniSpins => 'Mini spins';
+	@override String get noLineclear => 'No lineclear (Break Combo)';
+	@override String get custom => 'Custom';
+	@override String get multiplier => 'Multiplier';
+	@override String get pcDamage => 'Perfect Clear Damage';
+	@override String get comboTable => 'Combo Table';
+	@override String get b2bChaining => 'Back-To-Back Chaining';
+	@override String get surgeStartAtB2B => 'Starts at B2B';
+	@override String get surgeStartAmount => 'Start amount';
+	@override String get totalDamage => 'Total damage';
+	@override String get lineclears => 'Lineclears';
+	@override String get combo => 'Combo';
+	@override String get surge => 'Surge';
+	@override String get pcs => 'PCs';
+}
+
+// Path: infoDestination
+class _StringsInfoDestinationEsEs implements _StringsInfoDestinationEn {
+	_StringsInfoDestinationEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'Information Center';
+	@override String get sprintAndBlitzAverages => '40 Lines & Blitz Averages';
+	@override String get sprintAndBlitzAveragesDescription => 'Since calculating 40 Lines & Blitz averages is tedious process, it gets updated only once in a while. Click on the title of this card to see the full 40 Lines & Blitz averages table';
+	@override String get tetraStatsWiki => 'Tetra Stats Wiki';
+	@override String get tetraStatsWikiDescription => 'Find more information about Tetra Stats functions and statictic, that it provides';
+	@override String get about => 'Acerca de Tetra Stats';
+	@override String get aboutDescription => 'Desarrollado por dan63\n';
+}
+
+// Path: leaderboardsDestination
+class _StringsLeaderboardsDestinationEsEs implements _StringsLeaderboardsDestinationEn {
+	_StringsLeaderboardsDestinationEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'Leaderboards';
+	@override String get tl => 'Tetra League (Current Season)';
+	@override String get fullTL => 'Tetra League (Current Season, full one)';
+	@override String get ar => 'Achievement Points';
+}
+
+// Path: savedDataDestination
+class _StringsSavedDataDestinationEsEs implements _StringsSavedDataDestinationEn {
+	_StringsSavedDataDestinationEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'Saved Data';
+	@override String get tip => 'Select nickname on the left to see data assosiated with it';
+	@override String seasonTLstates({required Object s}) => 'S${s} TL States';
+	@override String get TLrecords => 'TL Records';
+}
+
+// Path: settingsDestination
+class _StringsSettingsDestinationEsEs implements _StringsSettingsDestinationEn {
+	_StringsSettingsDestinationEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'Settings';
+	@override String get general => 'General';
+	@override String get customization => 'Customization';
+	@override String get database => 'Local database';
+	@override String get checking => 'Checking...';
+	@override String get enterToSubmit => 'Press Enter to submit';
+	@override String get account => 'Tu cuenta en TETR.IO';
+	@override String get accountDescription => 'Stats of that player will be loaded initially right after launching this app. By default it loads my (dan63) stats. To change that, enter your nickname here.';
+	@override String get done => 'Done!';
+	@override String get noSuchAccount => 'No such account';
+	@override String get language => 'Language';
+	@override String languageDescription({required Object languages}) => 'Tetra Stats was translated on ${languages}. By default, app will pick your system one or English, if locale of your system isn\'t avaliable.';
+	@override String languages({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('es'))(n,
+		zero: 'cero idiomas',
+		one: '${n} idioma',
+		two: '${n} idiomas',
+		few: '${n} idiomas',
+		many: '${n} idiomas',
+		other: '${n} idiomas',
+	);
+	@override String get updateInTheBackground => 'Update data in the background';
+	@override String get updateInTheBackgroundDescription => 'If on, Tetra Stats will attempt to retrieve new info once cache expires. Usually that happen every 5 minutes';
+	@override String get compareStats => 'Compare TL stats with rank averages';
+	@override String get compareStatsDescription => 'If on, Tetra Stats will provide additional metrics, which allow you to compare yourself with average player on your rank. The way you\'ll see it — stats will be highlighted with corresponding color, hover over them with cursor for more info.';
+	@override String get showPosition => 'Show position on leaderboard by stats';
+	@override String get showPositionDescription => 'This can take some time (and traffic) to load, but will allow you to see your position on the leaderboard, sorted by a stat';
+	@override String get accentColor => 'Accent color';
+	@override String get accentColorDescription => 'That color is seen across this app and usually highlights interactive UI elements.';
+	@override String get accentColorModale => 'Pick an accent color';
+	@override String get timestamps => 'Timestamps format';
+	@override String timestampsDescriptionPart1({required Object d}) => 'You can choose, in which way timestamps shows time. By default, they show time in GMT timezone, formatted according to chosen locale, example: ${d}.';
+	@override String timestampsDescriptionPart2({required Object y, required Object r}) => 'There is also:\n• Locale formatted in your timezone: ${y}\n• Relative timestamp: ${r}';
+	@override String get timestampsAbsoluteGMT => 'Absolute (GMT)';
+	@override String get timestampsAbsoluteLocalTime => 'Absolute (Your timezone)';
+	@override String get timestampsRelative => 'Relative';
+	@override String get sheetbotLikeGraphs => 'Sheetbot-like behavior for radar graphs';
+	@override String get sheetbotLikeGraphsDescription => 'Altough it was considered by me, that the way graphs work in SheetBot is not very correct, some people were confused to see, that -0.5 stride dosen\'t look the way it looks on SheetBot graph. Hence, he we are: if this toggle is on, points on the graphs can appear on the opposite half of the graph if value is negative.';
+	@override String get oskKagariGimmick => 'Osk-Kagari gimmick';
+	@override String get oskKagariGimmickDescription => 'If on, instead of osk\'s rank, :kagari: will be rendered.';
+	@override String get bytesOfDataStored => 'of data stored';
+	@override String get TLrecordsSaved => 'Tetra League records saved';
+	@override String get TLplayerstatesSaved => 'Tetra League playerstates saved';
+	@override String get fixButton => 'Fix';
+	@override String get compressButton => 'Compress';
+	@override String get exportDB => 'Export local database';
+	@override String get desktopExportAlertTitle => 'Desktop export';
+	@override String get desktopExportText => 'It seems like you using this app on desktop. Check your documents folder, you should find "TetraStats.db". Copy it somewhere';
+	@override String get androidExportAlertTitle => 'Android export';
+	@override String androidExportText({required Object exportedDB}) => 'Exported.\n${exportedDB}';
+	@override String get importDB => 'Import local database';
+	@override String get importDBDescription => 'Restore your backup. Notice that already stored database will be overwritten.';
+	@override String get importWrongFileType => 'Wrong file type';
+}
+
+// Path: homeNavigation
+class _StringsHomeNavigationEsEs implements _StringsHomeNavigationEn {
+	_StringsHomeNavigationEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get overview => 'Overview';
+	@override String get standing => 'Standing';
+	@override String get seasons => 'Seasons';
+	@override String get mathces => 'Matches';
+	@override String get pb => 'PB';
+	@override String get normal => 'Normal';
+	@override String get expert => 'Expert';
+	@override String get expertRecords => 'Ex Records';
+}
+
+// Path: graphsNavigation
+class _StringsGraphsNavigationEsEs implements _StringsGraphsNavigationEn {
+	_StringsGraphsNavigationEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get history => 'Player History';
+	@override String get league => 'League State';
+	@override String get cutoffs => 'Cutoffs History';
+}
+
+// Path: calcNavigation
+class _StringsCalcNavigationEsEs implements _StringsCalcNavigationEn {
+	_StringsCalcNavigationEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get stats => 'Stats Calculator';
+	@override String get damage => 'Damage Calculator';
+}
+
+// Path: firstTimeView
+class _StringsFirstTimeViewEsEs implements _StringsFirstTimeViewEn {
+	_StringsFirstTimeViewEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get welcome => 'Welcome to Tetra Stats';
+	@override String get description => 'Service, that allows you to keep track of various statistics for TETR.IO';
+	@override String get nicknameQuestion => 'What\'s your nickname?';
+	@override String get inpuntHint => 'Type it here... (3-16 symbols)';
+	@override String get emptyInputError => 'Can\'t submit an empty string';
+	@override String niceToSeeYou({required Object n}) => 'Nice to see you, ${n}';
+	@override String get letsTakeALook => 'Let\'s take a look at your stats...';
+	@override String get skip => 'Skip';
+}
+
+// Path: aboutView
+class _StringsAboutViewEsEs implements _StringsAboutViewEn {
+	_StringsAboutViewEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'Acerca de Tetra Stats';
+	@override String get about => 'Tetra Stats is a service, that works with TETR.IO Tetra Channel API, providing data from it and calculating some addtitional metrics, based on this data. Service allows user to track their progress in Tetra League with "Track" function, which records every Tetra League change into local database (not automatically, you have to visit service from time to time), so these changes could be looked through graphs.\n\nBeanserver blaster is a part of a Tetra Stats, that decoupled into a serverside script. It provides full Tetra League leaderboard, allowing Tetra Stats to sort leaderboard by any metric and build scatter chart, that allows user to analyse Tetra League trends. It also provides history of Tetra League ranks cutoffs, which can be viewed by user via graph as well.\n\nThere is a plans to add replay analysis and tournaments history, so stay tuned!\n\nService is not associated with TETR.IO or osk in any capacity.';
+	@override String get appVersion => 'App Version';
+	@override String build({required Object build}) => 'Build ${build}';
+	@override String get GHrepo => 'GitHub Repository';
+	@override String get submitAnIssue => 'Submit an issue';
+	@override String get credits => 'Credits';
+	@override String get authorAndDeveloper => 'Autor & desarrollador';
+	@override String get providedFormulas => 'Provided formulas';
+	@override String get providedS1history => 'Provided S1 history';
+	@override String get inoue => 'Inoue (replay grabber)';
+	@override String get zhCNlocale => 'Simplfied Chinese locale';
+	@override String get deDElocale => 'German locale';
+	@override String get koKRlocale => 'Korean locale';
+	@override String get supportHim => 'Support him!';
+}
+
+// Path: stats
+class _StringsStatsEsEs implements _StringsStatsEn {
+	_StringsStatsEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get registrationDate => 'Registration Date';
+	@override String get gametime => 'Time Played';
+	@override String get ogp => 'Online Games Played';
+	@override String get ogw => 'Online Games Won';
+	@override String get followers => 'Followers';
+	@override late final _StringsStatsXpEsEs xp = _StringsStatsXpEsEs._(_root);
+	@override late final _StringsStatsTrEsEs tr = _StringsStatsTrEsEs._(_root);
+	@override late final _StringsStatsGlickoEsEs glicko = _StringsStatsGlickoEsEs._(_root);
+	@override late final _StringsStatsRdEsEs rd = _StringsStatsRdEsEs._(_root);
+	@override late final _StringsStatsGlixareEsEs glixare = _StringsStatsGlixareEsEs._(_root);
+	@override late final _StringsStatsS1trEsEs s1tr = _StringsStatsS1trEsEs._(_root);
+	@override late final _StringsStatsGpEsEs gp = _StringsStatsGpEsEs._(_root);
+	@override late final _StringsStatsGwEsEs gw = _StringsStatsGwEsEs._(_root);
+	@override late final _StringsStatsWinrateEsEs winrate = _StringsStatsWinrateEsEs._(_root);
+	@override late final _StringsStatsApmEsEs apm = _StringsStatsApmEsEs._(_root);
+	@override late final _StringsStatsPpsEsEs pps = _StringsStatsPpsEsEs._(_root);
+	@override late final _StringsStatsVsEsEs vs = _StringsStatsVsEsEs._(_root);
+	@override late final _StringsStatsAppEsEs app = _StringsStatsAppEsEs._(_root);
+	@override late final _StringsStatsVsapmEsEs vsapm = _StringsStatsVsapmEsEs._(_root);
+	@override late final _StringsStatsDssEsEs dss = _StringsStatsDssEsEs._(_root);
+	@override late final _StringsStatsDspEsEs dsp = _StringsStatsDspEsEs._(_root);
+	@override late final _StringsStatsAppdspEsEs appdsp = _StringsStatsAppdspEsEs._(_root);
+	@override late final _StringsStatsCheeseEsEs cheese = _StringsStatsCheeseEsEs._(_root);
+	@override late final _StringsStatsGbeEsEs gbe = _StringsStatsGbeEsEs._(_root);
+	@override late final _StringsStatsNyaappEsEs nyaapp = _StringsStatsNyaappEsEs._(_root);
+	@override late final _StringsStatsAreaEsEs area = _StringsStatsAreaEsEs._(_root);
+	@override late final _StringsStatsEtrEsEs etr = _StringsStatsEtrEsEs._(_root);
+	@override late final _StringsStatsEtraccEsEs etracc = _StringsStatsEtraccEsEs._(_root);
+	@override late final _StringsStatsOpenerEsEs opener = _StringsStatsOpenerEsEs._(_root);
+	@override late final _StringsStatsPlonkEsEs plonk = _StringsStatsPlonkEsEs._(_root);
+	@override late final _StringsStatsStrideEsEs stride = _StringsStatsStrideEsEs._(_root);
+	@override late final _StringsStatsInfdsEsEs infds = _StringsStatsInfdsEsEs._(_root);
+	@override late final _StringsStatsAltitudeEsEs altitude = _StringsStatsAltitudeEsEs._(_root);
+	@override late final _StringsStatsClimbSpeedEsEs climbSpeed = _StringsStatsClimbSpeedEsEs._(_root);
+	@override late final _StringsStatsPeakClimbSpeedEsEs peakClimbSpeed = _StringsStatsPeakClimbSpeedEsEs._(_root);
+	@override late final _StringsStatsKosEsEs kos = _StringsStatsKosEsEs._(_root);
+	@override late final _StringsStatsB2bEsEs b2b = _StringsStatsB2bEsEs._(_root);
+	@override late final _StringsStatsFinesseEsEs finesse = _StringsStatsFinesseEsEs._(_root);
+	@override late final _StringsStatsFinesseFaultsEsEs finesseFaults = _StringsStatsFinesseFaultsEsEs._(_root);
+	@override late final _StringsStatsTotalTimeEsEs totalTime = _StringsStatsTotalTimeEsEs._(_root);
+	@override late final _StringsStatsLevelEsEs level = _StringsStatsLevelEsEs._(_root);
+	@override late final _StringsStatsPiecesEsEs pieces = _StringsStatsPiecesEsEs._(_root);
+	@override late final _StringsStatsSppEsEs spp = _StringsStatsSppEsEs._(_root);
+	@override late final _StringsStatsKpEsEs kp = _StringsStatsKpEsEs._(_root);
+	@override late final _StringsStatsKppEsEs kpp = _StringsStatsKppEsEs._(_root);
+	@override late final _StringsStatsKpsEsEs kps = _StringsStatsKpsEsEs._(_root);
+	@override String blitzScore({required Object p}) => '${p} points';
+	@override String levelUpRequirement({required Object p}) => 'Level up requirement: ${p}';
+	@override String get piecesTotal => 'Total pieces placed';
+	@override String get piecesWithPerfectFinesse => 'Placed with perfect finesse';
+	@override String get score => 'Score';
+	@override String get lines => 'Lines';
+	@override String get linesShort => 'L';
+	@override String get pcs => 'Perfect Clears';
+	@override String get holds => 'Holds';
+	@override String get spike => 'Top Spike';
+	@override String top({required Object percentage}) => 'Top ${percentage}';
+	@override String topRank({required Object rank}) => 'Top rank: ${rank}';
+	@override String get floor => 'Floor';
+	@override String get split => 'Split';
+	@override String get total => 'Total';
+	@override String get sent => 'Sent';
+	@override String get received => 'Received';
+	@override String get placement => 'Placement';
+	@override String get peak => 'Peak';
+	@override String qpWithMods({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('es'))(n,
+		one: 'With 1 mod',
+		two: 'With ${n} mods',
+		few: 'With ${n} mods',
+		many: 'With ${n} mods',
+		other: 'With ${n} mods',
+	);
+	@override String inputs({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('es'))(n,
+		zero: '${n} key presses',
+		one: '${n} key press',
+		two: '${n} key presses',
+		few: '${n} key presses',
+		many: '${n} key presses',
+		other: '${n} key presses',
+	);
+	@override String tspinsTotal({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('es'))(n,
+		zero: '${n} T-spins total',
+		one: '${n} T-spin total',
+		two: '${n} T-spins total',
+		few: '${n} T-spins total',
+		many: '${n} T-spins total',
+		other: '${n} T-spins total',
+	);
+	@override String linesCleared({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('es'))(n,
+		zero: '${n} lines cleared',
+		one: '${n} line cleared',
+		two: '${n} lines cleared',
+		few: '${n} lines cleared',
+		many: '${n} lines cleared',
+		other: '${n} lines cleared',
+	);
+	@override late final _StringsStatsGraphsEsEs graphs = _StringsStatsGraphsEsEs._(_root);
+	@override String players({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('es'))(n,
+		zero: '${n} players',
+		one: '${n} player',
+		two: '${n} players',
+		few: '${n} players',
+		many: '${n} players',
+		other: '${n} players',
+	);
+	@override String games({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('es'))(n,
+		zero: '${n} games',
+		one: '${n} game',
+		two: '${n} games',
+		few: '${n} games',
+		many: '${n} games',
+		other: '${n} games',
+	);
+	@override late final _StringsStatsLineClearEsEs lineClear = _StringsStatsLineClearEsEs._(_root);
+	@override late final _StringsStatsLineClearsEsEs lineClears = _StringsStatsLineClearsEsEs._(_root);
+	@override String get mini => 'Mini';
+	@override String get tSpin => 'T-spin';
+	@override String get tSpins => 'T-spins';
+	@override String get spin => 'Spin';
+	@override String get spins => 'Spins';
+}
+
+// Path: stats.xp
+class _StringsStatsXpEsEs implements _StringsStatsXpEn {
+	_StringsStatsXpEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'XP';
+	@override String get full => 'Experience Points';
+}
+
+// Path: stats.tr
+class _StringsStatsTrEsEs implements _StringsStatsTrEn {
+	_StringsStatsTrEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'TR';
+	@override String get full => 'Tetra Rating';
+}
+
+// Path: stats.glicko
+class _StringsStatsGlickoEsEs implements _StringsStatsGlickoEn {
+	_StringsStatsGlickoEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'Glicko';
+	@override String get full => 'Glicko';
+}
+
+// Path: stats.rd
+class _StringsStatsRdEsEs implements _StringsStatsRdEn {
+	_StringsStatsRdEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'RD';
+	@override String get full => 'Rating Deviation';
+}
+
+// Path: stats.glixare
+class _StringsStatsGlixareEsEs implements _StringsStatsGlixareEn {
+	_StringsStatsGlixareEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'GXE';
+	@override String get full => 'GLIXARE';
+}
+
+// Path: stats.s1tr
+class _StringsStatsS1trEsEs implements _StringsStatsS1trEn {
+	_StringsStatsS1trEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'S1 TR';
+	@override String get full => 'Season 1 like TR';
+}
+
+// Path: stats.gp
+class _StringsStatsGpEsEs implements _StringsStatsGpEn {
+	_StringsStatsGpEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'GP';
+	@override String get full => 'Games Played';
+}
+
+// Path: stats.gw
+class _StringsStatsGwEsEs implements _StringsStatsGwEn {
+	_StringsStatsGwEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'GW';
+	@override String get full => 'Games Won';
+}
+
+// Path: stats.winrate
+class _StringsStatsWinrateEsEs implements _StringsStatsWinrateEn {
+	_StringsStatsWinrateEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'WR%';
+	@override String get full => 'Win Rate';
+}
+
+// Path: stats.apm
+class _StringsStatsApmEsEs implements _StringsStatsApmEn {
+	_StringsStatsApmEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'APM';
+	@override String get full => 'Attack Per Minute';
+}
+
+// Path: stats.pps
+class _StringsStatsPpsEsEs implements _StringsStatsPpsEn {
+	_StringsStatsPpsEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'PPS';
+	@override String get full => 'Pieces Per Second';
+}
+
+// Path: stats.vs
+class _StringsStatsVsEsEs implements _StringsStatsVsEn {
+	_StringsStatsVsEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'VS';
+	@override String get full => 'Versus Score';
+}
+
+// Path: stats.app
+class _StringsStatsAppEsEs implements _StringsStatsAppEn {
+	_StringsStatsAppEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'APP';
+	@override String get full => 'Attack Per Piece';
+}
+
+// Path: stats.vsapm
+class _StringsStatsVsapmEsEs implements _StringsStatsVsapmEn {
+	_StringsStatsVsapmEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'VS/APM';
+	@override String get full => 'VS / APM';
+}
+
+// Path: stats.dss
+class _StringsStatsDssEsEs implements _StringsStatsDssEn {
+	_StringsStatsDssEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'DS/S';
+	@override String get full => 'Downstack Per Second';
+}
+
+// Path: stats.dsp
+class _StringsStatsDspEsEs implements _StringsStatsDspEn {
+	_StringsStatsDspEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'DS/P';
+	@override String get full => 'Downstack Per Piece';
+}
+
+// Path: stats.appdsp
+class _StringsStatsAppdspEsEs implements _StringsStatsAppdspEn {
+	_StringsStatsAppdspEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'APP+DSP';
+	@override String get full => 'APP + DSP';
+}
+
+// Path: stats.cheese
+class _StringsStatsCheeseEsEs implements _StringsStatsCheeseEn {
+	_StringsStatsCheeseEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'Cheese';
+	@override String get full => 'Cheese Index';
+}
+
+// Path: stats.gbe
+class _StringsStatsGbeEsEs implements _StringsStatsGbeEn {
+	_StringsStatsGbeEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'GbE';
+	@override String get full => 'Garbage Efficiency';
+}
+
+// Path: stats.nyaapp
+class _StringsStatsNyaappEsEs implements _StringsStatsNyaappEn {
+	_StringsStatsNyaappEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'wAPP';
+	@override String get full => 'Weighted APP';
+}
+
+// Path: stats.area
+class _StringsStatsAreaEsEs implements _StringsStatsAreaEn {
+	_StringsStatsAreaEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'Area';
+	@override String get full => 'Area';
+}
+
+// Path: stats.etr
+class _StringsStatsEtrEsEs implements _StringsStatsEtrEn {
+	_StringsStatsEtrEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'eTR';
+	@override String get full => 'Estimated TR';
+}
+
+// Path: stats.etracc
+class _StringsStatsEtraccEsEs implements _StringsStatsEtraccEn {
+	_StringsStatsEtraccEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => '±eTR';
+	@override String get full => 'Accuracy of Estimated TR';
+}
+
+// Path: stats.opener
+class _StringsStatsOpenerEsEs implements _StringsStatsOpenerEn {
+	_StringsStatsOpenerEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'Opener';
+	@override String get full => 'Opener';
+}
+
+// Path: stats.plonk
+class _StringsStatsPlonkEsEs implements _StringsStatsPlonkEn {
+	_StringsStatsPlonkEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'Plonk';
+	@override String get full => 'Plonk';
+}
+
+// Path: stats.stride
+class _StringsStatsStrideEsEs implements _StringsStatsStrideEn {
+	_StringsStatsStrideEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'Stride';
+	@override String get full => 'Stride';
+}
+
+// Path: stats.infds
+class _StringsStatsInfdsEsEs implements _StringsStatsInfdsEn {
+	_StringsStatsInfdsEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'Inf. DS';
+	@override String get full => 'Infinite Downstack';
+}
+
+// Path: stats.altitude
+class _StringsStatsAltitudeEsEs implements _StringsStatsAltitudeEn {
+	_StringsStatsAltitudeEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'm';
+	@override String get full => 'Altitude';
+}
+
+// Path: stats.climbSpeed
+class _StringsStatsClimbSpeedEsEs implements _StringsStatsClimbSpeedEn {
+	_StringsStatsClimbSpeedEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'CSP';
+	@override String get full => 'Climb Speed';
+	@override String get gaugetTitle => 'Climb\nSpeed';
+}
+
+// Path: stats.peakClimbSpeed
+class _StringsStatsPeakClimbSpeedEsEs implements _StringsStatsPeakClimbSpeedEn {
+	_StringsStatsPeakClimbSpeedEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'Peak CSP';
+	@override String get full => 'Peak Climb Speed';
+	@override String get gaugetTitle => 'Peak';
+}
+
+// Path: stats.kos
+class _StringsStatsKosEsEs implements _StringsStatsKosEn {
+	_StringsStatsKosEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'KO\'s';
+	@override String get full => 'Knockouts';
+}
+
+// Path: stats.b2b
+class _StringsStatsB2bEsEs implements _StringsStatsB2bEn {
+	_StringsStatsB2bEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'B2B';
+	@override String get full => 'Back-To-Back';
+}
+
+// Path: stats.finesse
+class _StringsStatsFinesseEsEs implements _StringsStatsFinesseEn {
+	_StringsStatsFinesseEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'F';
+	@override String get full => 'Finesse';
+	@override String get widgetTitle => 'inesse';
+}
+
+// Path: stats.finesseFaults
+class _StringsStatsFinesseFaultsEsEs implements _StringsStatsFinesseFaultsEn {
+	_StringsStatsFinesseFaultsEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'FF';
+	@override String get full => 'Finesse Faults';
+}
+
+// Path: stats.totalTime
+class _StringsStatsTotalTimeEsEs implements _StringsStatsTotalTimeEn {
+	_StringsStatsTotalTimeEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'Time';
+	@override String get full => 'Total Time';
+	@override String get widgetTitle => 'otal Time';
+}
+
+// Path: stats.level
+class _StringsStatsLevelEsEs implements _StringsStatsLevelEn {
+	_StringsStatsLevelEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'Lvl';
+	@override String get full => 'Level';
+}
+
+// Path: stats.pieces
+class _StringsStatsPiecesEsEs implements _StringsStatsPiecesEn {
+	_StringsStatsPiecesEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'P';
+	@override String get full => 'Pieces';
+}
+
+// Path: stats.spp
+class _StringsStatsSppEsEs implements _StringsStatsSppEn {
+	_StringsStatsSppEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'SPP';
+	@override String get full => 'Score Per Piece';
+}
+
+// Path: stats.kp
+class _StringsStatsKpEsEs implements _StringsStatsKpEn {
+	_StringsStatsKpEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'KP';
+	@override String get full => 'Key presses';
+}
+
+// Path: stats.kpp
+class _StringsStatsKppEsEs implements _StringsStatsKppEn {
+	_StringsStatsKppEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'KPP';
+	@override String get full => 'Key presses Per Piece';
+}
+
+// Path: stats.kps
+class _StringsStatsKpsEsEs implements _StringsStatsKpsEn {
+	_StringsStatsKpsEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'KPS';
+	@override String get full => 'Key presses Per Second';
+}
+
+// Path: stats.graphs
+class _StringsStatsGraphsEsEs implements _StringsStatsGraphsEn {
+	_StringsStatsGraphsEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get attack => 'Attack';
+	@override String get speed => 'Speed';
+	@override String get defense => 'Defense';
+	@override String get cheese => 'Cheese';
+}
+
+// Path: stats.lineClear
+class _StringsStatsLineClearEsEs implements _StringsStatsLineClearEn {
+	_StringsStatsLineClearEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get single => 'Single';
+	@override String get double => 'Double';
+	@override String get triple => 'Triple';
+	@override String get quad => 'Quad';
+	@override String get penta => 'Penta';
+	@override String get hexa => 'Hexa';
+	@override String get hepta => 'Hepta';
+	@override String get octa => 'Octa';
+	@override String get ennea => 'Ennea';
+	@override String get deca => 'Deca';
+	@override String get hendeca => 'Hendeca';
+	@override String get dodeca => 'Dodeca';
+	@override String get triadeca => 'Triadeca';
+	@override String get tessaradeca => 'Tessaradeca';
+	@override String get pentedeca => 'Pentedeca';
+	@override String get hexadeca => 'Hexadeca';
+	@override String get heptadeca => 'Heptadeca';
+	@override String get octadeca => 'Octadeca';
+	@override String get enneadeca => 'Enneadeca';
+	@override String get eicosa => 'Eicosa';
+	@override String get kagaris => 'Kagaris';
+}
+
+// Path: stats.lineClears
+class _StringsStatsLineClearsEsEs implements _StringsStatsLineClearsEn {
+	_StringsStatsLineClearsEsEs._(this._root);
+
+	@override final _StringsEsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get zero => 'Zeros';
+	@override String get single => 'Singles';
+	@override String get double => 'Doubles';
+	@override String get triple => 'Triples';
+	@override String get quad => 'Quads';
+	@override String get penta => 'Pentas';
+}
+
+// Path: <root>
+class _StringsFrFr implements Translations {
+	/// You can call this constructor and build your own translation instance of this locale.
+	/// Constructing via the enum [AppLocale.build] is preferred.
+	_StringsFrFr.build({Map<String, Node>? overrides, PluralResolver? cardinalResolver, PluralResolver? ordinalResolver})
+		: assert(overrides == null, 'Set "translation_overrides: true" in order to enable this feature.'),
+		  $meta = TranslationMetadata(
+		    locale: AppLocale.frFr,
+		    overrides: overrides ?? {},
+		    cardinalResolver: cardinalResolver,
+		    ordinalResolver: ordinalResolver,
+		  ) {
+		$meta.setFlatMapFunction(_flatMapFunction);
+	}
+
+	/// Metadata for the translations of <fr-FR>.
+	@override final TranslationMetadata<AppLocale, Translations> $meta;
+
+	/// Access flat map
+	@override dynamic operator[](String key) => $meta.getTranslation(key);
+
+	@override late final _StringsFrFr _root = this; // ignore: unused_field
+
+	// Translations
+	@override Map<String, String> get locales => {
+		'en': 'Anglais (English)',
+		'fr-FR': 'Français',
+		'es-ES': 'Espagnol (Espanol)',
+		'ru-RU': 'Russe (Русский)',
+		'ko-KR': 'Coréen (한국인)',
+		'zh-CN': 'Chinois simplifié (简体中文)',
+		'de-DE': 'Allemand (Deutsch)',
+	};
+	@override Map<String, String> get gamemodes => {
+		'league': 'Tetra League',
+		'zenith': 'Quick Play',
+		'zenithex': 'Quick Play Expert',
+		'40l': '40 Lignes',
+		'blitz': 'Blitz',
+		'5mblast': '5,000,000 Blast',
+		'zen': 'Zen',
+	};
+	@override late final _StringsDestinationsFrFr destinations = _StringsDestinationsFrFr._(_root);
+	@override Map<String, String> get playerRole => {
+		'user': 'Utilisateur',
+		'banned': 'Banni',
+		'bot': 'Bot',
+		'sysop': 'Opérateur système',
+		'admin': 'Administrateur',
+		'mod': 'Modérateur',
+		'halfmod': 'Modérateur de la communauté',
+		'anon': 'Anonyme',
+	};
+	@override String get goBackButton => 'Retour';
+	@override String get nanow => 'Indisponible pour le moment...';
+	@override String seasonEnds({required Object countdown}) => 'La saison se termine dans ${countdown}';
+	@override String get seasonEnded => 'La saison est terminée';
+	@override String overallPB({required Object pb}) => 'Record utilisateur : ${pb} m';
+	@override String gamesUntilRanked({required Object left}) => '${left} parties restantes avant classification';
+	@override String numOfVictories({required Object wins}) => '~${wins} victoires';
+	@override String get promotionOnNextWin => 'Promotion à la prochaine victoire';
+	@override String numOfdefeats({required Object losses}) => '~${losses} défaites';
+	@override String get demotionOnNextLoss => 'Rétrogradation à la prochaine défaite';
+	@override String get records => 'Enregistrements';
+	@override String get nerdStats => 'Statistiques pour les nerds';
+	@override String get playstyles => 'Styles de jeu';
+	@override String get horoscopes => 'Horoscopes';
+	@override String get relatedAchievements => 'Succès liés';
+	@override String get season => 'Saison';
+	@override String get smooth => 'Smooth';
+	@override String get dateAndTime => 'Date & Time';
+	@override String get TLfullLBnote => 'Lourd, mais permet de trier les joueurs par leurs statistiques et de les filtrer par rangs';
+	@override String get rank => 'Rang';
+	@override String verdictGeneral({required Object n, required Object verdict, required Object rank}) => '${n} ${verdict} de la moyenne du rang ${rank}';
+	@override String get verdictBetter => 'en avant';
+	@override String get verdictWorse => 'en arrière';
+	@override String get localStanding => 'régional';
+	@override late final _StringsXpFrFr xp = _StringsXpFrFr._(_root);
+	@override late final _StringsGametimeFrFr gametime = _StringsGametimeFrFr._(_root);
+	@override String get track => 'Suivre';
+	@override String get stopTracking => 'Arrêter de suivre';
+	@override String supporter({required Object tier}) => 'Supporteur de palier ${tier}';
+	@override String comparingWith({required Object newDate, required Object oldDate}) => 'Data from ${newDate} comparing with ${oldDate}';
+	@override String get compare => 'Comparer';
+	@override String get comparison => 'Comparaison';
+	@override String get enterUsername => 'Enter username or \$avgX (where X is rank)';
+	@override String get general => 'General';
+	@override String get badges => 'Badges';
+	@override String obtainDate({required Object date}) => 'Obtained ${date}';
+	@override String get assignedManualy => 'Ce badge a été attribué manuellement par les administrateurs de TETR.IO';
+	@override String get distinguishment => 'Distinction';
+	@override String get banned => 'Banni';
+	@override String get bannedSubtext => 'Les bannissements sont placés lorsque les règles ou les conditions d\'utilisation de TETR.IO ne sont pas respectées';
+	@override String get badStanding => 'Bad standing';
+	@override String get badStandingSubtext => 'Un ou plusieurs bannissements récemment enregistrés';
+	@override String get botAccount => 'Compte de bot';
+	@override String botAccountSubtext({required Object botMaintainers}) => 'Opéré par ${botMaintainers}';
+	@override String get copiedToClipboard => 'Copié dans le presse-papiers !';
+	@override String get bio => 'Bio';
+	@override String get news => 'Nouvelles';
+	@override late final _StringsMatchResultFrFr matchResult = _StringsMatchResultFrFr._(_root);
+	@override late final _StringsDistinguishmentsFrFr distinguishments = _StringsDistinguishmentsFrFr._(_root);
+	@override late final _StringsNewsEntriesFrFr newsEntries = _StringsNewsEntriesFrFr._(_root);
+	@override String rankupMiddle({required Object r}) => 'Rang ${r}';
+	@override String get copyUserID => 'Cliquez pour copier l\'ID de l\'utilisateur';
+	@override String get searchHint => 'Nom d\'utilisateur ou ID';
+	@override String get navMenu => 'Menu de navigation';
+	@override String get navMenuTooltip => 'Open navigation menu';
+	@override String get refresh => 'Actualiser les données';
+	@override String get searchButton => 'Search';
+	@override String get trackedPlayers => 'Joueurs suivis';
+	@override String get standing => 'Standing';
+	@override String get previousSeasons => 'Saisons précédentes';
+	@override String get recent => 'Recent';
+	@override String get top => 'Top';
+	@override String get noRecord => 'No record';
+	@override String sprintAndBlitsRelevance({required Object date}) => 'Relevance: ${date}';
+	@override late final _StringsSnackBarMessagesFrFr snackBarMessages = _StringsSnackBarMessagesFrFr._(_root);
+	@override late final _StringsErrorsFrFr errors = _StringsErrorsFrFr._(_root);
+	@override late final _StringsActionsFrFr actions = _StringsActionsFrFr._(_root);
+	@override late final _StringsAprilFoolsFrFr aprilFools = _StringsAprilFoolsFrFr._(_root);
+	@override late final _StringsGraphsDestinationFrFr graphsDestination = _StringsGraphsDestinationFrFr._(_root);
+	@override late final _StringsFilterModaleFrFr filterModale = _StringsFilterModaleFrFr._(_root);
+	@override late final _StringsCutoffsDestinationFrFr cutoffsDestination = _StringsCutoffsDestinationFrFr._(_root);
+	@override late final _StringsRankViewFrFr rankView = _StringsRankViewFrFr._(_root);
+	@override late final _StringsStateViewFrFr stateView = _StringsStateViewFrFr._(_root);
+	@override late final _StringsTlMatchViewFrFr tlMatchView = _StringsTlMatchViewFrFr._(_root);
+	@override late final _StringsCalcDestinationFrFr calcDestination = _StringsCalcDestinationFrFr._(_root);
+	@override late final _StringsInfoDestinationFrFr infoDestination = _StringsInfoDestinationFrFr._(_root);
+	@override late final _StringsLeaderboardsDestinationFrFr leaderboardsDestination = _StringsLeaderboardsDestinationFrFr._(_root);
+	@override late final _StringsSavedDataDestinationFrFr savedDataDestination = _StringsSavedDataDestinationFrFr._(_root);
+	@override late final _StringsSettingsDestinationFrFr settingsDestination = _StringsSettingsDestinationFrFr._(_root);
+	@override late final _StringsHomeNavigationFrFr homeNavigation = _StringsHomeNavigationFrFr._(_root);
+	@override late final _StringsGraphsNavigationFrFr graphsNavigation = _StringsGraphsNavigationFrFr._(_root);
+	@override late final _StringsCalcNavigationFrFr calcNavigation = _StringsCalcNavigationFrFr._(_root);
+	@override late final _StringsFirstTimeViewFrFr firstTimeView = _StringsFirstTimeViewFrFr._(_root);
+	@override late final _StringsAboutViewFrFr aboutView = _StringsAboutViewFrFr._(_root);
+	@override late final _StringsStatsFrFr stats = _StringsStatsFrFr._(_root);
+	@override Map<String, String> get countries => {
+		'': 'Monde',
+		'AF': 'Afghanistan',
+		'AX': 'Åland Islands',
+		'AL': 'Albanie',
+		'DZ': 'Algérie',
+		'AS': 'American Samoa',
+		'AD': 'Andorra',
+		'AO': 'Angola',
+		'AI': 'Anguilla',
+		'AQ': 'Antarctique',
+		'AG': 'Antigua and Barbuda',
+		'AR': 'Argentine',
+		'AM': 'Arménie',
+		'AW': 'Aruba',
+		'AU': 'Australie',
+		'AT': 'Autriche',
+		'AZ': 'Azerbaïdjan',
+		'BS': 'Bahamas',
+		'BH': 'Bahrain',
+		'BD': 'Bangladesh',
+		'BB': 'Barbados',
+		'BY': 'Belarus',
+		'BE': 'Belgique',
+		'BZ': 'Belize',
+		'BJ': 'Benin',
+		'BM': 'Bermuda',
+		'BT': 'Bhutan',
+		'BO': 'Bolivia, Plurinational State of',
+		'BA': 'Bosnia and Herzegovina',
+		'BW': 'Botswana',
+		'BV': 'Bouvet Island',
+		'BR': 'Brésil',
+		'IO': 'British Indian Ocean Territory',
+		'BN': 'Brunei Darussalam',
+		'BG': 'Bulgarie',
+		'BF': 'Burkina Faso',
+		'BI': 'Burundi',
+		'KH': 'Cambodia',
+		'CM': 'Cameroon',
+		'CA': 'Canada',
+		'CV': 'Cape Verde',
+		'BQ': 'Caribbean Netherlands',
+		'KY': 'Cayman Islands',
+		'CF': 'Central African Republic',
+		'TD': 'Tchad',
+		'CL': 'Chili',
+		'CN': 'Chine',
+		'CX': 'Christmas Island',
+		'CC': 'Cocos (Keeling) Islands',
+		'CO': 'Colombie',
+		'KM': 'Comoros',
+		'CG': 'Congo',
+		'CD': 'Congo, République démocratique du',
+		'CK': 'Cook Islands',
+		'CR': 'Costa Rica',
+		'CI': 'Côte d\'Ivoire',
+		'HR': 'Croatie',
+		'CU': 'Cuba',
+		'CW': 'Curaçao',
+		'CY': 'Cyprus',
+		'CZ': 'Czech Republic',
+		'DK': 'Danemark',
+		'DJ': 'Djibouti',
+		'DM': 'Dominica',
+		'DO': 'République Dominicaine',
+		'EC': 'Équateur',
+		'EG': 'Égypte',
+		'SV': 'El Salvador',
+		'GB-ENG': 'Angleterre',
+		'GQ': 'Guinée équatoriale',
+		'ER': 'Eritrea',
+		'EE': 'Estonie',
+		'ET': 'Ethiopia',
+		'EU': 'Europe',
+		'FK': 'Falkland Islands (Malvinas)',
+		'FO': 'Faroe Islands',
+		'FJ': 'Fiji',
+		'FI': 'Finlande',
+		'FR': 'France',
+		'GF': 'Guyane française',
+		'PF': 'Polynésie française',
+		'TF': 'French Southern Territories',
+		'GA': 'Gabon',
+		'GM': 'Gambia',
+		'GE': 'Géorgie',
+		'DE': 'Allemagne',
+		'GH': 'Ghana',
+		'GI': 'Gibraltar',
+		'GR': 'Grèce',
+		'GL': 'Groenland',
+		'GD': 'Grenada',
+		'GP': 'Guadeloupe',
+		'GU': 'Guam',
+		'GT': 'Guatemala',
+		'GG': 'Guernsey',
+		'GN': 'Guinée',
+		'GW': 'Guinea-Bissau',
+		'GY': 'Guyana',
+		'HT': 'Haïti',
+		'HM': 'Heard Island and McDonald Islands',
+		'VA': 'Holy See (Vatican City State)',
+		'HN': 'Honduras',
+		'HK': 'Hong Kong',
+		'HU': 'Hungary',
+		'IS': 'Islande',
+		'IN': 'Inde',
+		'ID': 'Indonésie',
+		'IR': 'Iran, Islamic Republic of',
+		'IQ': 'Iraq',
+		'IE': 'Irlande',
+		'IM': 'Isle of Man',
+		'IL': 'Israël',
+		'IT': 'Italie',
+		'JM': 'Jamaïque',
+		'JP': 'Japon',
+		'JE': 'Jersey',
+		'JO': 'Jordan',
+		'KZ': 'Kazakhstan',
+		'KE': 'Kenya',
+		'KI': 'Kiribati',
+		'KP': 'Korea, Democratic People\'s Republic of',
+		'KR': 'Korea, Republic of',
+		'XK': 'Kosovo',
+		'KW': 'Koweït',
+		'KG': 'Kirghizistan',
+		'LA': 'Lao People\'s Democratic Republic',
+		'LV': 'Latvia',
+		'LB': 'Lebanon',
+		'LS': 'Lesotho',
+		'LR': 'Liberia',
+		'LY': 'Libye',
+		'LI': 'Liechtenstein',
+		'LT': 'Lituanie',
+		'LU': 'Luxembourg',
+		'MO': 'Macao',
+		'MK': 'Macedonia, the former Yugoslav Republic of',
+		'MG': 'Madagascar',
+		'MW': 'Malawi',
+		'MY': 'Malaisie',
+		'MV': 'Maldives',
+		'ML': 'Mali',
+		'MT': 'Malta',
+		'MH': 'Marshall Islands',
+		'MQ': 'Martinique',
+		'MR': 'Mauritania',
+		'MU': 'Mauritius',
+		'YT': 'Mayotte',
+		'MX': 'Mexique',
+		'FM': 'Micronesia, Federated States of',
+		'MD': 'Moldova, Republic of',
+		'MC': 'Monaco',
+		'ME': 'Montenegro',
+		'MA': 'Maroc',
+		'MN': 'Mongolie',
+		'MS': 'Montserrat',
+		'MZ': 'Mozambique',
+		'MM': 'Myanmar',
+		'NA': 'Namibie',
+		'NR': 'Nauru',
+		'NP': 'Népal',
+		'NL': 'Pays-Bas',
+		'AN': 'Netherlands Antilles',
+		'NC': 'New Caledonia',
+		'NZ': 'Nouvelle-Zélande',
+		'NI': 'Nicaragua',
+		'NE': 'Niger',
+		'NG': 'Nigeria',
+		'NU': 'Niue',
+		'NF': 'Norfolk Island',
+		'GB-NIR': 'Northern Ireland',
+		'MP': 'Northern Mariana Islands',
+		'NO': 'Norvège',
+		'OM': 'Oman',
+		'PK': 'Pakistan',
+		'PW': 'Palau',
+		'PS': 'Palestine',
+		'PA': 'Panama',
+		'PG': 'Papua New Guinea',
+		'PY': 'Paraguay',
+		'PE': 'Pérou',
+		'PH': 'Philippines',
+		'PN': 'Pitcairn',
+		'PL': 'Pologne',
+		'PT': 'Portugal',
+		'PR': 'Puerto Rico',
+		'QA': 'Qatar',
+		'RE': 'Réunion',
+		'RO': 'Roumanie',
+		'RU': 'Russie, Fédération de',
+		'RW': 'Rwanda',
+		'BL': 'Saint Barthélemy',
+		'SH': 'Saint Helena, Ascension and Tristan da Cunha',
+		'KN': 'Saint Kitts and Nevis',
+		'LC': 'Saint Lucia',
+		'MF': 'Saint Martin',
+		'PM': 'Saint Pierre and Miquelon',
+		'VC': 'Saint Vincent and the Grenadines',
+		'WS': 'Samoa',
+		'SM': 'San Marino',
+		'ST': 'Sao Tome and Principe',
+		'SA': 'Arabie saoudite',
+		'GB-SCT': 'Écosse',
+		'SN': 'Sénégal',
+		'RS': 'Serbie',
+		'SC': 'Seychelles',
+		'SL': 'Sierra Leone',
+		'SG': 'Singapour',
+		'SX': 'Sint Maarten (Dutch part)',
+		'SK': 'Slovaquie',
+		'SI': 'Slovénie',
+		'SB': 'Solomon Islands',
+		'SO': 'Somalia',
+		'ZA': 'Afrique du Sud',
+		'GS': 'South Georgia and the South Sandwich Islands',
+		'SS': 'South Sudan',
+		'ES': 'Espagne',
+		'LK': 'Sri Lanka',
+		'SD': 'Sudan',
+		'SR': 'Suriname',
+		'SJ': 'Svalbard and Jan Mayen Islands',
+		'SZ': 'Swaziland',
+		'SE': 'Sweden',
+		'CH': 'Suisse',
+		'SY': 'Syrian Arab Republic',
+		'TW': 'Taiwan',
+		'TJ': 'Tadjikistan',
+		'TZ': 'Tanzania, United Republic of',
+		'TH': 'Thaïlande',
+		'TL': 'Timor-Leste',
+		'TG': 'Togo',
+		'TK': 'Tokelau',
+		'TO': 'Tonga',
+		'TT': 'Trinidad and Tobago',
+		'TN': 'Tunisie',
+		'TR': 'Turquie',
+		'TM': 'Turkménistan',
+		'TC': 'Turks and Caicos Islands',
+		'TV': 'Tuvalu',
+		'UG': 'Uganda',
+		'UA': 'Ukraine',
+		'AE': 'Émirats arabes unis',
+		'GB': 'Royaume-Uni',
+		'US': 'États-Unis',
+		'UY': 'Uruguay',
+		'UM': 'US Minor Outlying Islands',
+		'UZ': 'Ouzbékistan',
+		'VU': 'Vanuatu',
+		'VE': 'Venezuela, Bolivarian Republic of',
+		'VN': 'Viêtnam',
+		'VG': 'Virgin Islands, British',
+		'VI': 'Virgin Islands, U.S.',
+		'GB-WLS': 'Wales',
+		'WF': 'Wallis and Futuna Islands',
+		'EH': 'Western Sahara',
+		'YE': 'Yemen',
+		'ZM': 'Zambia',
+		'ZW': 'Zimbabwe',
+		'XX': 'Inconnu',
+		'XM': 'La Lune',
+	};
+}
+
+// Path: destinations
+class _StringsDestinationsFrFr implements _StringsDestinationsEn {
+	_StringsDestinationsFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get home => 'Accueil';
+	@override String get graphs => 'Graphiques';
+	@override String get leaderboards => 'Classements';
+	@override String get cutoffs => 'Seuils de rangs';
+	@override String get calc => 'Calculatrice';
+	@override String get info => 'Centre d\'informations';
+	@override String get data => 'Données sauvegardées';
+	@override String get settings => 'Paramètres';
+}
+
+// Path: xp
+class _StringsXpFrFr implements _StringsXpEn {
+	_StringsXpFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'Niveau d\'EXP';
+	@override String progressToNextLevel({required Object percentage}) => 'Progression vers le niveau suivant : ${percentage}';
+	@override String progressTowardsGoal({required Object goal, required Object percentage, required Object left}) => 'Progression de 0 EXP au niveau ${goal} : ${percentage} (${left} EXP restant)';
+}
+
+// Path: gametime
+class _StringsGametimeFrFr implements _StringsGametimeEn {
+	_StringsGametimeFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'Temps de jeu exact';
+	@override String gametimeAday({required Object gametime}) => '${gametime} par jour en moyenne';
+	@override String breakdown({required Object years, required Object months, required Object days, required Object minutes, required Object seconds}) => 'C\'est ${years} années,\nou ${months} mois,\nou ${days} jours,\nou ${minutes} minutes,\nou ${seconds} secondes';
+}
+
+// Path: matchResult
+class _StringsMatchResultFrFr implements _StringsMatchResultEn {
+	_StringsMatchResultFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get victory => 'Victoire';
+	@override String get defeat => 'Défaite';
+	@override String get tie => 'Égalité';
+	@override String get dqvictory => 'L\'adversaire a été disqualifié(e)';
+	@override String get dqdefeat => 'Disqualifié(e)';
+	@override String get nocontest => 'No Contest';
+	@override String get nullified => 'Nullified';
+}
+
+// Path: distinguishments
+class _StringsDistinguishmentsFrFr implements _StringsDistinguishmentsEn {
+	_StringsDistinguishmentsFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get noHeader => 'En-tête manquant';
+	@override String get noFooter => 'Bas de page manquant';
+	@override String get twc => 'Champion du monde TETR.IO';
+	@override String twcYear({required Object year}) => 'Championnat du monde TETR.IO ${year}';
+}
+
+// Path: newsEntries
+class _StringsNewsEntriesFrFr implements _StringsNewsEntriesEn {
+	_StringsNewsEntriesFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override TextSpan leaderboard({required InlineSpan rank, required InlineSpan gametype}) => TextSpan(children: [
+		const TextSpan(text: 'Got № '),
+		rank,
+		const TextSpan(text: ' in '),
+		gametype,
+	]);
+	@override TextSpan personalbest({required InlineSpan gametype, required InlineSpan pb}) => TextSpan(children: [
+		const TextSpan(text: 'Got a new PB in '),
+		gametype,
+		const TextSpan(text: ' of '),
+		pb,
+	]);
+	@override TextSpan badge({required InlineSpan badge}) => TextSpan(children: [
+		const TextSpan(text: 'A obtenu un badge '),
+		badge,
+	]);
+	@override TextSpan rankup({required InlineSpan rank}) => TextSpan(children: [
+		const TextSpan(text: 'Obtained '),
+		rank,
+		const TextSpan(text: ' in Tetra League'),
+	]);
+	@override TextSpan supporter({required InlineSpanBuilder s}) => TextSpan(children: [
+		const TextSpan(text: 'Est devenu un '),
+		s('supporter TETR.IO'),
+	]);
+	@override TextSpan supporter_gift({required InlineSpanBuilder s}) => TextSpan(children: [
+		const TextSpan(text: 'Received the gift of '),
+		s('TETR.IO supporter'),
+	]);
+	@override TextSpan unknown({required InlineSpan type}) => TextSpan(children: [
+		const TextSpan(text: 'Unknown news of type '),
+		type,
+	]);
+}
+
+// Path: snackBarMessages
+class _StringsSnackBarMessagesFrFr implements _StringsSnackBarMessagesEn {
+	_StringsSnackBarMessagesFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String stateRemoved({required Object date}) => '${date} state was removed from database!';
+	@override String matchRemoved({required Object date}) => '${date} match was removed from database!';
+	@override String get notForWeb => 'Cette fonction est indisponible pour la version web';
+	@override String get importSuccess => 'Importation réussie';
+	@override String get importCancelled => 'L\'importation a été annulée';
+}
+
+// Path: errors
+class _StringsErrorsFrFr implements _StringsErrorsEn {
+	_StringsErrorsFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get noRecords => 'No records';
+	@override String get notEnoughData => 'Not enough data';
+	@override String get noHistorySaved => 'No history saved';
+	@override String connection({required Object code, required Object message}) => 'Some issue with connection: ${code} ${message}';
+	@override String get noSuchUser => 'Utilisateur inexistant';
+	@override String get noSuchUserSub => 'Soit vous avez mal tapé quelque chose, soit le compte n\'existe plus';
+	@override String get discordNotAssigned => 'No connections found';
+	@override String get discordNotAssignedSub => 'Your query should look like described in [API guide](https://tetr.io/about/api/#userssearchquery)';
+	@override String get history => 'History for that player is missing';
+	@override String get actionSuggestion => 'Perhaps, you want to';
+	@override String get p1nkl0bst3rTLmatches => 'No Tetra League matches was found';
+	@override String get clientException => 'No internet connection';
+	@override String get forbidden => 'Votre adresse IP est bloquée';
+	@override String forbiddenSub({required Object nickname}) => 'If you are using VPN or Proxy, turn it off. If this does not help, reach out to ${nickname}';
+	@override String get tooManyRequests => 'You have been rate limited.';
+	@override String get tooManyRequestsSub => 'Attendez quelques instants et réessayez';
+	@override String get internal => 'Quelque chose s\'est passé du côté de tetr.io';
+	@override String get internalSub => 'osk, probably, already aware about it';
+	@override String get internalWebVersion => 'Something happened on the tetr.io side (or on oskware_bridge, idk honestly)';
+	@override String get internalWebVersionSub => 'Si la page de statut d\'osk indique que tout est correct, faites parvenir le problème à dan63047';
+	@override String get oskwareBridge => 'Something happened with oskware_bridge';
+	@override String get oskwareBridgeSub => 'Faites savoir à dan63047';
+	@override String get p1nkl0bst3rForbidden => 'Third party API blocked your IP address';
+	@override String get p1nkl0bst3rTooManyRequests => 'Too many requests to third party API. Try again later';
+	@override String get p1nkl0bst3rinternal => 'Something happened on the p1nkl0bst3r side';
+	@override String get p1nkl0bst3rinternalWebVersion => 'Something happened on the p1nkl0bst3r side (or on oskware_bridge, idk honestly)';
+	@override String get replayAlreadySaved => 'Replay already saved';
+	@override String get replayExpired => 'Replay expired and not available anymore';
+	@override String get replayRejected => 'Third party API blocked your IP address';
+}
+
+// Path: actions
+class _StringsActionsFrFr implements _StringsActionsEn {
+	_StringsActionsFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get cancel => 'Cancel';
+	@override String get submit => 'Submit';
+	@override String get ok => 'OK';
+	@override String get apply => 'Apply';
+	@override String get refresh => 'Actualiser';
+}
+
+// Path: aprilFools
+class _StringsAprilFoolsFrFr implements _StringsAprilFoolsEn {
+	_StringsAprilFoolsFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get fakeBanModaleTitle => 'Vous avez été banni définitivement de Tetra Stats';
+	@override String get fakeBanModaleBody => 'Raison : violation grossière des conditions d\'utilisation\n\nSi vous souhaitez faire appel, veuillez contacter dan63.';
+	@override String get fakeBanModaledan63Grin => 'Fool...';
+	@override String get SettingTitleUnfoolMyself => 'Unfool myself';
+	@override String get SettingButtonUnfool => 'Unfool';
+	@override String get SettingDescription => 'Ce bouton vous permettra de revivre la farce de poisson d\'avril une fois de plus';
+}
+
+// Path: graphsDestination
+class _StringsGraphsDestinationFrFr implements _StringsGraphsDestinationEn {
+	_StringsGraphsDestinationFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get fetchAndsaveTLHistory => 'Fetch History';
+	@override String get fetchAndSaveOldTLmatches => 'Get Tetra League matches history';
+	@override String fetchAndsaveTLHistoryResult({required Object number}) => '${number} states was found';
+	@override String fetchAndSaveOldTLmatchesResult({required Object number}) => '${number} matches was found';
+	@override String gamesPlayed({required Object games}) => '${games} played';
+	@override String get dateAndTime => 'Date & Time';
+	@override String get filterModaleTitle => 'Filter ranks on graph';
+}
+
+// Path: filterModale
+class _StringsFilterModaleFrFr implements _StringsFilterModaleEn {
+	_StringsFilterModaleFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get all => 'All';
+}
+
+// Path: cutoffsDestination
+class _StringsCutoffsDestinationFrFr implements _StringsCutoffsDestinationEn {
+	_StringsCutoffsDestinationFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'Tetra League State';
+	@override String relevance({required Object timestamp}) => 'as of ${timestamp}';
+	@override String get actual => 'Actual';
+	@override String get target => 'Target';
+	@override String get cutoffTR => 'Cutoff TR';
+	@override String get targetTR => 'Target TR';
+	@override String get state => 'State';
+	@override String get advanced => 'Advanced';
+	@override String players({required Object n}) => 'Players (${n})';
+	@override String get moreInfo => 'More Info';
+	@override String NumberOne({required Object tr}) => '№ 1 is ${tr} TR';
+	@override String inflated({required Object tr}) => 'Inflated on ${tr} TR';
+	@override String get notInflated => 'Non gonflé';
+	@override String deflated({required Object tr}) => 'Deflated on ${tr} TR';
+	@override String get notDeflated => 'Non dégonflé';
+	@override String get wellDotDotDot => 'Eh bien...';
+	@override String fromPlace({required Object n}) => 'from № ${n}';
+	@override String get viewButton => 'View';
+}
+
+// Path: rankView
+class _StringsRankViewFrFr implements _StringsRankViewEn {
+	_StringsRankViewFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String rankTitle({required Object rank}) => '${rank} rank data';
+	@override String get everyoneTitle => 'Entire leaderboard';
+	@override String get trRange => 'TR Range';
+	@override String get supposedToBe => 'Supposed to be';
+	@override String gap({required Object value}) => '${value} gap';
+	@override String trGap({required Object value}) => '${value} TR gap';
+	@override String get deflationGap => 'Deflation gap';
+	@override String get inflationGap => 'Inflation gap';
+	@override String get LBposRange => 'LB pos range';
+	@override String overpopulated({required Object players}) => 'Surpeuplé par ${players}';
+	@override String underpopulated({required Object players}) => 'Sous-peuplé par ${players}';
+	@override String get PlayersEqualSupposedToBe => 'cute';
+	@override String get avgStats => 'Average Stats';
+	@override String avgForRank({required Object rank}) => 'Average for ${rank} rank';
+	@override String get avgNerdStats => 'Statistiques moyennes pour les nerds';
+	@override String get minimums => 'Minimums';
+	@override String get maximums => 'Maximums';
+}
+
+// Path: stateView
+class _StringsStateViewFrFr implements _StringsStateViewEn {
+	_StringsStateViewFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String title({required Object date}) => 'State from ${date}';
+}
+
+// Path: tlMatchView
+class _StringsTlMatchViewFrFr implements _StringsTlMatchViewEn {
+	_StringsTlMatchViewFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get match => 'Match';
+	@override String get vs => 'vs';
+	@override String get winner => 'Winner';
+	@override String roundNumber({required Object n}) => 'Round ${n}';
+	@override String get statsFor => 'Stats for';
+	@override String get numberOfRounds => 'Number of rounds';
+	@override String get matchLength => 'Match Length';
+	@override String get roundLength => 'Round Length';
+	@override String get matchStats => 'Match stats';
+	@override String get downloadReplay => 'Download .ttrm replay';
+	@override String get openReplay => 'Open replay in TETR.IO';
+}
+
+// Path: calcDestination
+class _StringsCalcDestinationFrFr implements _StringsCalcDestinationEn {
+	_StringsCalcDestinationFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String placeholders({required Object stat}) => 'Enter your ${stat}';
+	@override String get tip => 'Entrez les valeurs et appuyez sur « Calc » pour voir les statistiques pour les nerds pour celles-ci';
+	@override String get statsCalcButton => 'Calc';
+	@override String get damageCalcTip => 'Click on the actions on the left to add them here';
+	@override String get actions => 'Actions';
+	@override String get results => 'Results';
+	@override String get rules => 'Rules';
+	@override String get noSpinClears => 'No Spin Clears';
+	@override String get spins => 'Spins';
+	@override String get miniSpins => 'Mini spins';
+	@override String get noLineclear => 'No lineclear (Break Combo)';
+	@override String get custom => 'Custom';
+	@override String get multiplier => 'Multiplier';
+	@override String get pcDamage => 'Perfect Clear Damage';
+	@override String get comboTable => 'Combo Table';
+	@override String get b2bChaining => 'Back-To-Back Chaining';
+	@override String get surgeStartAtB2B => 'Starts at B2B';
+	@override String get surgeStartAmount => 'Start amount';
+	@override String get totalDamage => 'Total damage';
+	@override String get lineclears => 'Lineclears';
+	@override String get combo => 'Combo';
+	@override String get surge => 'Surge';
+	@override String get pcs => 'PCs';
+}
+
+// Path: infoDestination
+class _StringsInfoDestinationFrFr implements _StringsInfoDestinationEn {
+	_StringsInfoDestinationFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'Centre d\'informations';
+	@override String get sprintAndBlitzAverages => 'Moyennes 40 Lignes & Blitz';
+	@override String get sprintAndBlitzAveragesDescription => 'Since calculating 40 Lines & Blitz averages is tedious process, it gets updated only once in a while. Click on the title of this card to see the full 40 Lines & Blitz averages table';
+	@override String get tetraStatsWiki => 'Wiki Tetra Stats';
+	@override String get tetraStatsWikiDescription => 'Find more information about Tetra Stats functions and statictic, that it provides';
+	@override String get about => 'À propos de Tetra Stats';
+	@override String get aboutDescription => 'Développé par dan63\n';
+}
+
+// Path: leaderboardsDestination
+class _StringsLeaderboardsDestinationFrFr implements _StringsLeaderboardsDestinationEn {
+	_StringsLeaderboardsDestinationFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'Classements';
+	@override String get tl => 'Tetra League (Saison actuelle)';
+	@override String get fullTL => 'Tetra League (Saison actuelle, complète)';
+	@override String get ar => 'Points de succès';
+}
+
+// Path: savedDataDestination
+class _StringsSavedDataDestinationFrFr implements _StringsSavedDataDestinationEn {
+	_StringsSavedDataDestinationFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'Saved Data';
+	@override String get tip => 'Select nickname on the left to see data assosiated with it';
+	@override String seasonTLstates({required Object s}) => 'S${s} TL States';
+	@override String get TLrecords => 'TL Records';
+}
+
+// Path: settingsDestination
+class _StringsSettingsDestinationFrFr implements _StringsSettingsDestinationEn {
+	_StringsSettingsDestinationFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'Settings';
+	@override String get general => 'General';
+	@override String get customization => 'Customization';
+	@override String get database => 'Local database';
+	@override String get checking => 'Checking...';
+	@override String get enterToSubmit => 'Press Enter to submit';
+	@override String get account => 'Votre compte dans TETR.IO';
+	@override String get accountDescription => 'Stats of that player will be loaded initially right after launching this app. By default it loads my (dan63) stats. To change that, enter your nickname here.';
+	@override String get done => 'Done!';
+	@override String get noSuchAccount => 'Compte non valide';
+	@override String get language => 'Langue';
+	@override String languageDescription({required Object languages}) => 'Tetra Stats a été traduit dans ${languages}. Par défaut, l\'application va sélectionner la langue système ou l\'anglais, si la langue système n\'est pas disponible.';
+	@override String languages({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('fr'))(n,
+		zero: 'aucune langue',
+		one: '${n} langue',
+		two: '${n} langues',
+		few: '${n} langues',
+		many: '${n} langues',
+		other: '${n} langues',
+	);
+	@override String get updateInTheBackground => 'Mettre à jour les données en arrière-plan';
+	@override String get updateInTheBackgroundDescription => 'Si activé, Tetra Stats tentera de récupérer de nouvelles informations une fois le cache expiré. Habituellement, cela se produit toutes les 5 minutes';
+	@override String get compareStats => 'Compare TL stats with rank averages';
+	@override String get compareStatsDescription => 'If on, Tetra Stats will provide additional metrics, which allow you to compare yourself with average player on your rank. The way you\'ll see it — stats will be highlighted with corresponding color, hover over them with cursor for more info.';
+	@override String get showPosition => 'Show position on leaderboard by stats';
+	@override String get showPositionDescription => 'This can take some time (and traffic) to load, but will allow you to see your position on the leaderboard, sorted by a stat';
+	@override String get accentColor => 'Couleur d\'accentuation';
+	@override String get accentColorDescription => 'Cette couleur est visible dans cette application et met en évidence les éléments interactifs de l\'interface utilisateur.';
+	@override String get accentColorModale => 'Choisissez une couleur d\'accentuation';
+	@override String get timestamps => 'Timestamps format';
+	@override String timestampsDescriptionPart1({required Object d}) => 'You can choose, in which way timestamps shows time. By default, they show time in GMT timezone, formatted according to chosen locale, example: ${d}.';
+	@override String timestampsDescriptionPart2({required Object y, required Object r}) => 'There is also:\n• Locale formatted in your timezone: ${y}\n• Relative timestamp: ${r}';
+	@override String get timestampsAbsoluteGMT => 'Absolute (GMT)';
+	@override String get timestampsAbsoluteLocalTime => 'Absolute (Your timezone)';
+	@override String get timestampsRelative => 'Relative';
+	@override String get sheetbotLikeGraphs => 'Sheetbot-like behavior for radar graphs';
+	@override String get sheetbotLikeGraphsDescription => 'Altough it was considered by me, that the way graphs work in SheetBot is not very correct, some people were confused to see, that -0.5 stride dosen\'t look the way it looks on SheetBot graph. Hence, he we are: if this toggle is on, points on the graphs can appear on the opposite half of the graph if value is negative.';
+	@override String get oskKagariGimmick => 'Osk-Kagari gimmick';
+	@override String get oskKagariGimmickDescription => 'Si activé, :kagari: sera affichée au lieu du rang d\'osk.';
+	@override String get bytesOfDataStored => 'of data stored';
+	@override String get TLrecordsSaved => 'Tetra League records saved';
+	@override String get TLplayerstatesSaved => 'Tetra League playerstates saved';
+	@override String get fixButton => 'Fix';
+	@override String get compressButton => 'Compresser';
+	@override String get exportDB => 'Exporter la base de données locale';
+	@override String get desktopExportAlertTitle => 'Desktop export';
+	@override String get desktopExportText => 'It seems like you using this app on desktop. Check your documents folder, you should find "TetraStats.db". Copy it somewhere';
+	@override String get androidExportAlertTitle => 'Android export';
+	@override String androidExportText({required Object exportedDB}) => 'Exported.\n${exportedDB}';
+	@override String get importDB => 'Importer la base de données locale';
+	@override String get importDBDescription => 'Restore your backup. Notice that already stored database will be overwritten.';
+	@override String get importWrongFileType => 'Wrong file type';
+}
+
+// Path: homeNavigation
+class _StringsHomeNavigationFrFr implements _StringsHomeNavigationEn {
+	_StringsHomeNavigationFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get overview => 'Vue d\'ensemble';
+	@override String get standing => 'Standing';
+	@override String get seasons => 'Saisons';
+	@override String get mathces => 'Parties';
+	@override String get pb => 'PB';
+	@override String get normal => 'Normal';
+	@override String get expert => 'Expert';
+	@override String get expertRecords => 'Ex Records';
+}
+
+// Path: graphsNavigation
+class _StringsGraphsNavigationFrFr implements _StringsGraphsNavigationEn {
+	_StringsGraphsNavigationFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get history => 'Player History';
+	@override String get league => 'League State';
+	@override String get cutoffs => 'Cutoffs History';
+}
+
+// Path: calcNavigation
+class _StringsCalcNavigationFrFr implements _StringsCalcNavigationEn {
+	_StringsCalcNavigationFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get stats => 'Calculatrice de statistiques';
+	@override String get damage => 'Calculatrice de dégâts';
+}
+
+// Path: firstTimeView
+class _StringsFirstTimeViewFrFr implements _StringsFirstTimeViewEn {
+	_StringsFirstTimeViewFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get welcome => 'Bienvenue dans Tetra Stats';
+	@override String get description => 'Service, that allows you to keep track of various statistics for TETR.IO';
+	@override String get nicknameQuestion => 'What\'s your nickname?';
+	@override String get inpuntHint => 'Type it here... (3-16 symbols)';
+	@override String get emptyInputError => 'Can\'t submit an empty string';
+	@override String niceToSeeYou({required Object n}) => 'Nice to see you, ${n}';
+	@override String get letsTakeALook => 'Let\'s take a look at your stats...';
+	@override String get skip => 'Skip';
+}
+
+// Path: aboutView
+class _StringsAboutViewFrFr implements _StringsAboutViewEn {
+	_StringsAboutViewFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'À propos de Tetra Stats';
+	@override String get about => 'Tetra Stats is a service, that works with TETR.IO Tetra Channel API, providing data from it and calculating some addtitional metrics, based on this data. Service allows user to track their progress in Tetra League with "Track" function, which records every Tetra League change into local database (not automatically, you have to visit service from time to time), so these changes could be looked through graphs.\n\nBeanserver blaster is a part of a Tetra Stats, that decoupled into a serverside script. It provides full Tetra League leaderboard, allowing Tetra Stats to sort leaderboard by any metric and build scatter chart, that allows user to analyse Tetra League trends. It also provides history of Tetra League ranks cutoffs, which can be viewed by user via graph as well.\n\nThere is a plans to add replay analysis and tournaments history, so stay tuned!\n\nService is not associated with TETR.IO or osk in any capacity.';
+	@override String get appVersion => 'App Version';
+	@override String build({required Object build}) => 'Build ${build}';
+	@override String get GHrepo => 'GitHub Repository';
+	@override String get submitAnIssue => 'Submit an issue';
+	@override String get credits => 'Credits';
+	@override String get authorAndDeveloper => 'Autor & developer';
+	@override String get providedFormulas => 'Provided formulas';
+	@override String get providedS1history => 'Provided S1 history';
+	@override String get inoue => 'Inoue (replay grabber)';
+	@override String get zhCNlocale => 'Traduction chinoise (simplifié)';
+	@override String get deDElocale => 'Traduction allemande';
+	@override String get koKRlocale => 'Traduction coréenne';
+	@override String get supportHim => 'Donnez-lui votre soutien !';
+}
+
+// Path: stats
+class _StringsStatsFrFr implements _StringsStatsEn {
+	_StringsStatsFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get registrationDate => 'Date d\'inscription';
+	@override String get gametime => 'Temps joué';
+	@override String get ogp => 'Parties en ligne jouées';
+	@override String get ogw => 'Parties en ligne gagnées';
+	@override String get followers => 'Suiveurs';
+	@override late final _StringsStatsXpFrFr xp = _StringsStatsXpFrFr._(_root);
+	@override late final _StringsStatsTrFrFr tr = _StringsStatsTrFrFr._(_root);
+	@override late final _StringsStatsGlickoFrFr glicko = _StringsStatsGlickoFrFr._(_root);
+	@override late final _StringsStatsRdFrFr rd = _StringsStatsRdFrFr._(_root);
+	@override late final _StringsStatsGlixareFrFr glixare = _StringsStatsGlixareFrFr._(_root);
+	@override late final _StringsStatsS1trFrFr s1tr = _StringsStatsS1trFrFr._(_root);
+	@override late final _StringsStatsGpFrFr gp = _StringsStatsGpFrFr._(_root);
+	@override late final _StringsStatsGwFrFr gw = _StringsStatsGwFrFr._(_root);
+	@override late final _StringsStatsWinrateFrFr winrate = _StringsStatsWinrateFrFr._(_root);
+	@override late final _StringsStatsApmFrFr apm = _StringsStatsApmFrFr._(_root);
+	@override late final _StringsStatsPpsFrFr pps = _StringsStatsPpsFrFr._(_root);
+	@override late final _StringsStatsVsFrFr vs = _StringsStatsVsFrFr._(_root);
+	@override late final _StringsStatsAppFrFr app = _StringsStatsAppFrFr._(_root);
+	@override late final _StringsStatsVsapmFrFr vsapm = _StringsStatsVsapmFrFr._(_root);
+	@override late final _StringsStatsDssFrFr dss = _StringsStatsDssFrFr._(_root);
+	@override late final _StringsStatsDspFrFr dsp = _StringsStatsDspFrFr._(_root);
+	@override late final _StringsStatsAppdspFrFr appdsp = _StringsStatsAppdspFrFr._(_root);
+	@override late final _StringsStatsCheeseFrFr cheese = _StringsStatsCheeseFrFr._(_root);
+	@override late final _StringsStatsGbeFrFr gbe = _StringsStatsGbeFrFr._(_root);
+	@override late final _StringsStatsNyaappFrFr nyaapp = _StringsStatsNyaappFrFr._(_root);
+	@override late final _StringsStatsAreaFrFr area = _StringsStatsAreaFrFr._(_root);
+	@override late final _StringsStatsEtrFrFr etr = _StringsStatsEtrFrFr._(_root);
+	@override late final _StringsStatsEtraccFrFr etracc = _StringsStatsEtraccFrFr._(_root);
+	@override late final _StringsStatsOpenerFrFr opener = _StringsStatsOpenerFrFr._(_root);
+	@override late final _StringsStatsPlonkFrFr plonk = _StringsStatsPlonkFrFr._(_root);
+	@override late final _StringsStatsStrideFrFr stride = _StringsStatsStrideFrFr._(_root);
+	@override late final _StringsStatsInfdsFrFr infds = _StringsStatsInfdsFrFr._(_root);
+	@override late final _StringsStatsAltitudeFrFr altitude = _StringsStatsAltitudeFrFr._(_root);
+	@override late final _StringsStatsClimbSpeedFrFr climbSpeed = _StringsStatsClimbSpeedFrFr._(_root);
+	@override late final _StringsStatsPeakClimbSpeedFrFr peakClimbSpeed = _StringsStatsPeakClimbSpeedFrFr._(_root);
+	@override late final _StringsStatsKosFrFr kos = _StringsStatsKosFrFr._(_root);
+	@override late final _StringsStatsB2bFrFr b2b = _StringsStatsB2bFrFr._(_root);
+	@override late final _StringsStatsFinesseFrFr finesse = _StringsStatsFinesseFrFr._(_root);
+	@override late final _StringsStatsFinesseFaultsFrFr finesseFaults = _StringsStatsFinesseFaultsFrFr._(_root);
+	@override late final _StringsStatsTotalTimeFrFr totalTime = _StringsStatsTotalTimeFrFr._(_root);
+	@override late final _StringsStatsLevelFrFr level = _StringsStatsLevelFrFr._(_root);
+	@override late final _StringsStatsPiecesFrFr pieces = _StringsStatsPiecesFrFr._(_root);
+	@override late final _StringsStatsSppFrFr spp = _StringsStatsSppFrFr._(_root);
+	@override late final _StringsStatsKpFrFr kp = _StringsStatsKpFrFr._(_root);
+	@override late final _StringsStatsKppFrFr kpp = _StringsStatsKppFrFr._(_root);
+	@override late final _StringsStatsKpsFrFr kps = _StringsStatsKpsFrFr._(_root);
+	@override String blitzScore({required Object p}) => '${p} points';
+	@override String levelUpRequirement({required Object p}) => 'Level up requirement: ${p}';
+	@override String get piecesTotal => 'Total de pièces placées';
+	@override String get piecesWithPerfectFinesse => 'Placés avec finesse parfaite';
+	@override String get score => 'Score';
+	@override String get lines => 'Lignes';
+	@override String get linesShort => 'L';
+	@override String get pcs => 'Perfect Clears';
+	@override String get holds => 'Retenues';
+	@override String get spike => 'Top Spike';
+	@override String top({required Object percentage}) => 'Top ${percentage}';
+	@override String topRank({required Object rank}) => 'Meilleur rang : ${rank}';
+	@override String get floor => 'Étage';
+	@override String get split => 'Split';
+	@override String get total => 'Total';
+	@override String get sent => 'Envoyé';
+	@override String get received => 'Reçu';
+	@override String get placement => 'Placement';
+	@override String get peak => 'Peak';
+	@override String qpWithMods({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('fr'))(n,
+		one: 'With 1 mod',
+		two: 'With ${n} mods',
+		few: 'With ${n} mods',
+		many: 'With ${n} mods',
+		other: 'With ${n} mods',
+	);
+	@override String inputs({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('fr'))(n,
+		zero: '${n} key presses',
+		one: '${n} key press',
+		two: '${n} key presses',
+		few: '${n} key presses',
+		many: '${n} key presses',
+		other: '${n} key presses',
+	);
+	@override String tspinsTotal({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('fr'))(n,
+		zero: '${n} T-spins total',
+		one: '${n} T-spin total',
+		two: '${n} T-spins total',
+		few: '${n} T-spins total',
+		many: '${n} T-spins total',
+		other: '${n} T-spins total',
+	);
+	@override String linesCleared({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('fr'))(n,
+		zero: '${n} lines cleared',
+		one: '${n} line cleared',
+		two: '${n} lines cleared',
+		few: '${n} lines cleared',
+		many: '${n} lines cleared',
+		other: '${n} lines cleared',
+	);
+	@override late final _StringsStatsGraphsFrFr graphs = _StringsStatsGraphsFrFr._(_root);
+	@override String players({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('fr'))(n,
+		zero: '${n} players',
+		one: '${n} player',
+		two: '${n} players',
+		few: '${n} players',
+		many: '${n} players',
+		other: '${n} players',
+	);
+	@override String games({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('fr'))(n,
+		zero: '${n} games',
+		one: '${n} game',
+		two: '${n} games',
+		few: '${n} games',
+		many: '${n} games',
+		other: '${n} games',
+	);
+	@override late final _StringsStatsLineClearFrFr lineClear = _StringsStatsLineClearFrFr._(_root);
+	@override late final _StringsStatsLineClearsFrFr lineClears = _StringsStatsLineClearsFrFr._(_root);
+	@override String get mini => 'Mini';
+	@override String get tSpin => 'T-spin';
+	@override String get tSpins => 'T-spins';
+	@override String get spin => 'Spin';
+	@override String get spins => 'Spins';
+}
+
+// Path: stats.xp
+class _StringsStatsXpFrFr implements _StringsStatsXpEn {
+	_StringsStatsXpFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'EXP';
+	@override String get full => 'Points d\'expérience';
+}
+
+// Path: stats.tr
+class _StringsStatsTrFrFr implements _StringsStatsTrEn {
+	_StringsStatsTrFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'TR';
+	@override String get full => 'Tetra Rating';
+}
+
+// Path: stats.glicko
+class _StringsStatsGlickoFrFr implements _StringsStatsGlickoEn {
+	_StringsStatsGlickoFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'Glicko';
+	@override String get full => 'Glicko';
+}
+
+// Path: stats.rd
+class _StringsStatsRdFrFr implements _StringsStatsRdEn {
+	_StringsStatsRdFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'RD';
+	@override String get full => 'Écart de classement';
+}
+
+// Path: stats.glixare
+class _StringsStatsGlixareFrFr implements _StringsStatsGlixareEn {
+	_StringsStatsGlixareFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'GXE';
+	@override String get full => 'GLIXARE';
+}
+
+// Path: stats.s1tr
+class _StringsStatsS1trFrFr implements _StringsStatsS1trEn {
+	_StringsStatsS1trFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'S1 TR';
+	@override String get full => 'Season 1 like TR';
+}
+
+// Path: stats.gp
+class _StringsStatsGpFrFr implements _StringsStatsGpEn {
+	_StringsStatsGpFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'GP';
+	@override String get full => 'Parties jouées';
+}
+
+// Path: stats.gw
+class _StringsStatsGwFrFr implements _StringsStatsGwEn {
+	_StringsStatsGwFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'GW';
+	@override String get full => 'Parties gagnées';
+}
+
+// Path: stats.winrate
+class _StringsStatsWinrateFrFr implements _StringsStatsWinrateEn {
+	_StringsStatsWinrateFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'WR%';
+	@override String get full => 'Taux de réussite';
+}
+
+// Path: stats.apm
+class _StringsStatsApmFrFr implements _StringsStatsApmEn {
+	_StringsStatsApmFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'APM';
+	@override String get full => 'Attaque par minute';
+}
+
+// Path: stats.pps
+class _StringsStatsPpsFrFr implements _StringsStatsPpsEn {
+	_StringsStatsPpsFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'PPS';
+	@override String get full => 'Pièces par seconde';
+}
+
+// Path: stats.vs
+class _StringsStatsVsFrFr implements _StringsStatsVsEn {
+	_StringsStatsVsFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'VS';
+	@override String get full => 'Score Versus';
+}
+
+// Path: stats.app
+class _StringsStatsAppFrFr implements _StringsStatsAppEn {
+	_StringsStatsAppFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'APP';
+	@override String get full => 'Attaque par pièce';
+}
+
+// Path: stats.vsapm
+class _StringsStatsVsapmFrFr implements _StringsStatsVsapmEn {
+	_StringsStatsVsapmFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'VS/APM';
+	@override String get full => 'VS / APM';
+}
+
+// Path: stats.dss
+class _StringsStatsDssFrFr implements _StringsStatsDssEn {
+	_StringsStatsDssFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'DS/S';
+	@override String get full => 'Downstack Per Second';
+}
+
+// Path: stats.dsp
+class _StringsStatsDspFrFr implements _StringsStatsDspEn {
+	_StringsStatsDspFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'DS/P';
+	@override String get full => 'Downstack Per Piece';
+}
+
+// Path: stats.appdsp
+class _StringsStatsAppdspFrFr implements _StringsStatsAppdspEn {
+	_StringsStatsAppdspFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'APP+DSP';
+	@override String get full => 'APP + DSP';
+}
+
+// Path: stats.cheese
+class _StringsStatsCheeseFrFr implements _StringsStatsCheeseEn {
+	_StringsStatsCheeseFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'Cheese';
+	@override String get full => 'Cheese Index';
+}
+
+// Path: stats.gbe
+class _StringsStatsGbeFrFr implements _StringsStatsGbeEn {
+	_StringsStatsGbeFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'GbE';
+	@override String get full => 'Garbage Efficiency';
+}
+
+// Path: stats.nyaapp
+class _StringsStatsNyaappFrFr implements _StringsStatsNyaappEn {
+	_StringsStatsNyaappFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'wAPP';
+	@override String get full => 'Weighted APP';
+}
+
+// Path: stats.area
+class _StringsStatsAreaFrFr implements _StringsStatsAreaEn {
+	_StringsStatsAreaFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'Area';
+	@override String get full => 'Area';
+}
+
+// Path: stats.etr
+class _StringsStatsEtrFrFr implements _StringsStatsEtrEn {
+	_StringsStatsEtrFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'eTR';
+	@override String get full => 'Estimated TR';
+}
+
+// Path: stats.etracc
+class _StringsStatsEtraccFrFr implements _StringsStatsEtraccEn {
+	_StringsStatsEtraccFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => '±eTR';
+	@override String get full => 'Accuracy of Estimated TR';
+}
+
+// Path: stats.opener
+class _StringsStatsOpenerFrFr implements _StringsStatsOpenerEn {
+	_StringsStatsOpenerFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'Opener';
+	@override String get full => 'Opener';
+}
+
+// Path: stats.plonk
+class _StringsStatsPlonkFrFr implements _StringsStatsPlonkEn {
+	_StringsStatsPlonkFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'Plonk';
+	@override String get full => 'Plonk';
+}
+
+// Path: stats.stride
+class _StringsStatsStrideFrFr implements _StringsStatsStrideEn {
+	_StringsStatsStrideFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'Stride';
+	@override String get full => 'Stride';
+}
+
+// Path: stats.infds
+class _StringsStatsInfdsFrFr implements _StringsStatsInfdsEn {
+	_StringsStatsInfdsFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'Inf. DS';
+	@override String get full => 'Infinite Downstack';
+}
+
+// Path: stats.altitude
+class _StringsStatsAltitudeFrFr implements _StringsStatsAltitudeEn {
+	_StringsStatsAltitudeFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'm';
+	@override String get full => 'Altitude';
+}
+
+// Path: stats.climbSpeed
+class _StringsStatsClimbSpeedFrFr implements _StringsStatsClimbSpeedEn {
+	_StringsStatsClimbSpeedFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'CSP';
+	@override String get full => 'Climb Speed';
+	@override String get gaugetTitle => 'Climb\nSpeed';
+}
+
+// Path: stats.peakClimbSpeed
+class _StringsStatsPeakClimbSpeedFrFr implements _StringsStatsPeakClimbSpeedEn {
+	_StringsStatsPeakClimbSpeedFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'Peak CSP';
+	@override String get full => 'Peak Climb Speed';
+	@override String get gaugetTitle => 'Peak';
+}
+
+// Path: stats.kos
+class _StringsStatsKosFrFr implements _StringsStatsKosEn {
+	_StringsStatsKosFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'KO\'s';
+	@override String get full => 'Knockouts';
+}
+
+// Path: stats.b2b
+class _StringsStatsB2bFrFr implements _StringsStatsB2bEn {
+	_StringsStatsB2bFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'B2B';
+	@override String get full => 'Back-To-Back';
+}
+
+// Path: stats.finesse
+class _StringsStatsFinesseFrFr implements _StringsStatsFinesseEn {
+	_StringsStatsFinesseFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'F';
+	@override String get full => 'Finesse';
+	@override String get widgetTitle => 'inesse';
+}
+
+// Path: stats.finesseFaults
+class _StringsStatsFinesseFaultsFrFr implements _StringsStatsFinesseFaultsEn {
+	_StringsStatsFinesseFaultsFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'FF';
+	@override String get full => 'Fautes de finesse';
+}
+
+// Path: stats.totalTime
+class _StringsStatsTotalTimeFrFr implements _StringsStatsTotalTimeEn {
+	_StringsStatsTotalTimeFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'Temps';
+	@override String get full => 'Temps total';
+	@override String get widgetTitle => 'emps total';
+}
+
+// Path: stats.level
+class _StringsStatsLevelFrFr implements _StringsStatsLevelEn {
+	_StringsStatsLevelFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'Niv.';
+	@override String get full => 'Niveau';
+}
+
+// Path: stats.pieces
+class _StringsStatsPiecesFrFr implements _StringsStatsPiecesEn {
+	_StringsStatsPiecesFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'P';
+	@override String get full => 'Pièces';
+}
+
+// Path: stats.spp
+class _StringsStatsSppFrFr implements _StringsStatsSppEn {
+	_StringsStatsSppFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'SPP';
+	@override String get full => 'Score par pièce';
+}
+
+// Path: stats.kp
+class _StringsStatsKpFrFr implements _StringsStatsKpEn {
+	_StringsStatsKpFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'KP';
+	@override String get full => 'Key presses';
+}
+
+// Path: stats.kpp
+class _StringsStatsKppFrFr implements _StringsStatsKppEn {
+	_StringsStatsKppFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'KPP';
+	@override String get full => 'Key presses Per Piece';
+}
+
+// Path: stats.kps
+class _StringsStatsKpsFrFr implements _StringsStatsKpsEn {
+	_StringsStatsKpsFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get short => 'KPS';
+	@override String get full => 'Key presses Per Second';
+}
+
+// Path: stats.graphs
+class _StringsStatsGraphsFrFr implements _StringsStatsGraphsEn {
+	_StringsStatsGraphsFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get attack => 'Attaque';
+	@override String get speed => 'Vitesse';
+	@override String get defense => 'Défense';
+	@override String get cheese => 'Cheese';
+}
+
+// Path: stats.lineClear
+class _StringsStatsLineClearFrFr implements _StringsStatsLineClearEn {
+	_StringsStatsLineClearFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get single => 'Single';
+	@override String get double => 'Double';
+	@override String get triple => 'Triple';
+	@override String get quad => 'Quad';
+	@override String get penta => 'Penta';
+	@override String get hexa => 'Hexa';
+	@override String get hepta => 'Hepta';
+	@override String get octa => 'Octa';
+	@override String get ennea => 'Ennea';
+	@override String get deca => 'Deca';
+	@override String get hendeca => 'Hendeca';
+	@override String get dodeca => 'Dodeca';
+	@override String get triadeca => 'Triadeca';
+	@override String get tessaradeca => 'Tessaradeca';
+	@override String get pentedeca => 'Pentedeca';
+	@override String get hexadeca => 'Hexadeca';
+	@override String get heptadeca => 'Heptadeca';
+	@override String get octadeca => 'Octadeca';
+	@override String get enneadeca => 'Enneadeca';
+	@override String get eicosa => 'Eicosa';
+	@override String get kagaris => 'Kagaris';
+}
+
+// Path: stats.lineClears
+class _StringsStatsLineClearsFrFr implements _StringsStatsLineClearsEn {
+	_StringsStatsLineClearsFrFr._(this._root);
+
+	@override final _StringsFrFr _root; // ignore: unused_field
+
+	// Translations
+	@override String get zero => 'Zeros';
+	@override String get single => 'Singles';
+	@override String get double => 'Doubles';
+	@override String get triple => 'Triples';
+	@override String get quad => 'Quads';
+	@override String get penta => 'Pentas';
+}
+
+// Path: <root>
 class _StringsKoKr implements Translations {
 	/// You can call this constructor and build your own translation instance of this locale.
 	/// Constructing via the enum [AppLocale.build] is preferred.
@@ -3272,6 +6401,8 @@ class _StringsKoKr implements Translations {
 	// Translations
 	@override Map<String, String> get locales => {
 		'en': '영어 (English)',
+		'fr-FR': 'French (Français)',
+		'es-ES': 'Spanish (Espanol)',
 		'ru-RU': '러시아어 (Русский)',
 		'ko-KR': '한국어',
 		'zh-CN': '중국어 간체 (简体中文)',
@@ -4831,6 +7962,8 @@ class _StringsRuRu implements Translations {
 	// Translations
 	@override Map<String, String> get locales => {
 		'en': 'Английский (English)',
+		'fr-FR': 'French (Français)',
+		'es-ES': 'Spanish (Espanol)',
 		'ru-RU': 'Русский',
 		'ko-KR': 'Корейский (한국인)',
 		'zh-CN': 'Упрощенный Китайский (简体中文)',
@@ -6391,6 +9524,8 @@ class _StringsZhCn implements Translations {
 	// Translations
 	@override Map<String, String> get locales => {
 		'en': '英语 (English)',
+		'fr-FR': 'French (Français)',
+		'es-ES': 'Spanish (Espanol)',
 		'ru-RU': '俄语 (Русский)',
 		'ko-KR': '韩语 (한국인)',
 		'zh-CN': '简体中文',
@@ -7931,6 +11066,8 @@ extension on Translations {
 	dynamic _flatMapFunction(String path) {
 		switch (path) {
 			case 'locales.en': return 'English';
+			case 'locales.fr-FR': return 'French (Français)';
+			case 'locales.es-ES': return 'Spanish (Espanol)';
 			case 'locales.ru-RU': return 'Russian (Русский)';
 			case 'locales.ko-KR': return 'Korean (한국인)';
 			case 'locales.zh-CN': return 'Simplified Chinese (简体中文)';
@@ -8755,6 +11892,8 @@ extension on _StringsDeDe {
 	dynamic _flatMapFunction(String path) {
 		switch (path) {
 			case 'locales.en': return 'Englisch';
+			case 'locales.fr-FR': return 'French (Français)';
+			case 'locales.es-ES': return 'Spanish (Espanol)';
 			case 'locales.ru-RU': return 'Russisch (Русский)';
 			case 'locales.ko-KR': return 'Koreanisch (한국인)';
 			case 'locales.zh-CN': return 'Vereinfachtes Chinesisch (简体中文)';
@@ -9574,10 +12713,1663 @@ extension on _StringsDeDe {
 	}
 }
 
+extension on _StringsEsEs {
+	dynamic _flatMapFunction(String path) {
+		switch (path) {
+			case 'locales.en': return 'Inglés (English)';
+			case 'locales.fr-FR': return 'Francés (Français)';
+			case 'locales.es-ES': return 'Espanol';
+			case 'locales.ru-RU': return 'Ruso (Русский)';
+			case 'locales.ko-KR': return 'Coreano (한국인)';
+			case 'locales.zh-CN': return 'Chino simplificado (简体中文)';
+			case 'locales.de-DE': return 'Alemán (Deutsch)';
+			case 'gamemodes.league': return 'Tetra League';
+			case 'gamemodes.zenith': return 'Quick Play';
+			case 'gamemodes.zenithex': return 'Quick Play Expert';
+			case 'gamemodes.40l': return '40 Líneas';
+			case 'gamemodes.blitz': return 'Blitz';
+			case 'gamemodes.5mblast': return '5,000,000 Blast';
+			case 'gamemodes.zen': return 'Zen';
+			case 'destinations.home': return 'Home';
+			case 'destinations.graphs': return 'Gráficos';
+			case 'destinations.leaderboards': return 'Clasificaciones';
+			case 'destinations.cutoffs': return 'Cutoffs';
+			case 'destinations.calc': return 'Calculator';
+			case 'destinations.info': return 'Info Center';
+			case 'destinations.data': return 'Saved Data';
+			case 'destinations.settings': return 'Settings';
+			case 'playerRole.user': return 'User';
+			case 'playerRole.banned': return 'Banned';
+			case 'playerRole.bot': return 'Bot';
+			case 'playerRole.sysop': return 'System operator';
+			case 'playerRole.admin': return 'Admin';
+			case 'playerRole.mod': return 'Moderator';
+			case 'playerRole.halfmod': return 'Community moderator';
+			case 'playerRole.anon': return 'Anonymous';
+			case 'goBackButton': return 'Go Back';
+			case 'nanow': return 'Not avaliable for now...';
+			case 'seasonEnds': return ({required Object countdown}) => 'Season ends in ${countdown}';
+			case 'seasonEnded': return 'Season has ended';
+			case 'overallPB': return ({required Object pb}) => 'Overall PB: ${pb} m';
+			case 'gamesUntilRanked': return ({required Object left}) => '${left} games until being ranked';
+			case 'numOfVictories': return ({required Object wins}) => '~${wins} victories';
+			case 'promotionOnNextWin': return 'Promotion on next win';
+			case 'numOfdefeats': return ({required Object losses}) => '~${losses} defeats';
+			case 'demotionOnNextLoss': return 'Demotion on next loss';
+			case 'records': return 'Records';
+			case 'nerdStats': return 'Nerd Stats';
+			case 'playstyles': return 'Playstyles';
+			case 'horoscopes': return 'Horoscopes';
+			case 'relatedAchievements': return 'Related Achievements';
+			case 'season': return 'Season';
+			case 'smooth': return 'Smooth';
+			case 'dateAndTime': return 'Date & Time';
+			case 'TLfullLBnote': return 'Heavy, but allows you to sort players by their stats and filter them by ranks';
+			case 'rank': return 'Rank';
+			case 'verdictGeneral': return ({required Object n, required Object verdict, required Object rank}) => '${n} ${verdict} of ${rank} rank avg';
+			case 'verdictBetter': return 'ahead';
+			case 'verdictWorse': return 'behind';
+			case 'localStanding': return 'local';
+			case 'xp.title': return 'XP Level';
+			case 'xp.progressToNextLevel': return ({required Object percentage}) => 'Progress to next level: ${percentage}';
+			case 'xp.progressTowardsGoal': return ({required Object goal, required Object percentage, required Object left}) => 'Progress from 0 XP to level ${goal}: ${percentage} (${left} XP left)';
+			case 'gametime.title': return 'Exact gametime';
+			case 'gametime.gametimeAday': return ({required Object gametime}) => '${gametime} a day in average';
+			case 'gametime.breakdown': return ({required Object years, required Object months, required Object days, required Object minutes, required Object seconds}) => 'It\'s ${years} years,\nor ${months} months,\nor ${days} days,\nor ${minutes} minutes\nor ${seconds} seconds';
+			case 'track': return 'Track';
+			case 'stopTracking': return 'Stop tracking';
+			case 'supporter': return ({required Object tier}) => 'Nivel ${tier} de apoyo';
+			case 'comparingWith': return ({required Object newDate, required Object oldDate}) => 'Data from ${newDate} comparing with ${oldDate}';
+			case 'compare': return 'Comparar';
+			case 'comparison': return 'Comparison';
+			case 'enterUsername': return 'Enter username or \$avgX (where X is rank)';
+			case 'general': return 'General';
+			case 'badges': return 'Badges';
+			case 'obtainDate': return ({required Object date}) => 'Obtained ${date}';
+			case 'assignedManualy': return 'That badge was assigned manually by TETR.IO admins';
+			case 'distinguishment': return 'Distinguishment';
+			case 'banned': return 'Banned';
+			case 'bannedSubtext': return 'Bans are placed when TETR.IO rules or terms of service are broken';
+			case 'badStanding': return 'Bad standing';
+			case 'badStandingSubtext': return 'One or more recent bans on record';
+			case 'botAccount': return 'Bot account';
+			case 'botAccountSubtext': return ({required Object botMaintainers}) => 'Operated by ${botMaintainers}';
+			case 'copiedToClipboard': return 'Copied to clipboard!';
+			case 'bio': return 'Bio';
+			case 'news': return 'News';
+			case 'matchResult.victory': return 'Victory';
+			case 'matchResult.defeat': return 'Defeat';
+			case 'matchResult.tie': return 'Tie';
+			case 'matchResult.dqvictory': return 'Opponent was DQ\'ed';
+			case 'matchResult.dqdefeat': return 'Disqualified';
+			case 'matchResult.nocontest': return 'No Contest';
+			case 'matchResult.nullified': return 'Nullified';
+			case 'distinguishments.noHeader': return 'Header is missing';
+			case 'distinguishments.noFooter': return 'Footer is missing';
+			case 'distinguishments.twc': return 'TETR.IO World Champion';
+			case 'distinguishments.twcYear': return ({required Object year}) => '${year} TETR.IO World Championship';
+			case 'newsEntries.leaderboard': return ({required InlineSpan rank, required InlineSpan gametype}) => TextSpan(children: [
+				const TextSpan(text: 'Got № '),
+				rank,
+				const TextSpan(text: ' in '),
+				gametype,
+			]);
+			case 'newsEntries.personalbest': return ({required InlineSpan gametype, required InlineSpan pb}) => TextSpan(children: [
+				const TextSpan(text: 'Got a new PB in '),
+				gametype,
+				const TextSpan(text: ' of '),
+				pb,
+			]);
+			case 'newsEntries.badge': return ({required InlineSpan badge}) => TextSpan(children: [
+				const TextSpan(text: 'Obtained a '),
+				badge,
+				const TextSpan(text: ' badge'),
+			]);
+			case 'newsEntries.rankup': return ({required InlineSpan rank}) => TextSpan(children: [
+				const TextSpan(text: 'Obtained '),
+				rank,
+				const TextSpan(text: ' in Tetra League'),
+			]);
+			case 'newsEntries.supporter': return ({required InlineSpanBuilder s}) => TextSpan(children: [
+				const TextSpan(text: 'Became a '),
+				s('TETR.IO supporter'),
+			]);
+			case 'newsEntries.supporter_gift': return ({required InlineSpanBuilder s}) => TextSpan(children: [
+				const TextSpan(text: 'Received the gift of '),
+				s('TETR.IO supporter'),
+			]);
+			case 'newsEntries.unknown': return ({required InlineSpan type}) => TextSpan(children: [
+				const TextSpan(text: 'Unknown news of type '),
+				type,
+			]);
+			case 'rankupMiddle': return ({required Object r}) => '${r} rank';
+			case 'copyUserID': return 'Click to copy user ID';
+			case 'searchHint': return 'Username or ID';
+			case 'navMenu': return 'Navigation menu';
+			case 'navMenuTooltip': return 'Open navigation menu';
+			case 'refresh': return 'Refresh data';
+			case 'searchButton': return 'Search';
+			case 'trackedPlayers': return 'Tracked Players';
+			case 'standing': return 'Standing';
+			case 'previousSeasons': return 'Previous Seasons';
+			case 'recent': return 'Recent';
+			case 'top': return 'Top';
+			case 'noRecord': return 'No record';
+			case 'sprintAndBlitsRelevance': return ({required Object date}) => 'Relevance: ${date}';
+			case 'snackBarMessages.stateRemoved': return ({required Object date}) => '${date} state was removed from database!';
+			case 'snackBarMessages.matchRemoved': return ({required Object date}) => '${date} match was removed from database!';
+			case 'snackBarMessages.notForWeb': return 'Function is not available for web version';
+			case 'snackBarMessages.importSuccess': return 'Import successful';
+			case 'snackBarMessages.importCancelled': return 'Import was cancelled';
+			case 'errors.noRecords': return 'No records';
+			case 'errors.notEnoughData': return 'Not enough data';
+			case 'errors.noHistorySaved': return 'No history saved';
+			case 'errors.connection': return ({required Object code, required Object message}) => 'Some issue with connection: ${code} ${message}';
+			case 'errors.noSuchUser': return 'No such user';
+			case 'errors.noSuchUserSub': return 'Either you mistyped something, or the account no longer exists';
+			case 'errors.discordNotAssigned': return 'No connections found';
+			case 'errors.discordNotAssignedSub': return 'Your query should look like described in [API guide](https://tetr.io/about/api/#userssearchquery)';
+			case 'errors.history': return 'History for that player is missing';
+			case 'errors.actionSuggestion': return 'Perhaps, you want to';
+			case 'errors.p1nkl0bst3rTLmatches': return 'No Tetra League matches was found';
+			case 'errors.clientException': return 'No internet connection';
+			case 'errors.forbidden': return 'Your IP address is blocked';
+			case 'errors.forbiddenSub': return ({required Object nickname}) => 'If you are using VPN or Proxy, turn it off. If this does not help, reach out to ${nickname}';
+			case 'errors.tooManyRequests': return 'You have been rate limited.';
+			case 'errors.tooManyRequestsSub': return 'Wait a few moments and try again';
+			case 'errors.internal': return 'Something happened on the tetr.io side';
+			case 'errors.internalSub': return 'osk, probably, already aware about it';
+			case 'errors.internalWebVersion': return 'Something happened on the tetr.io side (or on oskware_bridge, idk honestly)';
+			case 'errors.internalWebVersionSub': return 'If osk status page says that everything is ok, let dan63047 know about this issue';
+			case 'errors.oskwareBridge': return 'Something happened with oskware_bridge';
+			case 'errors.oskwareBridgeSub': return 'Let dan63047 know';
+			case 'errors.p1nkl0bst3rForbidden': return 'Third party API blocked your IP address';
+			case 'errors.p1nkl0bst3rTooManyRequests': return 'Too many requests to third party API. Try again later';
+			case 'errors.p1nkl0bst3rinternal': return 'Something happened on the p1nkl0bst3r side';
+			case 'errors.p1nkl0bst3rinternalWebVersion': return 'Something happened on the p1nkl0bst3r side (or on oskware_bridge, idk honestly)';
+			case 'errors.replayAlreadySaved': return 'Replay already saved';
+			case 'errors.replayExpired': return 'Replay expired and not available anymore';
+			case 'errors.replayRejected': return 'Third party API blocked your IP address';
+			case 'actions.cancel': return 'Cancel';
+			case 'actions.submit': return 'Submit';
+			case 'actions.ok': return 'OK';
+			case 'actions.apply': return 'Apply';
+			case 'actions.refresh': return 'Refresh';
+			case 'aprilFools.fakeBanModaleTitle': return 'You have been permanently banned from Tetra Stats';
+			case 'aprilFools.fakeBanModaleBody': return 'Reason: gross violation of the Terms of Service\n\nIf you want to appeal, please, contact dan63.';
+			case 'aprilFools.fakeBanModaledan63Grin': return 'Fool...';
+			case 'aprilFools.SettingTitleUnfoolMyself': return 'Unfool myself';
+			case 'aprilFools.SettingButtonUnfool': return 'Unfool';
+			case 'aprilFools.SettingDescription': return 'That button will allow you re experience april fool prank once again';
+			case 'graphsDestination.fetchAndsaveTLHistory': return 'Fetch History';
+			case 'graphsDestination.fetchAndSaveOldTLmatches': return 'Get Tetra League matches history';
+			case 'graphsDestination.fetchAndsaveTLHistoryResult': return ({required Object number}) => '${number} states was found';
+			case 'graphsDestination.fetchAndSaveOldTLmatchesResult': return ({required Object number}) => '${number} matches was found';
+			case 'graphsDestination.gamesPlayed': return ({required Object games}) => '${games} played';
+			case 'graphsDestination.dateAndTime': return 'Date & Time';
+			case 'graphsDestination.filterModaleTitle': return 'Filter ranks on graph';
+			case 'filterModale.all': return 'All';
+			case 'cutoffsDestination.title': return 'Tetra League State';
+			case 'cutoffsDestination.relevance': return ({required Object timestamp}) => 'as of ${timestamp}';
+			case 'cutoffsDestination.actual': return 'Actual';
+			case 'cutoffsDestination.target': return 'Target';
+			case 'cutoffsDestination.cutoffTR': return 'Cutoff TR';
+			case 'cutoffsDestination.targetTR': return 'Target TR';
+			case 'cutoffsDestination.state': return 'State';
+			case 'cutoffsDestination.advanced': return 'Advanced';
+			case 'cutoffsDestination.players': return ({required Object n}) => 'Players (${n})';
+			case 'cutoffsDestination.moreInfo': return 'More Info';
+			case 'cutoffsDestination.NumberOne': return ({required Object tr}) => '№ 1 is ${tr} TR';
+			case 'cutoffsDestination.inflated': return ({required Object tr}) => 'Inflated on ${tr} TR';
+			case 'cutoffsDestination.notInflated': return 'Not inflated';
+			case 'cutoffsDestination.deflated': return ({required Object tr}) => 'Deflated on ${tr} TR';
+			case 'cutoffsDestination.notDeflated': return 'Not deflated';
+			case 'cutoffsDestination.wellDotDotDot': return 'Well...';
+			case 'cutoffsDestination.fromPlace': return ({required Object n}) => 'from № ${n}';
+			case 'cutoffsDestination.viewButton': return 'View';
+			case 'rankView.rankTitle': return ({required Object rank}) => '${rank} rank data';
+			case 'rankView.everyoneTitle': return 'Entire leaderboard';
+			case 'rankView.trRange': return 'TR Range';
+			case 'rankView.supposedToBe': return 'Supposed to be';
+			case 'rankView.gap': return ({required Object value}) => '${value} gap';
+			case 'rankView.trGap': return ({required Object value}) => '${value} TR gap';
+			case 'rankView.deflationGap': return 'Deflation gap';
+			case 'rankView.inflationGap': return 'Inflation gap';
+			case 'rankView.LBposRange': return 'LB pos range';
+			case 'rankView.overpopulated': return ({required Object players}) => 'Overpopulated by a ${players}';
+			case 'rankView.underpopulated': return ({required Object players}) => 'Underpopulated by a ${players}';
+			case 'rankView.PlayersEqualSupposedToBe': return 'cute';
+			case 'rankView.avgStats': return 'Average Stats';
+			case 'rankView.avgForRank': return ({required Object rank}) => 'Average for ${rank} rank';
+			case 'rankView.avgNerdStats': return 'Average Nerd Stats';
+			case 'rankView.minimums': return 'Minimums';
+			case 'rankView.maximums': return 'Maximums';
+			case 'stateView.title': return ({required Object date}) => 'State from ${date}';
+			case 'tlMatchView.match': return 'Match';
+			case 'tlMatchView.vs': return 'vs';
+			case 'tlMatchView.winner': return 'Winner';
+			case 'tlMatchView.roundNumber': return ({required Object n}) => 'Round ${n}';
+			case 'tlMatchView.statsFor': return 'Stats for';
+			case 'tlMatchView.numberOfRounds': return 'Number of rounds';
+			case 'tlMatchView.matchLength': return 'Match Length';
+			case 'tlMatchView.roundLength': return 'Round Length';
+			case 'tlMatchView.matchStats': return 'Match stats';
+			case 'tlMatchView.downloadReplay': return 'Download .ttrm replay';
+			case 'tlMatchView.openReplay': return 'Open replay in TETR.IO';
+			case 'calcDestination.placeholders': return ({required Object stat}) => 'Enter your ${stat}';
+			case 'calcDestination.tip': return 'Enter values and press "Calc" to see Nerd Stats for them';
+			case 'calcDestination.statsCalcButton': return 'Calc';
+			case 'calcDestination.damageCalcTip': return 'Click on the actions on the left to add them here';
+			case 'calcDestination.actions': return 'Actions';
+			case 'calcDestination.results': return 'Results';
+			case 'calcDestination.rules': return 'Rules';
+			case 'calcDestination.noSpinClears': return 'No Spin Clears';
+			case 'calcDestination.spins': return 'Spins';
+			case 'calcDestination.miniSpins': return 'Mini spins';
+			case 'calcDestination.noLineclear': return 'No lineclear (Break Combo)';
+			case 'calcDestination.custom': return 'Custom';
+			case 'calcDestination.multiplier': return 'Multiplier';
+			case 'calcDestination.pcDamage': return 'Perfect Clear Damage';
+			case 'calcDestination.comboTable': return 'Combo Table';
+			case 'calcDestination.b2bChaining': return 'Back-To-Back Chaining';
+			case 'calcDestination.surgeStartAtB2B': return 'Starts at B2B';
+			case 'calcDestination.surgeStartAmount': return 'Start amount';
+			case 'calcDestination.totalDamage': return 'Total damage';
+			case 'calcDestination.lineclears': return 'Lineclears';
+			case 'calcDestination.combo': return 'Combo';
+			case 'calcDestination.surge': return 'Surge';
+			case 'calcDestination.pcs': return 'PCs';
+			case 'infoDestination.title': return 'Information Center';
+			case 'infoDestination.sprintAndBlitzAverages': return '40 Lines & Blitz Averages';
+			case 'infoDestination.sprintAndBlitzAveragesDescription': return 'Since calculating 40 Lines & Blitz averages is tedious process, it gets updated only once in a while. Click on the title of this card to see the full 40 Lines & Blitz averages table';
+			case 'infoDestination.tetraStatsWiki': return 'Tetra Stats Wiki';
+			case 'infoDestination.tetraStatsWikiDescription': return 'Find more information about Tetra Stats functions and statictic, that it provides';
+			case 'infoDestination.about': return 'Acerca de Tetra Stats';
+			case 'infoDestination.aboutDescription': return 'Desarrollado por dan63\n';
+			case 'leaderboardsDestination.title': return 'Leaderboards';
+			case 'leaderboardsDestination.tl': return 'Tetra League (Current Season)';
+			case 'leaderboardsDestination.fullTL': return 'Tetra League (Current Season, full one)';
+			case 'leaderboardsDestination.ar': return 'Achievement Points';
+			case 'savedDataDestination.title': return 'Saved Data';
+			case 'savedDataDestination.tip': return 'Select nickname on the left to see data assosiated with it';
+			case 'savedDataDestination.seasonTLstates': return ({required Object s}) => 'S${s} TL States';
+			case 'savedDataDestination.TLrecords': return 'TL Records';
+			case 'settingsDestination.title': return 'Settings';
+			case 'settingsDestination.general': return 'General';
+			case 'settingsDestination.customization': return 'Customization';
+			case 'settingsDestination.database': return 'Local database';
+			case 'settingsDestination.checking': return 'Checking...';
+			case 'settingsDestination.enterToSubmit': return 'Press Enter to submit';
+			case 'settingsDestination.account': return 'Tu cuenta en TETR.IO';
+			case 'settingsDestination.accountDescription': return 'Stats of that player will be loaded initially right after launching this app. By default it loads my (dan63) stats. To change that, enter your nickname here.';
+			case 'settingsDestination.done': return 'Done!';
+			case 'settingsDestination.noSuchAccount': return 'No such account';
+			case 'settingsDestination.language': return 'Language';
+			case 'settingsDestination.languageDescription': return ({required Object languages}) => 'Tetra Stats was translated on ${languages}. By default, app will pick your system one or English, if locale of your system isn\'t avaliable.';
+			case 'settingsDestination.languages': return ({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('es'))(n,
+				zero: 'cero idiomas',
+				one: '${n} idioma',
+				two: '${n} idiomas',
+				few: '${n} idiomas',
+				many: '${n} idiomas',
+				other: '${n} idiomas',
+			);
+			case 'settingsDestination.updateInTheBackground': return 'Update data in the background';
+			case 'settingsDestination.updateInTheBackgroundDescription': return 'If on, Tetra Stats will attempt to retrieve new info once cache expires. Usually that happen every 5 minutes';
+			case 'settingsDestination.compareStats': return 'Compare TL stats with rank averages';
+			case 'settingsDestination.compareStatsDescription': return 'If on, Tetra Stats will provide additional metrics, which allow you to compare yourself with average player on your rank. The way you\'ll see it — stats will be highlighted with corresponding color, hover over them with cursor for more info.';
+			case 'settingsDestination.showPosition': return 'Show position on leaderboard by stats';
+			case 'settingsDestination.showPositionDescription': return 'This can take some time (and traffic) to load, but will allow you to see your position on the leaderboard, sorted by a stat';
+			case 'settingsDestination.accentColor': return 'Accent color';
+			case 'settingsDestination.accentColorDescription': return 'That color is seen across this app and usually highlights interactive UI elements.';
+			case 'settingsDestination.accentColorModale': return 'Pick an accent color';
+			case 'settingsDestination.timestamps': return 'Timestamps format';
+			case 'settingsDestination.timestampsDescriptionPart1': return ({required Object d}) => 'You can choose, in which way timestamps shows time. By default, they show time in GMT timezone, formatted according to chosen locale, example: ${d}.';
+			case 'settingsDestination.timestampsDescriptionPart2': return ({required Object y, required Object r}) => 'There is also:\n• Locale formatted in your timezone: ${y}\n• Relative timestamp: ${r}';
+			case 'settingsDestination.timestampsAbsoluteGMT': return 'Absolute (GMT)';
+			case 'settingsDestination.timestampsAbsoluteLocalTime': return 'Absolute (Your timezone)';
+			case 'settingsDestination.timestampsRelative': return 'Relative';
+			case 'settingsDestination.sheetbotLikeGraphs': return 'Sheetbot-like behavior for radar graphs';
+			case 'settingsDestination.sheetbotLikeGraphsDescription': return 'Altough it was considered by me, that the way graphs work in SheetBot is not very correct, some people were confused to see, that -0.5 stride dosen\'t look the way it looks on SheetBot graph. Hence, he we are: if this toggle is on, points on the graphs can appear on the opposite half of the graph if value is negative.';
+			case 'settingsDestination.oskKagariGimmick': return 'Osk-Kagari gimmick';
+			case 'settingsDestination.oskKagariGimmickDescription': return 'If on, instead of osk\'s rank, :kagari: will be rendered.';
+			case 'settingsDestination.bytesOfDataStored': return 'of data stored';
+			case 'settingsDestination.TLrecordsSaved': return 'Tetra League records saved';
+			case 'settingsDestination.TLplayerstatesSaved': return 'Tetra League playerstates saved';
+			case 'settingsDestination.fixButton': return 'Fix';
+			case 'settingsDestination.compressButton': return 'Compress';
+			case 'settingsDestination.exportDB': return 'Export local database';
+			case 'settingsDestination.desktopExportAlertTitle': return 'Desktop export';
+			case 'settingsDestination.desktopExportText': return 'It seems like you using this app on desktop. Check your documents folder, you should find "TetraStats.db". Copy it somewhere';
+			case 'settingsDestination.androidExportAlertTitle': return 'Android export';
+			case 'settingsDestination.androidExportText': return ({required Object exportedDB}) => 'Exported.\n${exportedDB}';
+			case 'settingsDestination.importDB': return 'Import local database';
+			case 'settingsDestination.importDBDescription': return 'Restore your backup. Notice that already stored database will be overwritten.';
+			case 'settingsDestination.importWrongFileType': return 'Wrong file type';
+			case 'homeNavigation.overview': return 'Overview';
+			case 'homeNavigation.standing': return 'Standing';
+			case 'homeNavigation.seasons': return 'Seasons';
+			case 'homeNavigation.mathces': return 'Matches';
+			case 'homeNavigation.pb': return 'PB';
+			case 'homeNavigation.normal': return 'Normal';
+			case 'homeNavigation.expert': return 'Expert';
+			case 'homeNavigation.expertRecords': return 'Ex Records';
+			case 'graphsNavigation.history': return 'Player History';
+			case 'graphsNavigation.league': return 'League State';
+			case 'graphsNavigation.cutoffs': return 'Cutoffs History';
+			case 'calcNavigation.stats': return 'Stats Calculator';
+			case 'calcNavigation.damage': return 'Damage Calculator';
+			case 'firstTimeView.welcome': return 'Welcome to Tetra Stats';
+			case 'firstTimeView.description': return 'Service, that allows you to keep track of various statistics for TETR.IO';
+			case 'firstTimeView.nicknameQuestion': return 'What\'s your nickname?';
+			case 'firstTimeView.inpuntHint': return 'Type it here... (3-16 symbols)';
+			case 'firstTimeView.emptyInputError': return 'Can\'t submit an empty string';
+			case 'firstTimeView.niceToSeeYou': return ({required Object n}) => 'Nice to see you, ${n}';
+			case 'firstTimeView.letsTakeALook': return 'Let\'s take a look at your stats...';
+			case 'firstTimeView.skip': return 'Skip';
+			case 'aboutView.title': return 'Acerca de Tetra Stats';
+			case 'aboutView.about': return 'Tetra Stats is a service, that works with TETR.IO Tetra Channel API, providing data from it and calculating some addtitional metrics, based on this data. Service allows user to track their progress in Tetra League with "Track" function, which records every Tetra League change into local database (not automatically, you have to visit service from time to time), so these changes could be looked through graphs.\n\nBeanserver blaster is a part of a Tetra Stats, that decoupled into a serverside script. It provides full Tetra League leaderboard, allowing Tetra Stats to sort leaderboard by any metric and build scatter chart, that allows user to analyse Tetra League trends. It also provides history of Tetra League ranks cutoffs, which can be viewed by user via graph as well.\n\nThere is a plans to add replay analysis and tournaments history, so stay tuned!\n\nService is not associated with TETR.IO or osk in any capacity.';
+			case 'aboutView.appVersion': return 'App Version';
+			case 'aboutView.build': return ({required Object build}) => 'Build ${build}';
+			case 'aboutView.GHrepo': return 'GitHub Repository';
+			case 'aboutView.submitAnIssue': return 'Submit an issue';
+			case 'aboutView.credits': return 'Credits';
+			case 'aboutView.authorAndDeveloper': return 'Autor & desarrollador';
+			case 'aboutView.providedFormulas': return 'Provided formulas';
+			case 'aboutView.providedS1history': return 'Provided S1 history';
+			case 'aboutView.inoue': return 'Inoue (replay grabber)';
+			case 'aboutView.zhCNlocale': return 'Simplfied Chinese locale';
+			case 'aboutView.deDElocale': return 'German locale';
+			case 'aboutView.koKRlocale': return 'Korean locale';
+			case 'aboutView.supportHim': return 'Support him!';
+			case 'stats.registrationDate': return 'Registration Date';
+			case 'stats.gametime': return 'Time Played';
+			case 'stats.ogp': return 'Online Games Played';
+			case 'stats.ogw': return 'Online Games Won';
+			case 'stats.followers': return 'Followers';
+			case 'stats.xp.short': return 'XP';
+			case 'stats.xp.full': return 'Experience Points';
+			case 'stats.tr.short': return 'TR';
+			case 'stats.tr.full': return 'Tetra Rating';
+			case 'stats.glicko.short': return 'Glicko';
+			case 'stats.glicko.full': return 'Glicko';
+			case 'stats.rd.short': return 'RD';
+			case 'stats.rd.full': return 'Rating Deviation';
+			case 'stats.glixare.short': return 'GXE';
+			case 'stats.glixare.full': return 'GLIXARE';
+			case 'stats.s1tr.short': return 'S1 TR';
+			case 'stats.s1tr.full': return 'Season 1 like TR';
+			case 'stats.gp.short': return 'GP';
+			case 'stats.gp.full': return 'Games Played';
+			case 'stats.gw.short': return 'GW';
+			case 'stats.gw.full': return 'Games Won';
+			case 'stats.winrate.short': return 'WR%';
+			case 'stats.winrate.full': return 'Win Rate';
+			case 'stats.apm.short': return 'APM';
+			case 'stats.apm.full': return 'Attack Per Minute';
+			case 'stats.pps.short': return 'PPS';
+			case 'stats.pps.full': return 'Pieces Per Second';
+			case 'stats.vs.short': return 'VS';
+			case 'stats.vs.full': return 'Versus Score';
+			case 'stats.app.short': return 'APP';
+			case 'stats.app.full': return 'Attack Per Piece';
+			case 'stats.vsapm.short': return 'VS/APM';
+			case 'stats.vsapm.full': return 'VS / APM';
+			case 'stats.dss.short': return 'DS/S';
+			case 'stats.dss.full': return 'Downstack Per Second';
+			case 'stats.dsp.short': return 'DS/P';
+			case 'stats.dsp.full': return 'Downstack Per Piece';
+			case 'stats.appdsp.short': return 'APP+DSP';
+			case 'stats.appdsp.full': return 'APP + DSP';
+			case 'stats.cheese.short': return 'Cheese';
+			case 'stats.cheese.full': return 'Cheese Index';
+			case 'stats.gbe.short': return 'GbE';
+			case 'stats.gbe.full': return 'Garbage Efficiency';
+			case 'stats.nyaapp.short': return 'wAPP';
+			case 'stats.nyaapp.full': return 'Weighted APP';
+			case 'stats.area.short': return 'Area';
+			case 'stats.area.full': return 'Area';
+			case 'stats.etr.short': return 'eTR';
+			case 'stats.etr.full': return 'Estimated TR';
+			case 'stats.etracc.short': return '±eTR';
+			case 'stats.etracc.full': return 'Accuracy of Estimated TR';
+			case 'stats.opener.short': return 'Opener';
+			case 'stats.opener.full': return 'Opener';
+			case 'stats.plonk.short': return 'Plonk';
+			case 'stats.plonk.full': return 'Plonk';
+			case 'stats.stride.short': return 'Stride';
+			case 'stats.stride.full': return 'Stride';
+			case 'stats.infds.short': return 'Inf. DS';
+			case 'stats.infds.full': return 'Infinite Downstack';
+			case 'stats.altitude.short': return 'm';
+			case 'stats.altitude.full': return 'Altitude';
+			case 'stats.climbSpeed.short': return 'CSP';
+			case 'stats.climbSpeed.full': return 'Climb Speed';
+			case 'stats.climbSpeed.gaugetTitle': return 'Climb\nSpeed';
+			case 'stats.peakClimbSpeed.short': return 'Peak CSP';
+			case 'stats.peakClimbSpeed.full': return 'Peak Climb Speed';
+			case 'stats.peakClimbSpeed.gaugetTitle': return 'Peak';
+			case 'stats.kos.short': return 'KO\'s';
+			case 'stats.kos.full': return 'Knockouts';
+			case 'stats.b2b.short': return 'B2B';
+			case 'stats.b2b.full': return 'Back-To-Back';
+			case 'stats.finesse.short': return 'F';
+			case 'stats.finesse.full': return 'Finesse';
+			case 'stats.finesse.widgetTitle': return 'inesse';
+			case 'stats.finesseFaults.short': return 'FF';
+			case 'stats.finesseFaults.full': return 'Finesse Faults';
+			case 'stats.totalTime.short': return 'Time';
+			case 'stats.totalTime.full': return 'Total Time';
+			case 'stats.totalTime.widgetTitle': return 'otal Time';
+			case 'stats.level.short': return 'Lvl';
+			case 'stats.level.full': return 'Level';
+			case 'stats.pieces.short': return 'P';
+			case 'stats.pieces.full': return 'Pieces';
+			case 'stats.spp.short': return 'SPP';
+			case 'stats.spp.full': return 'Score Per Piece';
+			case 'stats.kp.short': return 'KP';
+			case 'stats.kp.full': return 'Key presses';
+			case 'stats.kpp.short': return 'KPP';
+			case 'stats.kpp.full': return 'Key presses Per Piece';
+			case 'stats.kps.short': return 'KPS';
+			case 'stats.kps.full': return 'Key presses Per Second';
+			case 'stats.blitzScore': return ({required Object p}) => '${p} points';
+			case 'stats.levelUpRequirement': return ({required Object p}) => 'Level up requirement: ${p}';
+			case 'stats.piecesTotal': return 'Total pieces placed';
+			case 'stats.piecesWithPerfectFinesse': return 'Placed with perfect finesse';
+			case 'stats.score': return 'Score';
+			case 'stats.lines': return 'Lines';
+			case 'stats.linesShort': return 'L';
+			case 'stats.pcs': return 'Perfect Clears';
+			case 'stats.holds': return 'Holds';
+			case 'stats.spike': return 'Top Spike';
+			case 'stats.top': return ({required Object percentage}) => 'Top ${percentage}';
+			case 'stats.topRank': return ({required Object rank}) => 'Top rank: ${rank}';
+			case 'stats.floor': return 'Floor';
+			case 'stats.split': return 'Split';
+			case 'stats.total': return 'Total';
+			case 'stats.sent': return 'Sent';
+			case 'stats.received': return 'Received';
+			case 'stats.placement': return 'Placement';
+			case 'stats.peak': return 'Peak';
+			case 'stats.qpWithMods': return ({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('es'))(n,
+				one: 'With 1 mod',
+				two: 'With ${n} mods',
+				few: 'With ${n} mods',
+				many: 'With ${n} mods',
+				other: 'With ${n} mods',
+			);
+			case 'stats.inputs': return ({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('es'))(n,
+				zero: '${n} key presses',
+				one: '${n} key press',
+				two: '${n} key presses',
+				few: '${n} key presses',
+				many: '${n} key presses',
+				other: '${n} key presses',
+			);
+			case 'stats.tspinsTotal': return ({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('es'))(n,
+				zero: '${n} T-spins total',
+				one: '${n} T-spin total',
+				two: '${n} T-spins total',
+				few: '${n} T-spins total',
+				many: '${n} T-spins total',
+				other: '${n} T-spins total',
+			);
+			case 'stats.linesCleared': return ({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('es'))(n,
+				zero: '${n} lines cleared',
+				one: '${n} line cleared',
+				two: '${n} lines cleared',
+				few: '${n} lines cleared',
+				many: '${n} lines cleared',
+				other: '${n} lines cleared',
+			);
+			case 'stats.graphs.attack': return 'Attack';
+			case 'stats.graphs.speed': return 'Speed';
+			case 'stats.graphs.defense': return 'Defense';
+			case 'stats.graphs.cheese': return 'Cheese';
+			case 'stats.players': return ({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('es'))(n,
+				zero: '${n} players',
+				one: '${n} player',
+				two: '${n} players',
+				few: '${n} players',
+				many: '${n} players',
+				other: '${n} players',
+			);
+			case 'stats.games': return ({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('es'))(n,
+				zero: '${n} games',
+				one: '${n} game',
+				two: '${n} games',
+				few: '${n} games',
+				many: '${n} games',
+				other: '${n} games',
+			);
+			case 'stats.lineClear.single': return 'Single';
+			case 'stats.lineClear.double': return 'Double';
+			case 'stats.lineClear.triple': return 'Triple';
+			case 'stats.lineClear.quad': return 'Quad';
+			case 'stats.lineClear.penta': return 'Penta';
+			case 'stats.lineClear.hexa': return 'Hexa';
+			case 'stats.lineClear.hepta': return 'Hepta';
+			case 'stats.lineClear.octa': return 'Octa';
+			case 'stats.lineClear.ennea': return 'Ennea';
+			case 'stats.lineClear.deca': return 'Deca';
+			case 'stats.lineClear.hendeca': return 'Hendeca';
+			case 'stats.lineClear.dodeca': return 'Dodeca';
+			case 'stats.lineClear.triadeca': return 'Triadeca';
+			case 'stats.lineClear.tessaradeca': return 'Tessaradeca';
+			case 'stats.lineClear.pentedeca': return 'Pentedeca';
+			case 'stats.lineClear.hexadeca': return 'Hexadeca';
+			case 'stats.lineClear.heptadeca': return 'Heptadeca';
+			case 'stats.lineClear.octadeca': return 'Octadeca';
+			case 'stats.lineClear.enneadeca': return 'Enneadeca';
+			case 'stats.lineClear.eicosa': return 'Eicosa';
+			case 'stats.lineClear.kagaris': return 'Kagaris';
+			case 'stats.lineClears.zero': return 'Zeros';
+			case 'stats.lineClears.single': return 'Singles';
+			case 'stats.lineClears.double': return 'Doubles';
+			case 'stats.lineClears.triple': return 'Triples';
+			case 'stats.lineClears.quad': return 'Quads';
+			case 'stats.lineClears.penta': return 'Pentas';
+			case 'stats.mini': return 'Mini';
+			case 'stats.tSpin': return 'T-spin';
+			case 'stats.tSpins': return 'T-spins';
+			case 'stats.spin': return 'Spin';
+			case 'stats.spins': return 'Spins';
+			case 'countries.': return 'Worldwide';
+			case 'countries.AF': return 'Afghanistan';
+			case 'countries.AX': return 'Åland Islands';
+			case 'countries.AL': return 'Albania';
+			case 'countries.DZ': return 'Algeria';
+			case 'countries.AS': return 'American Samoa';
+			case 'countries.AD': return 'Andorra';
+			case 'countries.AO': return 'Angola';
+			case 'countries.AI': return 'Anguilla';
+			case 'countries.AQ': return 'Antarctica';
+			case 'countries.AG': return 'Antigua and Barbuda';
+			case 'countries.AR': return 'Argentina';
+			case 'countries.AM': return 'Armenia';
+			case 'countries.AW': return 'Aruba';
+			case 'countries.AU': return 'Australia';
+			case 'countries.AT': return 'Austria';
+			case 'countries.AZ': return 'Azerbaijan';
+			case 'countries.BS': return 'Bahamas';
+			case 'countries.BH': return 'Bahrain';
+			case 'countries.BD': return 'Bangladesh';
+			case 'countries.BB': return 'Barbados';
+			case 'countries.BY': return 'Belarus';
+			case 'countries.BE': return 'Belgium';
+			case 'countries.BZ': return 'Belize';
+			case 'countries.BJ': return 'Benin';
+			case 'countries.BM': return 'Bermuda';
+			case 'countries.BT': return 'Bhutan';
+			case 'countries.BO': return 'Bolivia, Plurinational State of';
+			case 'countries.BA': return 'Bosnia and Herzegovina';
+			case 'countries.BW': return 'Botswana';
+			case 'countries.BV': return 'Bouvet Island';
+			case 'countries.BR': return 'Brazil';
+			case 'countries.IO': return 'British Indian Ocean Territory';
+			case 'countries.BN': return 'Brunei Darussalam';
+			case 'countries.BG': return 'Bulgaria';
+			case 'countries.BF': return 'Burkina Faso';
+			case 'countries.BI': return 'Burundi';
+			case 'countries.KH': return 'Cambodia';
+			case 'countries.CM': return 'Cameroon';
+			case 'countries.CA': return 'Canada';
+			case 'countries.CV': return 'Cape Verde';
+			case 'countries.BQ': return 'Caribbean Netherlands';
+			case 'countries.KY': return 'Cayman Islands';
+			case 'countries.CF': return 'Central African Republic';
+			case 'countries.TD': return 'Chad';
+			case 'countries.CL': return 'Chile';
+			case 'countries.CN': return 'China';
+			case 'countries.CX': return 'Christmas Island';
+			case 'countries.CC': return 'Cocos (Keeling) Islands';
+			case 'countries.CO': return 'Colombia';
+			case 'countries.KM': return 'Comoros';
+			case 'countries.CG': return 'Congo';
+			case 'countries.CD': return 'Congo, the Democratic Republic of the';
+			case 'countries.CK': return 'Cook Islands';
+			case 'countries.CR': return 'Costa Rica';
+			case 'countries.CI': return 'Côte d\'Ivoire';
+			case 'countries.HR': return 'Croatia';
+			case 'countries.CU': return 'Cuba';
+			case 'countries.CW': return 'Curaçao';
+			case 'countries.CY': return 'Cyprus';
+			case 'countries.CZ': return 'Czech Republic';
+			case 'countries.DK': return 'Denmark';
+			case 'countries.DJ': return 'Djibouti';
+			case 'countries.DM': return 'Dominica';
+			case 'countries.DO': return 'Dominican Republic';
+			case 'countries.EC': return 'Ecuador';
+			case 'countries.EG': return 'Egypt';
+			case 'countries.SV': return 'El Salvador';
+			case 'countries.GB-ENG': return 'Inglaterra';
+			case 'countries.GQ': return 'Guinea Ecuatorial';
+			case 'countries.ER': return 'Eritrea';
+			case 'countries.EE': return 'Estonia';
+			case 'countries.ET': return 'Ethiopia';
+			case 'countries.EU': return 'Europe';
+			case 'countries.FK': return 'Falkland Islands (Malvinas)';
+			case 'countries.FO': return 'Faroe Islands';
+			case 'countries.FJ': return 'Fiji';
+			case 'countries.FI': return 'Finland';
+			case 'countries.FR': return 'France';
+			case 'countries.GF': return 'French Guiana';
+			case 'countries.PF': return 'French Polynesia';
+			case 'countries.TF': return 'French Southern Territories';
+			case 'countries.GA': return 'Gabon';
+			case 'countries.GM': return 'Gambia';
+			case 'countries.GE': return 'Georgia';
+			case 'countries.DE': return 'Germany';
+			case 'countries.GH': return 'Ghana';
+			case 'countries.GI': return 'Gibraltar';
+			case 'countries.GR': return 'Greece';
+			case 'countries.GL': return 'Greenland';
+			case 'countries.GD': return 'Grenada';
+			case 'countries.GP': return 'Guadeloupe';
+			case 'countries.GU': return 'Guam';
+			case 'countries.GT': return 'Guatemala';
+			case 'countries.GG': return 'Guernsey';
+			case 'countries.GN': return 'Guinea';
+			case 'countries.GW': return 'Guinea-Bissau';
+			case 'countries.GY': return 'Guyana';
+			case 'countries.HT': return 'Haiti';
+			case 'countries.HM': return 'Heard Island and McDonald Islands';
+			case 'countries.VA': return 'Holy See (Vatican City State)';
+			case 'countries.HN': return 'Honduras';
+			case 'countries.HK': return 'Hong Kong';
+			case 'countries.HU': return 'Hungary';
+			case 'countries.IS': return 'Iceland';
+			case 'countries.IN': return 'India';
+			case 'countries.ID': return 'Indonesia';
+			case 'countries.IR': return 'Iran, Islamic Republic of';
+			case 'countries.IQ': return 'Iraq';
+			case 'countries.IE': return 'Ireland';
+			case 'countries.IM': return 'Isle of Man';
+			case 'countries.IL': return 'Israel';
+			case 'countries.IT': return 'Italy';
+			case 'countries.JM': return 'Jamaica';
+			case 'countries.JP': return 'Japón';
+			case 'countries.JE': return 'Jersey';
+			case 'countries.JO': return 'Jordan';
+			case 'countries.KZ': return 'Kazakhstan';
+			case 'countries.KE': return 'Kenya';
+			case 'countries.KI': return 'Kiribati';
+			case 'countries.KP': return 'Korea, Democratic People\'s Republic of';
+			case 'countries.KR': return 'Korea, Republic of';
+			case 'countries.XK': return 'Kosovo';
+			case 'countries.KW': return 'Kuwait';
+			case 'countries.KG': return 'Kyrgyzstan';
+			case 'countries.LA': return 'Lao People\'s Democratic Republic';
+			case 'countries.LV': return 'Latvia';
+			case 'countries.LB': return 'Lebanon';
+			case 'countries.LS': return 'Lesotho';
+			case 'countries.LR': return 'Liberia';
+			case 'countries.LY': return 'Libya';
+			case 'countries.LI': return 'Liechtenstein';
+			case 'countries.LT': return 'Lithuania';
+			case 'countries.LU': return 'Luxembourg';
+			case 'countries.MO': return 'Macao';
+			case 'countries.MK': return 'Macedonia, the former Yugoslav Republic of';
+			case 'countries.MG': return 'Madagascar';
+			case 'countries.MW': return 'Malawi';
+			case 'countries.MY': return 'Malaysia';
+			case 'countries.MV': return 'Maldives';
+			case 'countries.ML': return 'Mali';
+			case 'countries.MT': return 'Malta';
+			case 'countries.MH': return 'Marshall Islands';
+			case 'countries.MQ': return 'Martinique';
+			case 'countries.MR': return 'Mauritania';
+			case 'countries.MU': return 'Mauritius';
+			case 'countries.YT': return 'Mayotte';
+			case 'countries.MX': return 'México';
+			case 'countries.FM': return 'Micronesia, Federated States of';
+			case 'countries.MD': return 'Moldova, Republic of';
+			case 'countries.MC': return 'Monaco';
+			case 'countries.ME': return 'Montenegro';
+			case 'countries.MA': return 'Morocco';
+			case 'countries.MN': return 'Mongolia';
+			case 'countries.MS': return 'Montserrat';
+			case 'countries.MZ': return 'Mozambique';
+			case 'countries.MM': return 'Myanmar';
+			case 'countries.NA': return 'Namibia';
+			case 'countries.NR': return 'Nauru';
+			case 'countries.NP': return 'Nepal';
+			case 'countries.NL': return 'Netherlands';
+			case 'countries.AN': return 'Netherlands Antilles';
+			case 'countries.NC': return 'New Caledonia';
+			case 'countries.NZ': return 'New Zealand';
+			case 'countries.NI': return 'Nicaragua';
+			case 'countries.NE': return 'Niger';
+			case 'countries.NG': return 'Nigeria';
+			case 'countries.NU': return 'Niue';
+			case 'countries.NF': return 'Norfolk Island';
+			case 'countries.GB-NIR': return 'Northern Ireland';
+			case 'countries.MP': return 'Northern Mariana Islands';
+			case 'countries.NO': return 'Norway';
+			case 'countries.OM': return 'Oman';
+			case 'countries.PK': return 'Pakistan';
+			case 'countries.PW': return 'Palau';
+			case 'countries.PS': return 'Palestine';
+			case 'countries.PA': return 'Panama';
+			case 'countries.PG': return 'Papua New Guinea';
+			case 'countries.PY': return 'Paraguay';
+			case 'countries.PE': return 'Peru';
+			case 'countries.PH': return 'Philippines';
+			case 'countries.PN': return 'Pitcairn';
+			case 'countries.PL': return 'Poland';
+			case 'countries.PT': return 'Portugal';
+			case 'countries.PR': return 'Puerto Rico';
+			case 'countries.QA': return 'Qatar';
+			case 'countries.RE': return 'Réunion';
+			case 'countries.RO': return 'Romania';
+			case 'countries.RU': return 'Russian Federation';
+			case 'countries.RW': return 'Rwanda';
+			case 'countries.BL': return 'Saint Barthélemy';
+			case 'countries.SH': return 'Saint Helena, Ascension and Tristan da Cunha';
+			case 'countries.KN': return 'Saint Kitts and Nevis';
+			case 'countries.LC': return 'Saint Lucia';
+			case 'countries.MF': return 'Saint Martin';
+			case 'countries.PM': return 'Saint Pierre and Miquelon';
+			case 'countries.VC': return 'Saint Vincent and the Grenadines';
+			case 'countries.WS': return 'Samoa';
+			case 'countries.SM': return 'San Marino';
+			case 'countries.ST': return 'Sao Tome and Principe';
+			case 'countries.SA': return 'Saudi Arabia';
+			case 'countries.GB-SCT': return 'Scotland';
+			case 'countries.SN': return 'Senegal';
+			case 'countries.RS': return 'Serbia';
+			case 'countries.SC': return 'Seychelles';
+			case 'countries.SL': return 'Sierra Leone';
+			case 'countries.SG': return 'Singapore';
+			case 'countries.SX': return 'Sint Maarten (Dutch part)';
+			case 'countries.SK': return 'Slovakia';
+			case 'countries.SI': return 'Slovenia';
+			case 'countries.SB': return 'Solomon Islands';
+			case 'countries.SO': return 'Somalia';
+			case 'countries.ZA': return 'South Africa';
+			case 'countries.GS': return 'South Georgia and the South Sandwich Islands';
+			case 'countries.SS': return 'South Sudan';
+			case 'countries.ES': return 'España';
+			case 'countries.LK': return 'Sri Lanka';
+			case 'countries.SD': return 'Sudan';
+			case 'countries.SR': return 'Suriname';
+			case 'countries.SJ': return 'Svalbard and Jan Mayen Islands';
+			case 'countries.SZ': return 'Swaziland';
+			case 'countries.SE': return 'Sweden';
+			case 'countries.CH': return 'Switzerland';
+			case 'countries.SY': return 'Syrian Arab Republic';
+			case 'countries.TW': return 'Taiwan';
+			case 'countries.TJ': return 'Tajikistan';
+			case 'countries.TZ': return 'Tanzania, United Republic of';
+			case 'countries.TH': return 'Thailand';
+			case 'countries.TL': return 'Timor-Leste';
+			case 'countries.TG': return 'Togo';
+			case 'countries.TK': return 'Tokelau';
+			case 'countries.TO': return 'Tonga';
+			case 'countries.TT': return 'Trinidad and Tobago';
+			case 'countries.TN': return 'Tunisia';
+			case 'countries.TR': return 'Turkey';
+			case 'countries.TM': return 'Turkmenistan';
+			case 'countries.TC': return 'Turks and Caicos Islands';
+			case 'countries.TV': return 'Tuvalu';
+			case 'countries.UG': return 'Uganda';
+			case 'countries.UA': return 'Ukraine';
+			case 'countries.AE': return 'United Arab Emirates';
+			case 'countries.GB': return 'United Kingdom';
+			case 'countries.US': return 'Estados Unidos';
+			case 'countries.UY': return 'Uruguay';
+			case 'countries.UM': return 'US Minor Outlying Islands';
+			case 'countries.UZ': return 'Uzbekistan';
+			case 'countries.VU': return 'Vanuatu';
+			case 'countries.VE': return 'Venezuela, Bolivarian Republic of';
+			case 'countries.VN': return 'Vietnam';
+			case 'countries.VG': return 'Virgin Islands, British';
+			case 'countries.VI': return 'Virgin Islands, U.S.';
+			case 'countries.GB-WLS': return 'Wales';
+			case 'countries.WF': return 'Wallis and Futuna Islands';
+			case 'countries.EH': return 'Western Sahara';
+			case 'countries.YE': return 'Yemen';
+			case 'countries.ZM': return 'Zambia';
+			case 'countries.ZW': return 'Zimbabwe';
+			case 'countries.XX': return 'Desconocido';
+			case 'countries.XM': return 'La Luna';
+			default: return null;
+		}
+	}
+}
+
+extension on _StringsFrFr {
+	dynamic _flatMapFunction(String path) {
+		switch (path) {
+			case 'locales.en': return 'Anglais (English)';
+			case 'locales.fr-FR': return 'Français';
+			case 'locales.es-ES': return 'Espagnol (Espanol)';
+			case 'locales.ru-RU': return 'Russe (Русский)';
+			case 'locales.ko-KR': return 'Coréen (한국인)';
+			case 'locales.zh-CN': return 'Chinois simplifié (简体中文)';
+			case 'locales.de-DE': return 'Allemand (Deutsch)';
+			case 'gamemodes.league': return 'Tetra League';
+			case 'gamemodes.zenith': return 'Quick Play';
+			case 'gamemodes.zenithex': return 'Quick Play Expert';
+			case 'gamemodes.40l': return '40 Lignes';
+			case 'gamemodes.blitz': return 'Blitz';
+			case 'gamemodes.5mblast': return '5,000,000 Blast';
+			case 'gamemodes.zen': return 'Zen';
+			case 'destinations.home': return 'Accueil';
+			case 'destinations.graphs': return 'Graphiques';
+			case 'destinations.leaderboards': return 'Classements';
+			case 'destinations.cutoffs': return 'Seuils de rangs';
+			case 'destinations.calc': return 'Calculatrice';
+			case 'destinations.info': return 'Centre d\'informations';
+			case 'destinations.data': return 'Données sauvegardées';
+			case 'destinations.settings': return 'Paramètres';
+			case 'playerRole.user': return 'Utilisateur';
+			case 'playerRole.banned': return 'Banni';
+			case 'playerRole.bot': return 'Bot';
+			case 'playerRole.sysop': return 'Opérateur système';
+			case 'playerRole.admin': return 'Administrateur';
+			case 'playerRole.mod': return 'Modérateur';
+			case 'playerRole.halfmod': return 'Modérateur de la communauté';
+			case 'playerRole.anon': return 'Anonyme';
+			case 'goBackButton': return 'Retour';
+			case 'nanow': return 'Indisponible pour le moment...';
+			case 'seasonEnds': return ({required Object countdown}) => 'La saison se termine dans ${countdown}';
+			case 'seasonEnded': return 'La saison est terminée';
+			case 'overallPB': return ({required Object pb}) => 'Record utilisateur : ${pb} m';
+			case 'gamesUntilRanked': return ({required Object left}) => '${left} parties restantes avant classification';
+			case 'numOfVictories': return ({required Object wins}) => '~${wins} victoires';
+			case 'promotionOnNextWin': return 'Promotion à la prochaine victoire';
+			case 'numOfdefeats': return ({required Object losses}) => '~${losses} défaites';
+			case 'demotionOnNextLoss': return 'Rétrogradation à la prochaine défaite';
+			case 'records': return 'Enregistrements';
+			case 'nerdStats': return 'Statistiques pour les nerds';
+			case 'playstyles': return 'Styles de jeu';
+			case 'horoscopes': return 'Horoscopes';
+			case 'relatedAchievements': return 'Succès liés';
+			case 'season': return 'Saison';
+			case 'smooth': return 'Smooth';
+			case 'dateAndTime': return 'Date & Time';
+			case 'TLfullLBnote': return 'Lourd, mais permet de trier les joueurs par leurs statistiques et de les filtrer par rangs';
+			case 'rank': return 'Rang';
+			case 'verdictGeneral': return ({required Object n, required Object verdict, required Object rank}) => '${n} ${verdict} de la moyenne du rang ${rank}';
+			case 'verdictBetter': return 'en avant';
+			case 'verdictWorse': return 'en arrière';
+			case 'localStanding': return 'régional';
+			case 'xp.title': return 'Niveau d\'EXP';
+			case 'xp.progressToNextLevel': return ({required Object percentage}) => 'Progression vers le niveau suivant : ${percentage}';
+			case 'xp.progressTowardsGoal': return ({required Object goal, required Object percentage, required Object left}) => 'Progression de 0 EXP au niveau ${goal} : ${percentage} (${left} EXP restant)';
+			case 'gametime.title': return 'Temps de jeu exact';
+			case 'gametime.gametimeAday': return ({required Object gametime}) => '${gametime} par jour en moyenne';
+			case 'gametime.breakdown': return ({required Object years, required Object months, required Object days, required Object minutes, required Object seconds}) => 'C\'est ${years} années,\nou ${months} mois,\nou ${days} jours,\nou ${minutes} minutes,\nou ${seconds} secondes';
+			case 'track': return 'Suivre';
+			case 'stopTracking': return 'Arrêter de suivre';
+			case 'supporter': return ({required Object tier}) => 'Supporteur de palier ${tier}';
+			case 'comparingWith': return ({required Object newDate, required Object oldDate}) => 'Data from ${newDate} comparing with ${oldDate}';
+			case 'compare': return 'Comparer';
+			case 'comparison': return 'Comparaison';
+			case 'enterUsername': return 'Enter username or \$avgX (where X is rank)';
+			case 'general': return 'General';
+			case 'badges': return 'Badges';
+			case 'obtainDate': return ({required Object date}) => 'Obtained ${date}';
+			case 'assignedManualy': return 'Ce badge a été attribué manuellement par les administrateurs de TETR.IO';
+			case 'distinguishment': return 'Distinction';
+			case 'banned': return 'Banni';
+			case 'bannedSubtext': return 'Les bannissements sont placés lorsque les règles ou les conditions d\'utilisation de TETR.IO ne sont pas respectées';
+			case 'badStanding': return 'Bad standing';
+			case 'badStandingSubtext': return 'Un ou plusieurs bannissements récemment enregistrés';
+			case 'botAccount': return 'Compte de bot';
+			case 'botAccountSubtext': return ({required Object botMaintainers}) => 'Opéré par ${botMaintainers}';
+			case 'copiedToClipboard': return 'Copié dans le presse-papiers !';
+			case 'bio': return 'Bio';
+			case 'news': return 'Nouvelles';
+			case 'matchResult.victory': return 'Victoire';
+			case 'matchResult.defeat': return 'Défaite';
+			case 'matchResult.tie': return 'Égalité';
+			case 'matchResult.dqvictory': return 'L\'adversaire a été disqualifié(e)';
+			case 'matchResult.dqdefeat': return 'Disqualifié(e)';
+			case 'matchResult.nocontest': return 'No Contest';
+			case 'matchResult.nullified': return 'Nullified';
+			case 'distinguishments.noHeader': return 'En-tête manquant';
+			case 'distinguishments.noFooter': return 'Bas de page manquant';
+			case 'distinguishments.twc': return 'Champion du monde TETR.IO';
+			case 'distinguishments.twcYear': return ({required Object year}) => 'Championnat du monde TETR.IO ${year}';
+			case 'newsEntries.leaderboard': return ({required InlineSpan rank, required InlineSpan gametype}) => TextSpan(children: [
+				const TextSpan(text: 'Got № '),
+				rank,
+				const TextSpan(text: ' in '),
+				gametype,
+			]);
+			case 'newsEntries.personalbest': return ({required InlineSpan gametype, required InlineSpan pb}) => TextSpan(children: [
+				const TextSpan(text: 'Got a new PB in '),
+				gametype,
+				const TextSpan(text: ' of '),
+				pb,
+			]);
+			case 'newsEntries.badge': return ({required InlineSpan badge}) => TextSpan(children: [
+				const TextSpan(text: 'A obtenu un badge '),
+				badge,
+			]);
+			case 'newsEntries.rankup': return ({required InlineSpan rank}) => TextSpan(children: [
+				const TextSpan(text: 'Obtained '),
+				rank,
+				const TextSpan(text: ' in Tetra League'),
+			]);
+			case 'newsEntries.supporter': return ({required InlineSpanBuilder s}) => TextSpan(children: [
+				const TextSpan(text: 'Est devenu un '),
+				s('supporter TETR.IO'),
+			]);
+			case 'newsEntries.supporter_gift': return ({required InlineSpanBuilder s}) => TextSpan(children: [
+				const TextSpan(text: 'Received the gift of '),
+				s('TETR.IO supporter'),
+			]);
+			case 'newsEntries.unknown': return ({required InlineSpan type}) => TextSpan(children: [
+				const TextSpan(text: 'Unknown news of type '),
+				type,
+			]);
+			case 'rankupMiddle': return ({required Object r}) => 'Rang ${r}';
+			case 'copyUserID': return 'Cliquez pour copier l\'ID de l\'utilisateur';
+			case 'searchHint': return 'Nom d\'utilisateur ou ID';
+			case 'navMenu': return 'Menu de navigation';
+			case 'navMenuTooltip': return 'Open navigation menu';
+			case 'refresh': return 'Actualiser les données';
+			case 'searchButton': return 'Search';
+			case 'trackedPlayers': return 'Joueurs suivis';
+			case 'standing': return 'Standing';
+			case 'previousSeasons': return 'Saisons précédentes';
+			case 'recent': return 'Recent';
+			case 'top': return 'Top';
+			case 'noRecord': return 'No record';
+			case 'sprintAndBlitsRelevance': return ({required Object date}) => 'Relevance: ${date}';
+			case 'snackBarMessages.stateRemoved': return ({required Object date}) => '${date} state was removed from database!';
+			case 'snackBarMessages.matchRemoved': return ({required Object date}) => '${date} match was removed from database!';
+			case 'snackBarMessages.notForWeb': return 'Cette fonction est indisponible pour la version web';
+			case 'snackBarMessages.importSuccess': return 'Importation réussie';
+			case 'snackBarMessages.importCancelled': return 'L\'importation a été annulée';
+			case 'errors.noRecords': return 'No records';
+			case 'errors.notEnoughData': return 'Not enough data';
+			case 'errors.noHistorySaved': return 'No history saved';
+			case 'errors.connection': return ({required Object code, required Object message}) => 'Some issue with connection: ${code} ${message}';
+			case 'errors.noSuchUser': return 'Utilisateur inexistant';
+			case 'errors.noSuchUserSub': return 'Soit vous avez mal tapé quelque chose, soit le compte n\'existe plus';
+			case 'errors.discordNotAssigned': return 'No connections found';
+			case 'errors.discordNotAssignedSub': return 'Your query should look like described in [API guide](https://tetr.io/about/api/#userssearchquery)';
+			case 'errors.history': return 'History for that player is missing';
+			case 'errors.actionSuggestion': return 'Perhaps, you want to';
+			case 'errors.p1nkl0bst3rTLmatches': return 'No Tetra League matches was found';
+			case 'errors.clientException': return 'No internet connection';
+			case 'errors.forbidden': return 'Votre adresse IP est bloquée';
+			case 'errors.forbiddenSub': return ({required Object nickname}) => 'If you are using VPN or Proxy, turn it off. If this does not help, reach out to ${nickname}';
+			case 'errors.tooManyRequests': return 'You have been rate limited.';
+			case 'errors.tooManyRequestsSub': return 'Attendez quelques instants et réessayez';
+			case 'errors.internal': return 'Quelque chose s\'est passé du côté de tetr.io';
+			case 'errors.internalSub': return 'osk, probably, already aware about it';
+			case 'errors.internalWebVersion': return 'Something happened on the tetr.io side (or on oskware_bridge, idk honestly)';
+			case 'errors.internalWebVersionSub': return 'Si la page de statut d\'osk indique que tout est correct, faites parvenir le problème à dan63047';
+			case 'errors.oskwareBridge': return 'Something happened with oskware_bridge';
+			case 'errors.oskwareBridgeSub': return 'Faites savoir à dan63047';
+			case 'errors.p1nkl0bst3rForbidden': return 'Third party API blocked your IP address';
+			case 'errors.p1nkl0bst3rTooManyRequests': return 'Too many requests to third party API. Try again later';
+			case 'errors.p1nkl0bst3rinternal': return 'Something happened on the p1nkl0bst3r side';
+			case 'errors.p1nkl0bst3rinternalWebVersion': return 'Something happened on the p1nkl0bst3r side (or on oskware_bridge, idk honestly)';
+			case 'errors.replayAlreadySaved': return 'Replay already saved';
+			case 'errors.replayExpired': return 'Replay expired and not available anymore';
+			case 'errors.replayRejected': return 'Third party API blocked your IP address';
+			case 'actions.cancel': return 'Cancel';
+			case 'actions.submit': return 'Submit';
+			case 'actions.ok': return 'OK';
+			case 'actions.apply': return 'Apply';
+			case 'actions.refresh': return 'Actualiser';
+			case 'aprilFools.fakeBanModaleTitle': return 'Vous avez été banni définitivement de Tetra Stats';
+			case 'aprilFools.fakeBanModaleBody': return 'Raison : violation grossière des conditions d\'utilisation\n\nSi vous souhaitez faire appel, veuillez contacter dan63.';
+			case 'aprilFools.fakeBanModaledan63Grin': return 'Fool...';
+			case 'aprilFools.SettingTitleUnfoolMyself': return 'Unfool myself';
+			case 'aprilFools.SettingButtonUnfool': return 'Unfool';
+			case 'aprilFools.SettingDescription': return 'Ce bouton vous permettra de revivre la farce de poisson d\'avril une fois de plus';
+			case 'graphsDestination.fetchAndsaveTLHistory': return 'Fetch History';
+			case 'graphsDestination.fetchAndSaveOldTLmatches': return 'Get Tetra League matches history';
+			case 'graphsDestination.fetchAndsaveTLHistoryResult': return ({required Object number}) => '${number} states was found';
+			case 'graphsDestination.fetchAndSaveOldTLmatchesResult': return ({required Object number}) => '${number} matches was found';
+			case 'graphsDestination.gamesPlayed': return ({required Object games}) => '${games} played';
+			case 'graphsDestination.dateAndTime': return 'Date & Time';
+			case 'graphsDestination.filterModaleTitle': return 'Filter ranks on graph';
+			case 'filterModale.all': return 'All';
+			case 'cutoffsDestination.title': return 'Tetra League State';
+			case 'cutoffsDestination.relevance': return ({required Object timestamp}) => 'as of ${timestamp}';
+			case 'cutoffsDestination.actual': return 'Actual';
+			case 'cutoffsDestination.target': return 'Target';
+			case 'cutoffsDestination.cutoffTR': return 'Cutoff TR';
+			case 'cutoffsDestination.targetTR': return 'Target TR';
+			case 'cutoffsDestination.state': return 'State';
+			case 'cutoffsDestination.advanced': return 'Advanced';
+			case 'cutoffsDestination.players': return ({required Object n}) => 'Players (${n})';
+			case 'cutoffsDestination.moreInfo': return 'More Info';
+			case 'cutoffsDestination.NumberOne': return ({required Object tr}) => '№ 1 is ${tr} TR';
+			case 'cutoffsDestination.inflated': return ({required Object tr}) => 'Inflated on ${tr} TR';
+			case 'cutoffsDestination.notInflated': return 'Non gonflé';
+			case 'cutoffsDestination.deflated': return ({required Object tr}) => 'Deflated on ${tr} TR';
+			case 'cutoffsDestination.notDeflated': return 'Non dégonflé';
+			case 'cutoffsDestination.wellDotDotDot': return 'Eh bien...';
+			case 'cutoffsDestination.fromPlace': return ({required Object n}) => 'from № ${n}';
+			case 'cutoffsDestination.viewButton': return 'View';
+			case 'rankView.rankTitle': return ({required Object rank}) => '${rank} rank data';
+			case 'rankView.everyoneTitle': return 'Entire leaderboard';
+			case 'rankView.trRange': return 'TR Range';
+			case 'rankView.supposedToBe': return 'Supposed to be';
+			case 'rankView.gap': return ({required Object value}) => '${value} gap';
+			case 'rankView.trGap': return ({required Object value}) => '${value} TR gap';
+			case 'rankView.deflationGap': return 'Deflation gap';
+			case 'rankView.inflationGap': return 'Inflation gap';
+			case 'rankView.LBposRange': return 'LB pos range';
+			case 'rankView.overpopulated': return ({required Object players}) => 'Surpeuplé par ${players}';
+			case 'rankView.underpopulated': return ({required Object players}) => 'Sous-peuplé par ${players}';
+			case 'rankView.PlayersEqualSupposedToBe': return 'cute';
+			case 'rankView.avgStats': return 'Average Stats';
+			case 'rankView.avgForRank': return ({required Object rank}) => 'Average for ${rank} rank';
+			case 'rankView.avgNerdStats': return 'Statistiques moyennes pour les nerds';
+			case 'rankView.minimums': return 'Minimums';
+			case 'rankView.maximums': return 'Maximums';
+			case 'stateView.title': return ({required Object date}) => 'State from ${date}';
+			case 'tlMatchView.match': return 'Match';
+			case 'tlMatchView.vs': return 'vs';
+			case 'tlMatchView.winner': return 'Winner';
+			case 'tlMatchView.roundNumber': return ({required Object n}) => 'Round ${n}';
+			case 'tlMatchView.statsFor': return 'Stats for';
+			case 'tlMatchView.numberOfRounds': return 'Number of rounds';
+			case 'tlMatchView.matchLength': return 'Match Length';
+			case 'tlMatchView.roundLength': return 'Round Length';
+			case 'tlMatchView.matchStats': return 'Match stats';
+			case 'tlMatchView.downloadReplay': return 'Download .ttrm replay';
+			case 'tlMatchView.openReplay': return 'Open replay in TETR.IO';
+			case 'calcDestination.placeholders': return ({required Object stat}) => 'Enter your ${stat}';
+			case 'calcDestination.tip': return 'Entrez les valeurs et appuyez sur « Calc » pour voir les statistiques pour les nerds pour celles-ci';
+			case 'calcDestination.statsCalcButton': return 'Calc';
+			case 'calcDestination.damageCalcTip': return 'Click on the actions on the left to add them here';
+			case 'calcDestination.actions': return 'Actions';
+			case 'calcDestination.results': return 'Results';
+			case 'calcDestination.rules': return 'Rules';
+			case 'calcDestination.noSpinClears': return 'No Spin Clears';
+			case 'calcDestination.spins': return 'Spins';
+			case 'calcDestination.miniSpins': return 'Mini spins';
+			case 'calcDestination.noLineclear': return 'No lineclear (Break Combo)';
+			case 'calcDestination.custom': return 'Custom';
+			case 'calcDestination.multiplier': return 'Multiplier';
+			case 'calcDestination.pcDamage': return 'Perfect Clear Damage';
+			case 'calcDestination.comboTable': return 'Combo Table';
+			case 'calcDestination.b2bChaining': return 'Back-To-Back Chaining';
+			case 'calcDestination.surgeStartAtB2B': return 'Starts at B2B';
+			case 'calcDestination.surgeStartAmount': return 'Start amount';
+			case 'calcDestination.totalDamage': return 'Total damage';
+			case 'calcDestination.lineclears': return 'Lineclears';
+			case 'calcDestination.combo': return 'Combo';
+			case 'calcDestination.surge': return 'Surge';
+			case 'calcDestination.pcs': return 'PCs';
+			case 'infoDestination.title': return 'Centre d\'informations';
+			case 'infoDestination.sprintAndBlitzAverages': return 'Moyennes 40 Lignes & Blitz';
+			case 'infoDestination.sprintAndBlitzAveragesDescription': return 'Since calculating 40 Lines & Blitz averages is tedious process, it gets updated only once in a while. Click on the title of this card to see the full 40 Lines & Blitz averages table';
+			case 'infoDestination.tetraStatsWiki': return 'Wiki Tetra Stats';
+			case 'infoDestination.tetraStatsWikiDescription': return 'Find more information about Tetra Stats functions and statictic, that it provides';
+			case 'infoDestination.about': return 'À propos de Tetra Stats';
+			case 'infoDestination.aboutDescription': return 'Développé par dan63\n';
+			case 'leaderboardsDestination.title': return 'Classements';
+			case 'leaderboardsDestination.tl': return 'Tetra League (Saison actuelle)';
+			case 'leaderboardsDestination.fullTL': return 'Tetra League (Saison actuelle, complète)';
+			case 'leaderboardsDestination.ar': return 'Points de succès';
+			case 'savedDataDestination.title': return 'Saved Data';
+			case 'savedDataDestination.tip': return 'Select nickname on the left to see data assosiated with it';
+			case 'savedDataDestination.seasonTLstates': return ({required Object s}) => 'S${s} TL States';
+			case 'savedDataDestination.TLrecords': return 'TL Records';
+			case 'settingsDestination.title': return 'Settings';
+			case 'settingsDestination.general': return 'General';
+			case 'settingsDestination.customization': return 'Customization';
+			case 'settingsDestination.database': return 'Local database';
+			case 'settingsDestination.checking': return 'Checking...';
+			case 'settingsDestination.enterToSubmit': return 'Press Enter to submit';
+			case 'settingsDestination.account': return 'Votre compte dans TETR.IO';
+			case 'settingsDestination.accountDescription': return 'Stats of that player will be loaded initially right after launching this app. By default it loads my (dan63) stats. To change that, enter your nickname here.';
+			case 'settingsDestination.done': return 'Done!';
+			case 'settingsDestination.noSuchAccount': return 'Compte non valide';
+			case 'settingsDestination.language': return 'Langue';
+			case 'settingsDestination.languageDescription': return ({required Object languages}) => 'Tetra Stats a été traduit dans ${languages}. Par défaut, l\'application va sélectionner la langue système ou l\'anglais, si la langue système n\'est pas disponible.';
+			case 'settingsDestination.languages': return ({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('fr'))(n,
+				zero: 'aucune langue',
+				one: '${n} langue',
+				two: '${n} langues',
+				few: '${n} langues',
+				many: '${n} langues',
+				other: '${n} langues',
+			);
+			case 'settingsDestination.updateInTheBackground': return 'Mettre à jour les données en arrière-plan';
+			case 'settingsDestination.updateInTheBackgroundDescription': return 'Si activé, Tetra Stats tentera de récupérer de nouvelles informations une fois le cache expiré. Habituellement, cela se produit toutes les 5 minutes';
+			case 'settingsDestination.compareStats': return 'Compare TL stats with rank averages';
+			case 'settingsDestination.compareStatsDescription': return 'If on, Tetra Stats will provide additional metrics, which allow you to compare yourself with average player on your rank. The way you\'ll see it — stats will be highlighted with corresponding color, hover over them with cursor for more info.';
+			case 'settingsDestination.showPosition': return 'Show position on leaderboard by stats';
+			case 'settingsDestination.showPositionDescription': return 'This can take some time (and traffic) to load, but will allow you to see your position on the leaderboard, sorted by a stat';
+			case 'settingsDestination.accentColor': return 'Couleur d\'accentuation';
+			case 'settingsDestination.accentColorDescription': return 'Cette couleur est visible dans cette application et met en évidence les éléments interactifs de l\'interface utilisateur.';
+			case 'settingsDestination.accentColorModale': return 'Choisissez une couleur d\'accentuation';
+			case 'settingsDestination.timestamps': return 'Timestamps format';
+			case 'settingsDestination.timestampsDescriptionPart1': return ({required Object d}) => 'You can choose, in which way timestamps shows time. By default, they show time in GMT timezone, formatted according to chosen locale, example: ${d}.';
+			case 'settingsDestination.timestampsDescriptionPart2': return ({required Object y, required Object r}) => 'There is also:\n• Locale formatted in your timezone: ${y}\n• Relative timestamp: ${r}';
+			case 'settingsDestination.timestampsAbsoluteGMT': return 'Absolute (GMT)';
+			case 'settingsDestination.timestampsAbsoluteLocalTime': return 'Absolute (Your timezone)';
+			case 'settingsDestination.timestampsRelative': return 'Relative';
+			case 'settingsDestination.sheetbotLikeGraphs': return 'Sheetbot-like behavior for radar graphs';
+			case 'settingsDestination.sheetbotLikeGraphsDescription': return 'Altough it was considered by me, that the way graphs work in SheetBot is not very correct, some people were confused to see, that -0.5 stride dosen\'t look the way it looks on SheetBot graph. Hence, he we are: if this toggle is on, points on the graphs can appear on the opposite half of the graph if value is negative.';
+			case 'settingsDestination.oskKagariGimmick': return 'Osk-Kagari gimmick';
+			case 'settingsDestination.oskKagariGimmickDescription': return 'Si activé, :kagari: sera affichée au lieu du rang d\'osk.';
+			case 'settingsDestination.bytesOfDataStored': return 'of data stored';
+			case 'settingsDestination.TLrecordsSaved': return 'Tetra League records saved';
+			case 'settingsDestination.TLplayerstatesSaved': return 'Tetra League playerstates saved';
+			case 'settingsDestination.fixButton': return 'Fix';
+			case 'settingsDestination.compressButton': return 'Compresser';
+			case 'settingsDestination.exportDB': return 'Exporter la base de données locale';
+			case 'settingsDestination.desktopExportAlertTitle': return 'Desktop export';
+			case 'settingsDestination.desktopExportText': return 'It seems like you using this app on desktop. Check your documents folder, you should find "TetraStats.db". Copy it somewhere';
+			case 'settingsDestination.androidExportAlertTitle': return 'Android export';
+			case 'settingsDestination.androidExportText': return ({required Object exportedDB}) => 'Exported.\n${exportedDB}';
+			case 'settingsDestination.importDB': return 'Importer la base de données locale';
+			case 'settingsDestination.importDBDescription': return 'Restore your backup. Notice that already stored database will be overwritten.';
+			case 'settingsDestination.importWrongFileType': return 'Wrong file type';
+			case 'homeNavigation.overview': return 'Vue d\'ensemble';
+			case 'homeNavigation.standing': return 'Standing';
+			case 'homeNavigation.seasons': return 'Saisons';
+			case 'homeNavigation.mathces': return 'Parties';
+			case 'homeNavigation.pb': return 'PB';
+			case 'homeNavigation.normal': return 'Normal';
+			case 'homeNavigation.expert': return 'Expert';
+			case 'homeNavigation.expertRecords': return 'Ex Records';
+			case 'graphsNavigation.history': return 'Player History';
+			case 'graphsNavigation.league': return 'League State';
+			case 'graphsNavigation.cutoffs': return 'Cutoffs History';
+			case 'calcNavigation.stats': return 'Calculatrice de statistiques';
+			case 'calcNavigation.damage': return 'Calculatrice de dégâts';
+			case 'firstTimeView.welcome': return 'Bienvenue dans Tetra Stats';
+			case 'firstTimeView.description': return 'Service, that allows you to keep track of various statistics for TETR.IO';
+			case 'firstTimeView.nicknameQuestion': return 'What\'s your nickname?';
+			case 'firstTimeView.inpuntHint': return 'Type it here... (3-16 symbols)';
+			case 'firstTimeView.emptyInputError': return 'Can\'t submit an empty string';
+			case 'firstTimeView.niceToSeeYou': return ({required Object n}) => 'Nice to see you, ${n}';
+			case 'firstTimeView.letsTakeALook': return 'Let\'s take a look at your stats...';
+			case 'firstTimeView.skip': return 'Skip';
+			case 'aboutView.title': return 'À propos de Tetra Stats';
+			case 'aboutView.about': return 'Tetra Stats is a service, that works with TETR.IO Tetra Channel API, providing data from it and calculating some addtitional metrics, based on this data. Service allows user to track their progress in Tetra League with "Track" function, which records every Tetra League change into local database (not automatically, you have to visit service from time to time), so these changes could be looked through graphs.\n\nBeanserver blaster is a part of a Tetra Stats, that decoupled into a serverside script. It provides full Tetra League leaderboard, allowing Tetra Stats to sort leaderboard by any metric and build scatter chart, that allows user to analyse Tetra League trends. It also provides history of Tetra League ranks cutoffs, which can be viewed by user via graph as well.\n\nThere is a plans to add replay analysis and tournaments history, so stay tuned!\n\nService is not associated with TETR.IO or osk in any capacity.';
+			case 'aboutView.appVersion': return 'App Version';
+			case 'aboutView.build': return ({required Object build}) => 'Build ${build}';
+			case 'aboutView.GHrepo': return 'GitHub Repository';
+			case 'aboutView.submitAnIssue': return 'Submit an issue';
+			case 'aboutView.credits': return 'Credits';
+			case 'aboutView.authorAndDeveloper': return 'Autor & developer';
+			case 'aboutView.providedFormulas': return 'Provided formulas';
+			case 'aboutView.providedS1history': return 'Provided S1 history';
+			case 'aboutView.inoue': return 'Inoue (replay grabber)';
+			case 'aboutView.zhCNlocale': return 'Traduction chinoise (simplifié)';
+			case 'aboutView.deDElocale': return 'Traduction allemande';
+			case 'aboutView.koKRlocale': return 'Traduction coréenne';
+			case 'aboutView.supportHim': return 'Donnez-lui votre soutien !';
+			case 'stats.registrationDate': return 'Date d\'inscription';
+			case 'stats.gametime': return 'Temps joué';
+			case 'stats.ogp': return 'Parties en ligne jouées';
+			case 'stats.ogw': return 'Parties en ligne gagnées';
+			case 'stats.followers': return 'Suiveurs';
+			case 'stats.xp.short': return 'EXP';
+			case 'stats.xp.full': return 'Points d\'expérience';
+			case 'stats.tr.short': return 'TR';
+			case 'stats.tr.full': return 'Tetra Rating';
+			case 'stats.glicko.short': return 'Glicko';
+			case 'stats.glicko.full': return 'Glicko';
+			case 'stats.rd.short': return 'RD';
+			case 'stats.rd.full': return 'Écart de classement';
+			case 'stats.glixare.short': return 'GXE';
+			case 'stats.glixare.full': return 'GLIXARE';
+			case 'stats.s1tr.short': return 'S1 TR';
+			case 'stats.s1tr.full': return 'Season 1 like TR';
+			case 'stats.gp.short': return 'GP';
+			case 'stats.gp.full': return 'Parties jouées';
+			case 'stats.gw.short': return 'GW';
+			case 'stats.gw.full': return 'Parties gagnées';
+			case 'stats.winrate.short': return 'WR%';
+			case 'stats.winrate.full': return 'Taux de réussite';
+			case 'stats.apm.short': return 'APM';
+			case 'stats.apm.full': return 'Attaque par minute';
+			case 'stats.pps.short': return 'PPS';
+			case 'stats.pps.full': return 'Pièces par seconde';
+			case 'stats.vs.short': return 'VS';
+			case 'stats.vs.full': return 'Score Versus';
+			case 'stats.app.short': return 'APP';
+			case 'stats.app.full': return 'Attaque par pièce';
+			case 'stats.vsapm.short': return 'VS/APM';
+			case 'stats.vsapm.full': return 'VS / APM';
+			case 'stats.dss.short': return 'DS/S';
+			case 'stats.dss.full': return 'Downstack Per Second';
+			case 'stats.dsp.short': return 'DS/P';
+			case 'stats.dsp.full': return 'Downstack Per Piece';
+			case 'stats.appdsp.short': return 'APP+DSP';
+			case 'stats.appdsp.full': return 'APP + DSP';
+			case 'stats.cheese.short': return 'Cheese';
+			case 'stats.cheese.full': return 'Cheese Index';
+			case 'stats.gbe.short': return 'GbE';
+			case 'stats.gbe.full': return 'Garbage Efficiency';
+			case 'stats.nyaapp.short': return 'wAPP';
+			case 'stats.nyaapp.full': return 'Weighted APP';
+			case 'stats.area.short': return 'Area';
+			case 'stats.area.full': return 'Area';
+			case 'stats.etr.short': return 'eTR';
+			case 'stats.etr.full': return 'Estimated TR';
+			case 'stats.etracc.short': return '±eTR';
+			case 'stats.etracc.full': return 'Accuracy of Estimated TR';
+			case 'stats.opener.short': return 'Opener';
+			case 'stats.opener.full': return 'Opener';
+			case 'stats.plonk.short': return 'Plonk';
+			case 'stats.plonk.full': return 'Plonk';
+			case 'stats.stride.short': return 'Stride';
+			case 'stats.stride.full': return 'Stride';
+			case 'stats.infds.short': return 'Inf. DS';
+			case 'stats.infds.full': return 'Infinite Downstack';
+			case 'stats.altitude.short': return 'm';
+			case 'stats.altitude.full': return 'Altitude';
+			case 'stats.climbSpeed.short': return 'CSP';
+			case 'stats.climbSpeed.full': return 'Climb Speed';
+			case 'stats.climbSpeed.gaugetTitle': return 'Climb\nSpeed';
+			case 'stats.peakClimbSpeed.short': return 'Peak CSP';
+			case 'stats.peakClimbSpeed.full': return 'Peak Climb Speed';
+			case 'stats.peakClimbSpeed.gaugetTitle': return 'Peak';
+			case 'stats.kos.short': return 'KO\'s';
+			case 'stats.kos.full': return 'Knockouts';
+			case 'stats.b2b.short': return 'B2B';
+			case 'stats.b2b.full': return 'Back-To-Back';
+			case 'stats.finesse.short': return 'F';
+			case 'stats.finesse.full': return 'Finesse';
+			case 'stats.finesse.widgetTitle': return 'inesse';
+			case 'stats.finesseFaults.short': return 'FF';
+			case 'stats.finesseFaults.full': return 'Fautes de finesse';
+			case 'stats.totalTime.short': return 'Temps';
+			case 'stats.totalTime.full': return 'Temps total';
+			case 'stats.totalTime.widgetTitle': return 'emps total';
+			case 'stats.level.short': return 'Niv.';
+			case 'stats.level.full': return 'Niveau';
+			case 'stats.pieces.short': return 'P';
+			case 'stats.pieces.full': return 'Pièces';
+			case 'stats.spp.short': return 'SPP';
+			case 'stats.spp.full': return 'Score par pièce';
+			case 'stats.kp.short': return 'KP';
+			case 'stats.kp.full': return 'Key presses';
+			case 'stats.kpp.short': return 'KPP';
+			case 'stats.kpp.full': return 'Key presses Per Piece';
+			case 'stats.kps.short': return 'KPS';
+			case 'stats.kps.full': return 'Key presses Per Second';
+			case 'stats.blitzScore': return ({required Object p}) => '${p} points';
+			case 'stats.levelUpRequirement': return ({required Object p}) => 'Level up requirement: ${p}';
+			case 'stats.piecesTotal': return 'Total de pièces placées';
+			case 'stats.piecesWithPerfectFinesse': return 'Placés avec finesse parfaite';
+			case 'stats.score': return 'Score';
+			case 'stats.lines': return 'Lignes';
+			case 'stats.linesShort': return 'L';
+			case 'stats.pcs': return 'Perfect Clears';
+			case 'stats.holds': return 'Retenues';
+			case 'stats.spike': return 'Top Spike';
+			case 'stats.top': return ({required Object percentage}) => 'Top ${percentage}';
+			case 'stats.topRank': return ({required Object rank}) => 'Meilleur rang : ${rank}';
+			case 'stats.floor': return 'Étage';
+			case 'stats.split': return 'Split';
+			case 'stats.total': return 'Total';
+			case 'stats.sent': return 'Envoyé';
+			case 'stats.received': return 'Reçu';
+			case 'stats.placement': return 'Placement';
+			case 'stats.peak': return 'Peak';
+			case 'stats.qpWithMods': return ({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('fr'))(n,
+				one: 'With 1 mod',
+				two: 'With ${n} mods',
+				few: 'With ${n} mods',
+				many: 'With ${n} mods',
+				other: 'With ${n} mods',
+			);
+			case 'stats.inputs': return ({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('fr'))(n,
+				zero: '${n} key presses',
+				one: '${n} key press',
+				two: '${n} key presses',
+				few: '${n} key presses',
+				many: '${n} key presses',
+				other: '${n} key presses',
+			);
+			case 'stats.tspinsTotal': return ({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('fr'))(n,
+				zero: '${n} T-spins total',
+				one: '${n} T-spin total',
+				two: '${n} T-spins total',
+				few: '${n} T-spins total',
+				many: '${n} T-spins total',
+				other: '${n} T-spins total',
+			);
+			case 'stats.linesCleared': return ({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('fr'))(n,
+				zero: '${n} lines cleared',
+				one: '${n} line cleared',
+				two: '${n} lines cleared',
+				few: '${n} lines cleared',
+				many: '${n} lines cleared',
+				other: '${n} lines cleared',
+			);
+			case 'stats.graphs.attack': return 'Attaque';
+			case 'stats.graphs.speed': return 'Vitesse';
+			case 'stats.graphs.defense': return 'Défense';
+			case 'stats.graphs.cheese': return 'Cheese';
+			case 'stats.players': return ({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('fr'))(n,
+				zero: '${n} players',
+				one: '${n} player',
+				two: '${n} players',
+				few: '${n} players',
+				many: '${n} players',
+				other: '${n} players',
+			);
+			case 'stats.games': return ({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('fr'))(n,
+				zero: '${n} games',
+				one: '${n} game',
+				two: '${n} games',
+				few: '${n} games',
+				many: '${n} games',
+				other: '${n} games',
+			);
+			case 'stats.lineClear.single': return 'Single';
+			case 'stats.lineClear.double': return 'Double';
+			case 'stats.lineClear.triple': return 'Triple';
+			case 'stats.lineClear.quad': return 'Quad';
+			case 'stats.lineClear.penta': return 'Penta';
+			case 'stats.lineClear.hexa': return 'Hexa';
+			case 'stats.lineClear.hepta': return 'Hepta';
+			case 'stats.lineClear.octa': return 'Octa';
+			case 'stats.lineClear.ennea': return 'Ennea';
+			case 'stats.lineClear.deca': return 'Deca';
+			case 'stats.lineClear.hendeca': return 'Hendeca';
+			case 'stats.lineClear.dodeca': return 'Dodeca';
+			case 'stats.lineClear.triadeca': return 'Triadeca';
+			case 'stats.lineClear.tessaradeca': return 'Tessaradeca';
+			case 'stats.lineClear.pentedeca': return 'Pentedeca';
+			case 'stats.lineClear.hexadeca': return 'Hexadeca';
+			case 'stats.lineClear.heptadeca': return 'Heptadeca';
+			case 'stats.lineClear.octadeca': return 'Octadeca';
+			case 'stats.lineClear.enneadeca': return 'Enneadeca';
+			case 'stats.lineClear.eicosa': return 'Eicosa';
+			case 'stats.lineClear.kagaris': return 'Kagaris';
+			case 'stats.lineClears.zero': return 'Zeros';
+			case 'stats.lineClears.single': return 'Singles';
+			case 'stats.lineClears.double': return 'Doubles';
+			case 'stats.lineClears.triple': return 'Triples';
+			case 'stats.lineClears.quad': return 'Quads';
+			case 'stats.lineClears.penta': return 'Pentas';
+			case 'stats.mini': return 'Mini';
+			case 'stats.tSpin': return 'T-spin';
+			case 'stats.tSpins': return 'T-spins';
+			case 'stats.spin': return 'Spin';
+			case 'stats.spins': return 'Spins';
+			case 'countries.': return 'Monde';
+			case 'countries.AF': return 'Afghanistan';
+			case 'countries.AX': return 'Åland Islands';
+			case 'countries.AL': return 'Albanie';
+			case 'countries.DZ': return 'Algérie';
+			case 'countries.AS': return 'American Samoa';
+			case 'countries.AD': return 'Andorra';
+			case 'countries.AO': return 'Angola';
+			case 'countries.AI': return 'Anguilla';
+			case 'countries.AQ': return 'Antarctique';
+			case 'countries.AG': return 'Antigua and Barbuda';
+			case 'countries.AR': return 'Argentine';
+			case 'countries.AM': return 'Arménie';
+			case 'countries.AW': return 'Aruba';
+			case 'countries.AU': return 'Australie';
+			case 'countries.AT': return 'Autriche';
+			case 'countries.AZ': return 'Azerbaïdjan';
+			case 'countries.BS': return 'Bahamas';
+			case 'countries.BH': return 'Bahrain';
+			case 'countries.BD': return 'Bangladesh';
+			case 'countries.BB': return 'Barbados';
+			case 'countries.BY': return 'Belarus';
+			case 'countries.BE': return 'Belgique';
+			case 'countries.BZ': return 'Belize';
+			case 'countries.BJ': return 'Benin';
+			case 'countries.BM': return 'Bermuda';
+			case 'countries.BT': return 'Bhutan';
+			case 'countries.BO': return 'Bolivia, Plurinational State of';
+			case 'countries.BA': return 'Bosnia and Herzegovina';
+			case 'countries.BW': return 'Botswana';
+			case 'countries.BV': return 'Bouvet Island';
+			case 'countries.BR': return 'Brésil';
+			case 'countries.IO': return 'British Indian Ocean Territory';
+			case 'countries.BN': return 'Brunei Darussalam';
+			case 'countries.BG': return 'Bulgarie';
+			case 'countries.BF': return 'Burkina Faso';
+			case 'countries.BI': return 'Burundi';
+			case 'countries.KH': return 'Cambodia';
+			case 'countries.CM': return 'Cameroon';
+			case 'countries.CA': return 'Canada';
+			case 'countries.CV': return 'Cape Verde';
+			case 'countries.BQ': return 'Caribbean Netherlands';
+			case 'countries.KY': return 'Cayman Islands';
+			case 'countries.CF': return 'Central African Republic';
+			case 'countries.TD': return 'Tchad';
+			case 'countries.CL': return 'Chili';
+			case 'countries.CN': return 'Chine';
+			case 'countries.CX': return 'Christmas Island';
+			case 'countries.CC': return 'Cocos (Keeling) Islands';
+			case 'countries.CO': return 'Colombie';
+			case 'countries.KM': return 'Comoros';
+			case 'countries.CG': return 'Congo';
+			case 'countries.CD': return 'Congo, République démocratique du';
+			case 'countries.CK': return 'Cook Islands';
+			case 'countries.CR': return 'Costa Rica';
+			case 'countries.CI': return 'Côte d\'Ivoire';
+			case 'countries.HR': return 'Croatie';
+			case 'countries.CU': return 'Cuba';
+			case 'countries.CW': return 'Curaçao';
+			case 'countries.CY': return 'Cyprus';
+			case 'countries.CZ': return 'Czech Republic';
+			case 'countries.DK': return 'Danemark';
+			case 'countries.DJ': return 'Djibouti';
+			case 'countries.DM': return 'Dominica';
+			case 'countries.DO': return 'République Dominicaine';
+			case 'countries.EC': return 'Équateur';
+			case 'countries.EG': return 'Égypte';
+			case 'countries.SV': return 'El Salvador';
+			case 'countries.GB-ENG': return 'Angleterre';
+			case 'countries.GQ': return 'Guinée équatoriale';
+			case 'countries.ER': return 'Eritrea';
+			case 'countries.EE': return 'Estonie';
+			case 'countries.ET': return 'Ethiopia';
+			case 'countries.EU': return 'Europe';
+			case 'countries.FK': return 'Falkland Islands (Malvinas)';
+			case 'countries.FO': return 'Faroe Islands';
+			case 'countries.FJ': return 'Fiji';
+			case 'countries.FI': return 'Finlande';
+			case 'countries.FR': return 'France';
+			case 'countries.GF': return 'Guyane française';
+			case 'countries.PF': return 'Polynésie française';
+			case 'countries.TF': return 'French Southern Territories';
+			case 'countries.GA': return 'Gabon';
+			case 'countries.GM': return 'Gambia';
+			case 'countries.GE': return 'Géorgie';
+			case 'countries.DE': return 'Allemagne';
+			case 'countries.GH': return 'Ghana';
+			case 'countries.GI': return 'Gibraltar';
+			case 'countries.GR': return 'Grèce';
+			case 'countries.GL': return 'Groenland';
+			case 'countries.GD': return 'Grenada';
+			case 'countries.GP': return 'Guadeloupe';
+			case 'countries.GU': return 'Guam';
+			case 'countries.GT': return 'Guatemala';
+			case 'countries.GG': return 'Guernsey';
+			case 'countries.GN': return 'Guinée';
+			case 'countries.GW': return 'Guinea-Bissau';
+			case 'countries.GY': return 'Guyana';
+			case 'countries.HT': return 'Haïti';
+			case 'countries.HM': return 'Heard Island and McDonald Islands';
+			case 'countries.VA': return 'Holy See (Vatican City State)';
+			case 'countries.HN': return 'Honduras';
+			case 'countries.HK': return 'Hong Kong';
+			case 'countries.HU': return 'Hungary';
+			case 'countries.IS': return 'Islande';
+			case 'countries.IN': return 'Inde';
+			case 'countries.ID': return 'Indonésie';
+			case 'countries.IR': return 'Iran, Islamic Republic of';
+			case 'countries.IQ': return 'Iraq';
+			case 'countries.IE': return 'Irlande';
+			case 'countries.IM': return 'Isle of Man';
+			case 'countries.IL': return 'Israël';
+			case 'countries.IT': return 'Italie';
+			case 'countries.JM': return 'Jamaïque';
+			case 'countries.JP': return 'Japon';
+			case 'countries.JE': return 'Jersey';
+			case 'countries.JO': return 'Jordan';
+			case 'countries.KZ': return 'Kazakhstan';
+			case 'countries.KE': return 'Kenya';
+			case 'countries.KI': return 'Kiribati';
+			case 'countries.KP': return 'Korea, Democratic People\'s Republic of';
+			case 'countries.KR': return 'Korea, Republic of';
+			case 'countries.XK': return 'Kosovo';
+			case 'countries.KW': return 'Koweït';
+			case 'countries.KG': return 'Kirghizistan';
+			case 'countries.LA': return 'Lao People\'s Democratic Republic';
+			case 'countries.LV': return 'Latvia';
+			case 'countries.LB': return 'Lebanon';
+			case 'countries.LS': return 'Lesotho';
+			case 'countries.LR': return 'Liberia';
+			case 'countries.LY': return 'Libye';
+			case 'countries.LI': return 'Liechtenstein';
+			case 'countries.LT': return 'Lituanie';
+			case 'countries.LU': return 'Luxembourg';
+			case 'countries.MO': return 'Macao';
+			case 'countries.MK': return 'Macedonia, the former Yugoslav Republic of';
+			case 'countries.MG': return 'Madagascar';
+			case 'countries.MW': return 'Malawi';
+			case 'countries.MY': return 'Malaisie';
+			case 'countries.MV': return 'Maldives';
+			case 'countries.ML': return 'Mali';
+			case 'countries.MT': return 'Malta';
+			case 'countries.MH': return 'Marshall Islands';
+			case 'countries.MQ': return 'Martinique';
+			case 'countries.MR': return 'Mauritania';
+			case 'countries.MU': return 'Mauritius';
+			case 'countries.YT': return 'Mayotte';
+			case 'countries.MX': return 'Mexique';
+			case 'countries.FM': return 'Micronesia, Federated States of';
+			case 'countries.MD': return 'Moldova, Republic of';
+			case 'countries.MC': return 'Monaco';
+			case 'countries.ME': return 'Montenegro';
+			case 'countries.MA': return 'Maroc';
+			case 'countries.MN': return 'Mongolie';
+			case 'countries.MS': return 'Montserrat';
+			case 'countries.MZ': return 'Mozambique';
+			case 'countries.MM': return 'Myanmar';
+			case 'countries.NA': return 'Namibie';
+			case 'countries.NR': return 'Nauru';
+			case 'countries.NP': return 'Népal';
+			case 'countries.NL': return 'Pays-Bas';
+			case 'countries.AN': return 'Netherlands Antilles';
+			case 'countries.NC': return 'New Caledonia';
+			case 'countries.NZ': return 'Nouvelle-Zélande';
+			case 'countries.NI': return 'Nicaragua';
+			case 'countries.NE': return 'Niger';
+			case 'countries.NG': return 'Nigeria';
+			case 'countries.NU': return 'Niue';
+			case 'countries.NF': return 'Norfolk Island';
+			case 'countries.GB-NIR': return 'Northern Ireland';
+			case 'countries.MP': return 'Northern Mariana Islands';
+			case 'countries.NO': return 'Norvège';
+			case 'countries.OM': return 'Oman';
+			case 'countries.PK': return 'Pakistan';
+			case 'countries.PW': return 'Palau';
+			case 'countries.PS': return 'Palestine';
+			case 'countries.PA': return 'Panama';
+			case 'countries.PG': return 'Papua New Guinea';
+			case 'countries.PY': return 'Paraguay';
+			case 'countries.PE': return 'Pérou';
+			case 'countries.PH': return 'Philippines';
+			case 'countries.PN': return 'Pitcairn';
+			case 'countries.PL': return 'Pologne';
+			case 'countries.PT': return 'Portugal';
+			case 'countries.PR': return 'Puerto Rico';
+			case 'countries.QA': return 'Qatar';
+			case 'countries.RE': return 'Réunion';
+			case 'countries.RO': return 'Roumanie';
+			case 'countries.RU': return 'Russie, Fédération de';
+			case 'countries.RW': return 'Rwanda';
+			case 'countries.BL': return 'Saint Barthélemy';
+			case 'countries.SH': return 'Saint Helena, Ascension and Tristan da Cunha';
+			case 'countries.KN': return 'Saint Kitts and Nevis';
+			case 'countries.LC': return 'Saint Lucia';
+			case 'countries.MF': return 'Saint Martin';
+			case 'countries.PM': return 'Saint Pierre and Miquelon';
+			case 'countries.VC': return 'Saint Vincent and the Grenadines';
+			case 'countries.WS': return 'Samoa';
+			case 'countries.SM': return 'San Marino';
+			case 'countries.ST': return 'Sao Tome and Principe';
+			case 'countries.SA': return 'Arabie saoudite';
+			case 'countries.GB-SCT': return 'Écosse';
+			case 'countries.SN': return 'Sénégal';
+			case 'countries.RS': return 'Serbie';
+			case 'countries.SC': return 'Seychelles';
+			case 'countries.SL': return 'Sierra Leone';
+			case 'countries.SG': return 'Singapour';
+			case 'countries.SX': return 'Sint Maarten (Dutch part)';
+			case 'countries.SK': return 'Slovaquie';
+			case 'countries.SI': return 'Slovénie';
+			case 'countries.SB': return 'Solomon Islands';
+			case 'countries.SO': return 'Somalia';
+			case 'countries.ZA': return 'Afrique du Sud';
+			case 'countries.GS': return 'South Georgia and the South Sandwich Islands';
+			case 'countries.SS': return 'South Sudan';
+			case 'countries.ES': return 'Espagne';
+			case 'countries.LK': return 'Sri Lanka';
+			case 'countries.SD': return 'Sudan';
+			case 'countries.SR': return 'Suriname';
+			case 'countries.SJ': return 'Svalbard and Jan Mayen Islands';
+			case 'countries.SZ': return 'Swaziland';
+			case 'countries.SE': return 'Sweden';
+			case 'countries.CH': return 'Suisse';
+			case 'countries.SY': return 'Syrian Arab Republic';
+			case 'countries.TW': return 'Taiwan';
+			case 'countries.TJ': return 'Tadjikistan';
+			case 'countries.TZ': return 'Tanzania, United Republic of';
+			case 'countries.TH': return 'Thaïlande';
+			case 'countries.TL': return 'Timor-Leste';
+			case 'countries.TG': return 'Togo';
+			case 'countries.TK': return 'Tokelau';
+			case 'countries.TO': return 'Tonga';
+			case 'countries.TT': return 'Trinidad and Tobago';
+			case 'countries.TN': return 'Tunisie';
+			case 'countries.TR': return 'Turquie';
+			case 'countries.TM': return 'Turkménistan';
+			case 'countries.TC': return 'Turks and Caicos Islands';
+			case 'countries.TV': return 'Tuvalu';
+			case 'countries.UG': return 'Uganda';
+			case 'countries.UA': return 'Ukraine';
+			case 'countries.AE': return 'Émirats arabes unis';
+			case 'countries.GB': return 'Royaume-Uni';
+			case 'countries.US': return 'États-Unis';
+			case 'countries.UY': return 'Uruguay';
+			case 'countries.UM': return 'US Minor Outlying Islands';
+			case 'countries.UZ': return 'Ouzbékistan';
+			case 'countries.VU': return 'Vanuatu';
+			case 'countries.VE': return 'Venezuela, Bolivarian Republic of';
+			case 'countries.VN': return 'Viêtnam';
+			case 'countries.VG': return 'Virgin Islands, British';
+			case 'countries.VI': return 'Virgin Islands, U.S.';
+			case 'countries.GB-WLS': return 'Wales';
+			case 'countries.WF': return 'Wallis and Futuna Islands';
+			case 'countries.EH': return 'Western Sahara';
+			case 'countries.YE': return 'Yemen';
+			case 'countries.ZM': return 'Zambia';
+			case 'countries.ZW': return 'Zimbabwe';
+			case 'countries.XX': return 'Inconnu';
+			case 'countries.XM': return 'La Lune';
+			default: return null;
+		}
+	}
+}
+
 extension on _StringsKoKr {
 	dynamic _flatMapFunction(String path) {
 		switch (path) {
 			case 'locales.en': return '영어 (English)';
+			case 'locales.fr-FR': return 'French (Français)';
+			case 'locales.es-ES': return 'Spanish (Espanol)';
 			case 'locales.ru-RU': return '러시아어 (Русский)';
 			case 'locales.ko-KR': return '한국어';
 			case 'locales.zh-CN': return '중국어 간체 (简体中文)';
@@ -10401,6 +15193,8 @@ extension on _StringsRuRu {
 	dynamic _flatMapFunction(String path) {
 		switch (path) {
 			case 'locales.en': return 'Английский (English)';
+			case 'locales.fr-FR': return 'French (Français)';
+			case 'locales.es-ES': return 'Spanish (Espanol)';
 			case 'locales.ru-RU': return 'Русский';
 			case 'locales.ko-KR': return 'Корейский (한국인)';
 			case 'locales.zh-CN': return 'Упрощенный Китайский (简体中文)';
@@ -11225,6 +16019,8 @@ extension on _StringsZhCn {
 	dynamic _flatMapFunction(String path) {
 		switch (path) {
 			case 'locales.en': return '英语 (English)';
+			case 'locales.fr-FR': return 'French (Français)';
+			case 'locales.es-ES': return 'Spanish (Espanol)';
 			case 'locales.ru-RU': return '俄语 (Русский)';
 			case 'locales.ko-KR': return '韩语 (한국인)';
 			case 'locales.zh-CN': return '简体中文';
