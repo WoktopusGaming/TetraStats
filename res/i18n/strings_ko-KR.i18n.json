@@ -1,6 +1,8 @@
 {
     "locales(map)": {
         "en": "영어 (English)",
+        "fr-FR": "French (Français)",
+        "es-ES": "Spanish (Espanol)",
         "ru-RU": "러시아어 (Русский)",
         "ko-KR": "한국어",
         "zh-CN": "중국어 간체 (简体中文)",

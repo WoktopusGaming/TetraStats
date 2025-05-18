@@ -1,26 +1,26 @@
 {
     "locales(map)": {
-        "en": "English",
-        "fr-FR": "French (Français)",
-        "es-ES": "Spanish (Espanol)",
-        "ru-RU": "Russian (Русский)",
-        "ko-KR": "Korean (한국인)",
-        "zh-CN": "Simplified Chinese (简体中文)",
-        "de-DE": "German (Deutsch)"
+        "en": "Inglés (English)",
+        "fr-FR": "Francés (Français)",
+        "es-ES": "Espanol",
+        "ru-RU": "Ruso (Русский)",
+        "ko-KR": "Coreano (한국인)",
+        "zh-CN": "Chino simplificado (简体中文)",
+        "de-DE": "Alemán (Deutsch)"
     },
-    "gamemodes(map)":{
+    "gamemodes(map)": {
         "league": "Tetra League",
         "zenith": "Quick Play",
         "zenithex": "Quick Play Expert",
-        "40l": "40 Lines",
+        "40l": "40 Líneas",
         "blitz": "Blitz",
         "5mblast": "5,000,000 Blast",
         "zen": "Zen"
     },
     "destinations": {
         "home": "Home",
-        "graphs": "Graphs",
-        "leaderboards": "Leaderboards",
+        "graphs": "Gráficos",
+        "leaderboards": "Clasificaciones",
         "cutoffs": "Cutoffs",
         "calc": "Calculator",
         "info": "Info Center",
@@ -66,16 +66,16 @@
         "progressToNextLevel": "Progress to next level: $percentage",
         "progressTowardsGoal": "Progress from 0 XP to level $goal: $percentage ($left XP left)"
     },
-    "gametime":{
+    "gametime": {
         "title": "Exact gametime",
         "gametimeAday": "$gametime a day in average",
         "breakdown": "It's $years years,\nor $months months,\nor $days days,\nor $minutes minutes\nor $seconds seconds"
     },
     "track": "Track",
     "stopTracking": "Stop tracking",
-    "supporter": "Supporter tier ${tier}",
+    "supporter": "Nivel ${tier} de apoyo",
     "comparingWith": "Data from ${newDate} comparing with ${oldDate}",
-    "compare": "Compare",
+    "compare": "Comparar",
     "comparison": "Comparison",
     "enterUsername": "Enter username or \\$avgX (where X is rank)",
     "general": "General",
@@ -107,7 +107,7 @@
         "twc": "TETR.IO World Champion",
         "twcYear": "$year TETR.IO World Championship"
     },
-    "newsEntries":{
+    "newsEntries": {
         "leaderboard(rich)": "Got № $rank in $gametype",
         "personalbest(rich)": "Got a new PB in $gametype of $pb",
         "badge(rich)": "Obtained a $badge badge",
@@ -130,7 +130,7 @@
     "top": "Top",
     "noRecord": "No record",
     "sprintAndBlitsRelevance": "Relevance: ${date}",
-    "snackBarMessages":{
+    "snackBarMessages": {
         "stateRemoved": "${date} state was removed from database!",
         "matchRemoved": "${date} match was removed from database!",
         "notForWeb": "Function is not available for web version",
@@ -168,7 +168,7 @@
         "replayExpired": "Replay expired and not available anymore",
         "replayRejected": "Third party API blocked your IP address"
     },
-    "actions":{
+    "actions": {
         "cancel": "Cancel",
         "submit": "Submit",
         "ok": "OK",
@@ -192,7 +192,7 @@
         "dateAndTime": "Date & Time",
         "filterModaleTitle": "Filter ranks on graph"
     },
-    "filterModale":{
+    "filterModale": {
         "all": "All"
     },
     "cutoffsDestination": {
@@ -215,7 +215,7 @@
         "fromPlace": "from № $n",
         "viewButton": "View"
     },
-    "rankView":{
+    "rankView": {
         "rankTitle": "$rank rank data",
         "everyoneTitle": "Entire leaderboard",
         "trRange": "TR Range",
@@ -281,8 +281,8 @@
         "sprintAndBlitzAveragesDescription": "Since calculating 40 Lines & Blitz averages is tedious process, it gets updated only once in a while. Click on the title of this card to see the full 40 Lines & Blitz averages table",
         "tetraStatsWiki": "Tetra Stats Wiki",
         "tetraStatsWikiDescription": "Find more information about Tetra Stats functions and statictic, that it provides",
-        "about": "About Tetra Stats",
-        "aboutDescription": "Developed by dan63\n"
+        "about": "Acerca de Tetra Stats",
+        "aboutDescription": "Desarrollado por dan63\n"
     },
     "leaderboardsDestination": {
         "title": "Leaderboards",
@@ -303,24 +303,24 @@
         "database": "Local database",
         "checking": "Checking...",
         "enterToSubmit": "Press Enter to submit",
-        "account": "Your account in TETR.IO",
+        "account": "Tu cuenta en TETR.IO",
         "accountDescription": "Stats of that player will be loaded initially right after launching this app. By default it loads my (dan63) stats. To change that, enter your nickname here.",
         "done": "Done!",
         "noSuchAccount": "No such account",
         "language": "Language",
         "languageDescription": "Tetra Stats was translated on $languages. By default, app will pick your system one or English, if locale of your system isn't avaliable.",
         "languages(plural)": {
-            "zero": "zero languages",
-            "one": "$n language",
-            "two": "$n languages",
-            "few": "$n languages",
-            "many": "$n languages",
-            "other": "$n languages"
+            "zero": "cero idiomas",
+            "one": "$n idioma",
+            "two": "$n idiomas",
+            "few": "$n idiomas",
+            "many": "$n idiomas",
+            "other": "$n idiomas"
         },
         "updateInTheBackground": "Update data in the background",
         "updateInTheBackgroundDescription": "If on, Tetra Stats will attempt to retrieve new info once cache expires. Usually that happen every 5 minutes",
         "compareStats": "Compare TL stats with rank averages",
-        "compareStatsDescription": "If on, Tetra Stats will provide additional metrics, which allow you to compare yourself with average player on your rank. The way you'll see it — stats will be highlighted with corresponding color, hover over them with cursor for more info.", 
+        "compareStatsDescription": "If on, Tetra Stats will provide additional metrics, which allow you to compare yourself with average player on your rank. The way you'll see it — stats will be highlighted with corresponding color, hover over them with cursor for more info.",
         "showPosition": "Show position on leaderboard by stats",
         "showPositionDescription": "This can take some time (and traffic) to load, but will allow you to see your position on the leaderboard, sorted by a stat",
         "accentColor": "Accent color",
@@ -328,7 +328,7 @@
         "accentColorModale": "Pick an accent color",
         "timestamps": "Timestamps format",
         "timestampsDescriptionPart1": "You can choose, in which way timestamps shows time. By default, they show time in GMT timezone, formatted according to chosen locale, example: $d.",
-        "timestampsDescriptionPart2": "There is also:\n• Locale formatted in your timezone: $y\n• Relative timestamp: $r", 
+        "timestampsDescriptionPart2": "There is also:\n• Locale formatted in your timezone: $y\n• Relative timestamp: $r",
         "timestampsAbsoluteGMT": "Absolute (GMT)",
         "timestampsAbsoluteLocalTime": "Absolute (Your timezone)",
         "timestampsRelative": "Relative",
@@ -366,8 +366,8 @@
         "cutoffs": "Cutoffs History"
     },
     "calcNavigation": {
-      "stats": "Stats Calculator",
-      "damage": "Damage Calculator"
+        "stats": "Stats Calculator",
+        "damage": "Damage Calculator"
     },
     "firstTimeView": {
         "welcome": "Welcome to Tetra Stats",
@@ -380,14 +380,14 @@
         "skip": "Skip"
     },
     "aboutView": {
-        "title": "About Tetra Stats",
+        "title": "Acerca de Tetra Stats",
         "about": "Tetra Stats is a service, that works with TETR.IO Tetra Channel API, providing data from it and calculating some addtitional metrics, based on this data. Service allows user to track their progress in Tetra League with \"Track\" function, which records every Tetra League change into local database (not automatically, you have to visit service from time to time), so these changes could be looked through graphs.\n\nBeanserver blaster is a part of a Tetra Stats, that decoupled into a serverside script. It provides full Tetra League leaderboard, allowing Tetra Stats to sort leaderboard by any metric and build scatter chart, that allows user to analyse Tetra League trends. It also provides history of Tetra League ranks cutoffs, which can be viewed by user via graph as well.\n\nThere is a plans to add replay analysis and tournaments history, so stay tuned!\n\nService is not associated with TETR.IO or osk in any capacity.",
         "appVersion": "App Version",
         "build": "Build $build",
         "GHrepo": "GitHub Repository",
         "submitAnIssue": "Submit an issue",
         "credits": "Credits",
-        "authorAndDeveloper": "Autor & developer",
+        "authorAndDeveloper": "Autor & desarrollador",
         "providedFormulas": "Provided formulas",
         "providedS1history": "Provided S1 history",
         "inoue": "Inoue (replay grabber)",
@@ -414,7 +414,7 @@
             "short": "Glicko",
             "full": "Glicko"
         },
-        "rd":{
+        "rd": {
             "short": "RD",
             "full": "Rating Deviation"
         },
@@ -426,43 +426,43 @@
             "short": "S1 TR",
             "full": "Season 1 like TR"
         },
-        "gp":{
+        "gp": {
             "short": "GP",
             "full": "Games Played"
         },
-        "gw":{
+        "gw": {
             "short": "GW",
             "full": "Games Won"
         },
-        "winrate":{
+        "winrate": {
             "short": "WR%",
             "full": "Win Rate"
         },
-        "apm":{
+        "apm": {
             "short": "APM",
             "full": "Attack Per Minute"
         },
-        "pps":{
+        "pps": {
             "short": "PPS",
             "full": "Pieces Per Second"
         },
-        "vs":{
+        "vs": {
             "short": "VS",
             "full": "Versus Score"
         },
-        "app":{
+        "app": {
             "short": "APP",
             "full": "Attack Per Piece"
         },
-        "vsapm":{
+        "vsapm": {
             "short": "VS/APM",
             "full": "VS / APM"
         },
-        "dss":{
+        "dss": {
             "short": "DS/S",
             "full": "Downstack Per Second"
         },
-        "dsp":{
+        "dsp": {
             "short": "DS/P",
             "full": "Downstack Per Piece"
         },
@@ -470,43 +470,43 @@
             "short": "APP+DSP",
             "full": "APP + DSP"
         },
-        "cheese":{
+        "cheese": {
             "short": "Cheese",
             "full": "Cheese Index"
         },
-        "gbe":{
+        "gbe": {
             "short": "GbE",
             "full": "Garbage Efficiency"
         },
-        "nyaapp":{
+        "nyaapp": {
             "short": "wAPP",
             "full": "Weighted APP"
         },
-        "area":{
+        "area": {
             "short": "Area",
             "full": "Area"
         },
-        "etr":{
+        "etr": {
             "short": "eTR",
             "full": "Estimated TR"
         },
-        "etracc":{
+        "etracc": {
             "short": "±eTR",
             "full": "Accuracy of Estimated TR"
         },
-        "opener":{
+        "opener": {
             "short": "Opener",
             "full": "Opener"
         },
-        "plonk":{
+        "plonk": {
             "short": "Plonk",
             "full": "Plonk"
         },
-        "stride":{
+        "stride": {
             "short": "Stride",
             "full": "Stride"
         },
-        "infds":{
+        "infds": {
             "short": "Inf. DS",
             "full": "Infinite Downstack"
         },
@@ -528,20 +528,20 @@
             "short": "KO's",
             "full": "Knockouts"
         },
-        "b2b":{
+        "b2b": {
             "short": "B2B",
             "full": "Back-To-Back"
         },
-        "finesse":{
+        "finesse": {
             "short": "F",
             "full": "Finesse",
             "widgetTitle": "inesse"
         },
-        "finesseFaults":{
+        "finesseFaults": {
             "short": "FF",
             "full": "Finesse Faults"
         },
-        "totalTime":{
+        "totalTime": {
             "short": "Time",
             "full": "Total Time",
             "widgetTitle": "otal Time"
@@ -626,7 +626,7 @@
             "defense": "Defense",
             "cheese": "Cheese"
         },
-        "players(plural)":{
+        "players(plural)": {
             "zero": "$n players",
             "one": "$n player",
             "two": "$n players",
@@ -681,9 +681,8 @@
     },
     "countries(map)": {
         "": "Worldwide",
-
         "AF": "Afghanistan",
-        "AX": "\u00c5land Islands",
+        "AX": "Åland Islands",
         "AL": "Albania",
         "DZ": "Algeria",
         "AS": "American Samoa",
@@ -698,7 +697,6 @@
         "AU": "Australia",
         "AT": "Austria",
         "AZ": "Azerbaijan",
-    
         "BS": "Bahamas",
         "BH": "Bahrain",
         "BD": "Bangladesh",
@@ -719,7 +717,6 @@
         "BG": "Bulgaria",
         "BF": "Burkina Faso",
         "BI": "Burundi",
-    
         "KH": "Cambodia",
         "CM": "Cameroon",
         "CA": "Canada",
@@ -738,28 +735,25 @@
         "CD": "Congo, the Democratic Republic of the",
         "CK": "Cook Islands",
         "CR": "Costa Rica",
-        "CI": "C\u00f4te d'Ivoire",
+        "CI": "Côte d'Ivoire",
         "HR": "Croatia",
         "CU": "Cuba",
-        "CW": "Cura\u00e7ao",
+        "CW": "Curaçao",
         "CY": "Cyprus",
         "CZ": "Czech Republic",
-    
         "DK": "Denmark",
         "DJ": "Djibouti",
         "DM": "Dominica",
         "DO": "Dominican Republic",
-    
         "EC": "Ecuador",
         "EG": "Egypt",
         "SV": "El Salvador",
-        "GB-ENG": "England",
-        "GQ": "Equatorial Guinea",
+        "GB-ENG": "Inglaterra",
+        "GQ": "Guinea Ecuatorial",
         "ER": "Eritrea",
         "EE": "Estonia",
         "ET": "Ethiopia",
         "EU": "Europe",
-    
         "FK": "Falkland Islands (Malvinas)",
         "FO": "Faroe Islands",
         "FJ": "Fiji",
@@ -768,7 +762,6 @@
         "GF": "French Guiana",
         "PF": "French Polynesia",
         "TF": "French Southern Territories",
-    
         "GA": "Gabon",
         "GM": "Gambia",
         "GE": "Georgia",
@@ -785,14 +778,12 @@
         "GN": "Guinea",
         "GW": "Guinea-Bissau",
         "GY": "Guyana",
-    
         "HT": "Haiti",
         "HM": "Heard Island and McDonald Islands",
         "VA": "Holy See (Vatican City State)",
         "HN": "Honduras",
         "HK": "Hong Kong",
         "HU": "Hungary",
-    
         "IS": "Iceland",
         "IN": "India",
         "ID": "Indonesia",
@@ -802,12 +793,10 @@
         "IM": "Isle of Man",
         "IL": "Israel",
         "IT": "Italy",
-    
         "JM": "Jamaica",
-        "JP": "Japan",
+        "JP": "Japón",
         "JE": "Jersey",
         "JO": "Jordan",
-    
         "KZ": "Kazakhstan",
         "KE": "Kenya",
         "KI": "Kiribati",
@@ -816,7 +805,6 @@
         "XK": "Kosovo",
         "KW": "Kuwait",
         "KG": "Kyrgyzstan",
-    
         "LA": "Lao People's Democratic Republic",
         "LV": "Latvia",
         "LB": "Lebanon",
@@ -826,7 +814,6 @@
         "LI": "Liechtenstein",
         "LT": "Lithuania",
         "LU": "Luxembourg",
-    
         "MO": "Macao",
         "MK": "Macedonia, the former Yugoslav Republic of",
         "MG": "Madagascar",
@@ -840,7 +827,7 @@
         "MR": "Mauritania",
         "MU": "Mauritius",
         "YT": "Mayotte",
-        "MX": "Mexico",
+        "MX": "México",
         "FM": "Micronesia, Federated States of",
         "MD": "Moldova, Republic of",
         "MC": "Monaco",
@@ -850,7 +837,6 @@
         "MS": "Montserrat",
         "MZ": "Mozambique",
         "MM": "Myanmar",
-    
         "NA": "Namibia",
         "NR": "Nauru",
         "NP": "Nepal",
@@ -866,9 +852,7 @@
         "GB-NIR": "Northern Ireland",
         "MP": "Northern Mariana Islands",
         "NO": "Norway",
-    
         "OM": "Oman",
-    
         "PK": "Pakistan",
         "PW": "Palau",
         "PS": "Palestine",
@@ -881,14 +865,11 @@
         "PL": "Poland",
         "PT": "Portugal",
         "PR": "Puerto Rico",
-    
         "QA": "Qatar",
-    
         "RE": "Réunion",
         "RO": "Romania",
         "RU": "Russian Federation",
         "RW": "Rwanda",
-    
         "BL": "Saint Barthélemy",
         "SH": "Saint Helena, Ascension and Tristan da Cunha",
         "KN": "Saint Kitts and Nevis",
@@ -914,7 +895,7 @@
         "ZA": "South Africa",
         "GS": "South Georgia and the South Sandwich Islands",
         "SS": "South Sudan",
-        "ES": "Spain",
+        "ES": "España",
         "LK": "Sri Lanka",
         "SD": "Sudan",
         "SR": "Suriname",
@@ -923,7 +904,6 @@
         "SE": "Sweden",
         "CH": "Switzerland",
         "SY": "Syrian Arab Republic",
-    
         "TW": "Taiwan",
         "TJ": "Tajikistan",
         "TZ": "Tanzania, United Republic of",
@@ -938,32 +918,26 @@
         "TM": "Turkmenistan",
         "TC": "Turks and Caicos Islands",
         "TV": "Tuvalu",
-    
         "UG": "Uganda",
         "UA": "Ukraine",
         "AE": "United Arab Emirates",
         "GB": "United Kingdom",
-        "US": "United States",
+        "US": "Estados Unidos",
         "UY": "Uruguay",
         "UM": "US Minor Outlying Islands",
         "UZ": "Uzbekistan",
-    
         "VU": "Vanuatu",
         "VE": "Venezuela, Bolivarian Republic of",
         "VN": "Vietnam",
         "VG": "Virgin Islands, British",
         "VI": "Virgin Islands, U.S.",
-    
         "GB-WLS": "Wales",
         "WF": "Wallis and Futuna Islands",
         "EH": "Western Sahara",
-    
         "YE": "Yemen",
-    
         "ZM": "Zambia",
         "ZW": "Zimbabwe",
-    
-        "XX": "Unknown",
-        "XM": "The Moon"
+        "XX": "Desconocido",
+        "XM": "La Luna"
     }
-  }
+}

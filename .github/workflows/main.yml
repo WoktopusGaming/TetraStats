@@ -3,11 +3,12 @@ on:
     branches:
       - main
       - master
+      - locale-patch
   push:
     branches:
       - main
       - master
-      - develop
+      - locale-patch
 name: "Build & Release"
 jobs:
   build-and-release-windows:
